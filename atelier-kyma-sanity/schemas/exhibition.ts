@@ -26,6 +26,16 @@ export default {
       },
     },
     {
+      name: 'startDate',
+      title: 'Start Date',
+      type: 'date',
+    },
+    {
+      name: 'endDate',
+      title: 'End Date',
+      type: 'date',
+    },
+    {
       name: 'description',
       title: 'Description',
       type: 'array',
