@@ -1,7 +1,21 @@
+import type { GetStaticProps } from "next/types";
+
 import React from "react";
 import { client } from "../lib/sanityClient";
 
-export default function About({ contact }) {
+type Contact = {
+  email: string;
+  phoneNumber: string;
+  website: string;
+  address: string;
+  instagramName: string;
+};
+
+type Props = {
+  contact: Contact;
+};
+
+export default function About({ contact }: Props) {
   return (
     <main>
       <div>E {contact.email}</div>
@@ -13,13 +27,13 @@ export default function About({ contact }) {
   );
 }
 
-export async function getStaticProps() {
+export const getStaticProps: GetStaticProps<Props> = async () => {
   const query = '*[_type == "contact"][0]';
-  const contact = await client.fetch(query);
+  const contact: Contact = await client.fetch(query);
 
   return {
     props: {
       contact,
     },
   };
-}
+};

@@ -1,7 +1,19 @@
+import type { GetStaticProps } from "next/types";
+
 import React from "react";
 import { client } from "../lib/sanityClient";
 
-export default function About({ about }) {
+type About = {
+  koreanIntro: string;
+  englishIntro: string;
+  frenchIntro: string;
+};
+
+type Props = {
+  about: About;
+};
+
+export default function About({ about }: Props) {
   return (
     <main>
       <p className="whitespace-pre-line mb-8">{about.koreanIntro}</p>
@@ -11,13 +23,13 @@ export default function About({ about }) {
   );
 }
 
-export async function getStaticProps() {
+export const getStaticProps: GetStaticProps<Props> = async () => {
   const query = '*[_type == "about"][0]';
-  const about = await client.fetch(query);
+  const about: About = await client.fetch(query);
 
   return {
     props: {
       about,
     },
   };
-}
+};

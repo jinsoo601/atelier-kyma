@@ -7,7 +7,7 @@ import { useState } from "react";
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <nav className="sticky top-0 flex drop-shadow-lg bg-white p-2 items-center justify-between">
+    <nav className="sticky z-50 top-0 flex drop-shadow-lg bg-white p-2 items-center justify-between">
       <Logo />
       <div className="flex items-center">
         <MenuButton isOpen={isOpen} setIsOpen={setIsOpen} />
