@@ -19,8 +19,9 @@ type Params = ParsedUrlQuery & {
 };
 
 export default function ArtistDetail({ artistDetail }: Props) {
+  console.log(artistDetail.career);
   return (
-    <main>
+    <main className="p-10">
       <header className="text-xl font-semibold">{artistDetail.name}</header>
       <SanityBlockRenderer value={artistDetail.career} />
     </main>
