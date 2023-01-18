@@ -1,16 +1,14 @@
 import type { SanityImageSource } from "@sanity/image-url/lib/types/types";
-import type { PortableTextProps } from "@portabletext/react";
 
-import { PortableText } from "@portabletext/react";
 import Image from "next/image";
 import React from "react";
-import { urlFor } from "../lib/sanityClient";
+import { urlFor } from "../../lib/sanityClient";
 
 type TextProps = {
   children: JSX.Element;
 };
 
-const components = {
+export default {
   types: {
     image: ({ value }: { value: SanityImageSource }) => (
       <div className="relative w-full md:w-1/2 h-80 md:h-[60vh] bg-slate-200 border-solid border-4 border-black mt-4 mb-2">
@@ -63,7 +61,3 @@ const components = {
     ),
   },
 };
-
-export default function SanityBlockRenderer({ value }: PortableTextProps) {
-  return <PortableText value={value} components={components} />;
-}

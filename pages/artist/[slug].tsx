@@ -2,8 +2,9 @@ import type { GetStaticPaths, GetStaticProps } from "next";
 import type { ParsedUrlQuery } from "querystring";
 import type { Image as SanityImage, PortableTextBlock } from "@sanity/types";
 
+import { PortableText } from "@portabletext/react";
 import { client } from "../../lib/sanityClient";
-import SanityBlockRenderer from "../../components/SanityBlockRenderer";
+import components from "./_sanityBlockComponents";
 
 type ArtistDetail = {
   name: string;
@@ -22,7 +23,7 @@ export default function ArtistDetail({ artistDetail }: Props) {
   return (
     <>
       <header className="text-xl font-semibold">{artistDetail.name}</header>
-      <SanityBlockRenderer value={artistDetail.career} />
+      <PortableText value={artistDetail.career} components={components} />
     </>
   );
 }
