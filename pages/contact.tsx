@@ -17,13 +17,13 @@ type Props = {
 
 export default function About({ contact }: Props) {
   return (
-    <main className="p-10">
+    <>
       <div>E {contact.email}</div>
       <div>T {contact.phoneNumber}</div>
       <div>W {contact.website}</div>
       <div>A {contact.address}</div>
       <div>I @{contact.instagramName}</div>
-    </main>
+    </>
   );
 }
 

@@ -17,19 +17,23 @@ type Props = {
 
 export default function Artist({ artists }: Props) {
   return (
-    <main>
+    <div className=" grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
       {artists.map(({ name, slug, profileImage }) => (
-        <Link key={slug.current} href={`/artist/${slug.current}`}>
+        <Link
+          key={slug.current}
+          href={`/artist/${slug.current}`}
+          className="flex flex-col items-center transition-transform hover:scale-105 duration-500"
+        >
           <Image
             src={urlFor(profileImage).width(200).height(250).url()}
             alt={name}
             width={200}
             height={250}
           />
-          <p>{name}</p>
+          <p className="font-semibold mt-2">{name}</p>
         </Link>
       ))}
-    </main>
+    </div>
   );
 }
 
