@@ -15,11 +15,11 @@ type Props = {
 
 export default function About({ about }: Props) {
   return (
-    <>
-      <p className="whitespace-pre-line mb-8">{about.koreanIntro}</p>
-      <p className="whitespace-pre-line mb-8">{about.englishIntro}</p>
-      <p className="whitespace-pre-line">{about.frenchIntro}</p>
-    </>
+    <div className="divide-y-2 divide-slate-500">
+      <p className="whitespace-pre-line mb-6">{about.koreanIntro}</p>
+      <p className="whitespace-pre-line pt-6 mb-6">{about.englishIntro}</p>
+      <p className="whitespace-pre-line pt-6">{about.frenchIntro}</p>
+    </div>
   );
 }
 
