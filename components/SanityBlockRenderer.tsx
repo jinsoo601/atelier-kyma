@@ -13,7 +13,7 @@ type TextProps = {
 const components = {
   types: {
     image: ({ value }: { value: SanityImageSource }) => (
-      <div className="relative w-full md:w-1/2 h-80 md:h-[60vh] bg-slate-200 border-solid border-4 border-black mt-4 mb-2 md:mx-auto">
+      <div className="relative w-full md:w-1/2 h-80 md:h-[60vh] bg-slate-200 border-solid border-4 border-black mt-4 mb-2">
         <Image
           src={urlFor(value).url()}
           alt="image"
@@ -24,9 +24,7 @@ const components = {
     ),
   },
   marks: {
-    em: ({ children }: TextProps) => (
-      <em className="block text-center">{children}</em>
-    ),
+    em: ({ children }: TextProps) => <em>{children}</em>,
   },
   block: {
     h1: ({ children }: TextProps) => (
@@ -61,7 +59,7 @@ const components = {
   },
   listItem: {
     bullet: ({ children }: TextProps) => (
-      <li className="list-disc list-inside text-sm">{children}</li>
+      <li className="list-disc list-inside text-sm leading-6">{children}</li>
     ),
   },
 };

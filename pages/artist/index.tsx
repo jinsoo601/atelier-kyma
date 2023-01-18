@@ -30,7 +30,7 @@ export default function Artist({ artists }: Props) {
             width={200}
             height={250}
           />
-          <p className="font-semibold mt-2">{name}</p>
+          <p className="text-sm font-semibold mt-2">{name}</p>
         </Link>
       ))}
     </div>
