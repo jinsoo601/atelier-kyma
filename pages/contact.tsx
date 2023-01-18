@@ -17,7 +17,7 @@ type Props = {
 
 export default function About({ contact }: Props) {
   return (
-    <main>
+    <main className="p-10">
       <div>E {contact.email}</div>
       <div>T {contact.phoneNumber}</div>
       <div>W {contact.website}</div>
