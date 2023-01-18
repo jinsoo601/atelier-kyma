@@ -15,9 +15,6 @@ export default function NavBar() {
           <Link href="/about" className="mx-4">
             ABOUT
           </Link>
-          <Link href="/consulting" className="mx-4">
-            CONSULTING
-          </Link>
           <Link href="/artist" className="mx-4">
             ARTIST
           </Link>
@@ -58,13 +55,6 @@ function MobileNav({
         </Link>
         <Link
           className="text-xl font-medium my-2"
-          href="/consulting"
-          onClick={closeNav}
-        >
-          Consulting
-        </Link>
-        <Link
-          className="text-xl font-medium my-2"
           href="/artist"
           onClick={closeNav}
         >
@@ -91,7 +81,7 @@ function MobileNav({
 
 function Logo() {
   return (
-    <Link href="/">
+    <Link href="/about">
       <Image
         src="/logo.png"
         alt="Atelier Kyma Logo"
