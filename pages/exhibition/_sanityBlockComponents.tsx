@@ -8,9 +8,7 @@ type TextProps = {
   children: JSX.Element;
 };
 
-const imageAspectRatio = 1658 / 1182;
-
-export default {
+const components = {
   types: {
     image: ({ value }: { value: SanityImageSource }) => (
       <div className="relative w-full md:w-2/3 aspect-[1182/1658] mt-4 mb-2">
@@ -58,3 +56,5 @@ export default {
     ),
   },
 };
+
+export default components;
