@@ -67,8 +67,8 @@ function MobileNav({
   const isSelected = (path: string) => router.pathname.startsWith(path);
   return (
     <div
-      className={`absolute top-0 left-0 h-screen w-screen inset-0 bg-white transform transition-transform duration-300 ease-in-out ${
-        isOpen ? "-translate-x-0" : "-translate-x-full"
+      className={`absolute top-0 left-0 h-[300px] w-screen bg-white transform transition-transform duration-500 ease-in-out ${
+        isOpen ? "-translate-y-0" : "-translate-y-full"
       }`}
     >
       <div className="h-full flex flex-col justify-end items-end p-6">
