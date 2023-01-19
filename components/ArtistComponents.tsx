@@ -3,13 +3,18 @@ import type { PortableTextReactComponents } from "@portabletext/react";
 
 import Image from "next/image";
 import React from "react";
-import { urlFor } from "../../lib/sanityClient";
+import { urlFor } from "../lib/sanityClient";
 
 const components: Partial<PortableTextReactComponents> = {
   types: {
     image: ({ value }: { value: SanityImageSource }) => (
-      <div className="relative w-full md:w-2/3 aspect-[1182/1658] mt-4 mb-2">
-        <Image src={urlFor(value).url()} alt="image" fill />
+      <div className="relative w-full md:w-1/2 h-80 md:h-[60vh] bg-slate-200 border-solid border-4 border-black mt-4 mb-2">
+        <Image
+          src={urlFor(value).url()}
+          alt="image"
+          fill
+          style={{ objectFit: "contain" }}
+        />
       </div>
     ),
   },

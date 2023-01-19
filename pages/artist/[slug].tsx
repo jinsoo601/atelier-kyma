@@ -4,7 +4,7 @@ import type { TypedObject } from "@sanity/types";
 
 import { PortableText } from "@portabletext/react";
 import { client } from "../../lib/sanityClient";
-import components from "./_sanityBlockComponents";
+import components from "../../components/ArtistComponents";
 
 type ArtistDetail = {
   name: string;
