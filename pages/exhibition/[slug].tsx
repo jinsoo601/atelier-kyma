@@ -1,6 +1,6 @@
 import type { GetStaticPaths, GetStaticProps } from "next";
 import type { ParsedUrlQuery } from "querystring";
-import type { Image as SanityImage, PortableTextBlock } from "@sanity/types";
+import type { TypedObject } from "@sanity/types";
 
 import { PortableText } from "@portabletext/react";
 import { client } from "../../lib/sanityClient";
@@ -8,7 +8,7 @@ import components from "./_sanityBlockComponents";
 
 type ExhibitionDetail = {
   name: string;
-  description: Array<SanityImage | PortableTextBlock>;
+  description: TypedObject[];
   startDate: string;
   endDate: string;
 };
