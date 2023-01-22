@@ -8,7 +8,7 @@ import { urlFor } from "../lib/sanityClient";
 const components: Partial<PortableTextReactComponents> = {
   types: {
     image: ({ value }: { value: SanityImageSource }) => (
-      <div className="relative w-full md:w-1/2 h-80 md:h-[60vh] bg-slate-200 border-solid border-4 border-black mt-4 mb-2">
+      <div className="relative w-full md:w-1/2 h-80 md:h-[60vh] bg-slate-200 drop-shadow-xl mt-4 mb-2">
         <Image
           src={urlFor(value).url()}
           alt="image"
