@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import React from "react";
 
 import { useState } from "react";
+import Wave from "./Wave";
 
 const selectedStyle =
   "after:block after:absolute after:h-0.5 after:w-full after:bg-black";
@@ -50,6 +51,7 @@ export default function NavBar() {
           </Link>
         </div>
       </div>
+      <Wave />
       <MobileNav isOpen={isOpen} setIsOpen={setIsOpen} />
     </nav>
   );
