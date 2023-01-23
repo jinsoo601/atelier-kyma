@@ -9,7 +9,7 @@ export default function Wave() {
         xmlnsXlink="http://www.w3.org/1999/xlink"
         viewBox="0 24 150 28"
         preserveAspectRatio="none"
-        shape-rendering="auto"
+        shapeRendering="auto"
       >
         <defs>
           <path
@@ -18,8 +18,18 @@ export default function Wave() {
           />
         </defs>
         <g className="parallax">
-          <use xlinkHref="#gentle-wave" x="48" y="0" fill="rgba(0,0,200,0.3)" />
-          <use xlinkHref="#gentle-wave" x="48" y="0" fill="rgba(0,0,200,0.3)" />
+          <use
+            xlinkHref="#gentle-wave"
+            x="48"
+            y="0"
+            fill="rgba(191,154,0,0.3)"
+          />
+          <use
+            xlinkHref="#gentle-wave"
+            x="48"
+            y="0"
+            fill="rgba(191,154,0,0.3)"
+          />
         </g>
       </svg>
       <style jsx>{`
