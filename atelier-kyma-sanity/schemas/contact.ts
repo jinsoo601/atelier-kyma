@@ -28,5 +28,18 @@ export default {
       title: 'Instagram Name',
       type: 'string',
     },
+    {
+      name: 'hours',
+      title: 'Hours of Operation',
+      type: 'text',
+    },
+    {
+      name: 'image',
+      title: 'Image',
+      type: 'image',
+      options: {
+        hotspot: true,
+      },
+    },
   ],
 }
