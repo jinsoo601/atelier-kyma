@@ -21,7 +21,6 @@ type Props = {
 };
 
 export default function About({ contact }: Props) {
-  console.log(contact);
   return (
     <div className="flex gap-4 flex-col md:flex-row">
       <div className="md:w-3/5">
