@@ -71,7 +71,7 @@ function MobileNav({
   const isSelected = (path: string) => router.pathname.startsWith(path);
   return (
     <div
-      className={`absolute md:hidden top-[72px] left-0 h-[220px] w-screen bg-white drop transform transition-transform duration-500 ease-in-out ${
+      className={`sticky z-40 md:hidden top-[72px] left-0 h-[220px] w-screen bg-white drop transform transition-transform duration-500 ease-in-out ${
         isOpen ? "-translate-y-0 drop-shadow-lg" : "-translate-y-full"
       }`}
     >

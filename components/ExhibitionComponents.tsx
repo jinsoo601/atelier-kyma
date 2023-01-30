@@ -8,7 +8,7 @@ import { urlFor } from "../lib/sanityClient";
 const components: Partial<PortableTextReactComponents> = {
   types: {
     image: ({ value }: { value: SanityImageSource }) => (
-      <div className="relative w-1/2 md:w-1/4 aspect-[1182/1658] inline-block mt-2">
+      <div className="relative w-full md:w-1/4 aspect-[1182/1658] inline-block mt-2">
         <Image src={urlFor(value).url()} alt="image" fill />
       </div>
     ),
