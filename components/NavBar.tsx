@@ -4,56 +4,58 @@ import { useRouter } from "next/router";
 import React from "react";
 
 import { useState } from "react";
-import Wave from "./Wave";
 
 const selectedStyle =
-  "after:block after:absolute after:h-0.5 after:w-full after:bg-black";
+  "after:block after:absolute after:top-0 after:-left-2 after:h-6 after:w-1/2 after:bg-mustard after:blur after:opacity-70";
 
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
   const router = useRouter();
   const isSelected = (path: string) => router.pathname.startsWith(path);
   return (
-    <nav className="sticky z-50 top-0 flex drop-shadow-lg bg-white p-2 items-center justify-between">
-      <Logo />
-      <div className="flex items-center">
-        <MenuButton isOpen={isOpen} setIsOpen={setIsOpen} />
-        <div className="hidden md:flex">
-          <Link
-            href="/about"
-            className={`mx-6 relative ${isSelected("/about") && selectedStyle}`}
-          >
-            ABOUT
-          </Link>
-          <Link
-            href="/artist"
-            className={`mx-6 relative ${
-              isSelected("/artist") && selectedStyle
-            }`}
-          >
-            ARTIST
-          </Link>
-          <Link
-            href="/exhibition"
-            className={`mx-6 relative ${
-              isSelected("/exhibition") && selectedStyle
-            }`}
-          >
-            EXHIBITION
-          </Link>
-          <Link
-            href="/contact"
-            className={`mx-6 relative ${
-              isSelected("/contact") && selectedStyle
-            }`}
-          >
-            CONTACT
-          </Link>
+    <>
+      <nav className="sticky z-50 h-[72px] top-0 py-2 md:p-2 flex bg-white items-center justify-between mx-4 md:mx-8 border-b-2 border-black/20">
+        <Logo />
+        <div className="flex items-center">
+          <MenuButton isOpen={isOpen} setIsOpen={setIsOpen} />
+          <div className="hidden md:flex">
+            <Link
+              href="/about"
+              className={`ml-8 relative ${
+                isSelected("/about") && selectedStyle
+              }`}
+            >
+              ABOUT
+            </Link>
+            <Link
+              href="/artist"
+              className={`ml-8 relative ${
+                isSelected("/artist") && selectedStyle
+              }`}
+            >
+              ARTIST
+            </Link>
+            <Link
+              href="/exhibition"
+              className={`ml-8 relative ${
+                isSelected("/exhibition") && selectedStyle
+              }`}
+            >
+              EXHIBITION
+            </Link>
+            <Link
+              href="/contact"
+              className={`ml-8 relative ${
+                isSelected("/contact") && selectedStyle
+              }`}
+            >
+              CONTACT
+            </Link>
+          </div>
         </div>
-      </div>
-      <Wave />
+      </nav>
       <MobileNav isOpen={isOpen} setIsOpen={setIsOpen} />
-    </nav>
+    </>
   );
 }
 
@@ -69,13 +71,13 @@ function MobileNav({
   const isSelected = (path: string) => router.pathname.startsWith(path);
   return (
     <div
-      className={`absolute top-0 left-0 h-[300px] w-screen bg-white transform transition-transform duration-500 ease-in-out ${
-        isOpen ? "-translate-y-0" : "-translate-y-full"
+      className={`absolute md:hidden top-[72px] left-0 h-[220px] w-screen bg-white drop transform transition-transform duration-500 ease-in-out ${
+        isOpen ? "-translate-y-0 drop-shadow-lg" : "-translate-y-full"
       }`}
     >
-      <div className="h-full flex flex-col justify-end items-end p-6">
+      <div className="h-full flex flex-col justify-around items-end p-6">
         <Link
-          className={`text-xl font-medium my-2 relative ${
+          className={`text-xl font-medium relative ${
             isSelected("/about") && selectedStyle
           }`}
           href="/about"
@@ -84,7 +86,7 @@ function MobileNav({
           About
         </Link>
         <Link
-          className={`text-xl font-medium my-2 relative ${
+          className={`text-xl font-medium relative ${
             isSelected("/artist") && selectedStyle
           }`}
           href="/artist"
@@ -93,7 +95,7 @@ function MobileNav({
           Artist
         </Link>
         <Link
-          className={`text-xl font-medium my-2 relative ${
+          className={`text-xl font-medium relative ${
             isSelected("/exhibition") && selectedStyle
           }`}
           href="/exhibition"
@@ -102,7 +104,7 @@ function MobileNav({
           Exhibition
         </Link>
         <Link
-          className={`text-xl font-medium my-2 relative ${
+          className={`text-xl font-medium relative ${
             isSelected("/contact") && selectedStyle
           }`}
           href="/contact"
@@ -138,22 +140,22 @@ function MenuButton({
 }) {
   return (
     <div
-      className="z-50 flex relative w-6 h-6 flex-col justify-between items-center md:hidden mr-2"
+      className="z-50 flex relative w-5 h-5 flex-col justify-between md:hidden"
       onClick={() => setIsOpen((prev) => !prev)}
     >
       <span
-        className={`h-1 w-full bg-black rounded-lg transition duration-300 ease-in-out ${
+        className={`h-0.5 w-full bg-black rounded-lg transition duration-300 ease-in-out ${
           isOpen ? "rotate-45 translate-y-2.5" : ""
         }`}
       />
       <span
-        className={`h-1 w-full bg-black rounded-lg transition-width duration-300 ease-in-out ${
+        className={`h-0.5 w-full bg-black rounded-lg transition-width duration-300 ease-in-out ${
           isOpen ? "w-0" : "w-full"
         }`}
       />
       <span
-        className={`h-1 w-full bg-black rounded-lg transition duration-300 ease-in-out ${
-          isOpen ? "-rotate-45 -translate-y-2.5" : ""
+        className={`h-0.5 bg-black rounded-lg transition duration-300 ease-in-out ${
+          isOpen ? "w-full -rotate-45 -translate-y-2" : "w-4/5"
         }`}
       />
     </div>

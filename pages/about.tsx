@@ -16,15 +16,15 @@ type Props = {
 export default function About({ about }: Props) {
   return (
     <div className="">
-      <p className="whitespace-pre-line text-sm leading-7 md:w-1/2 md:ml-auto">
+      <p className="whitespace-pre-line text-sm leading-6 md:w-1/2 md:ml-auto">
         {about.koreanIntro}
       </p>
       <div className="w-full h-1 bg-slate-300 my-4 md:bg-transparent" />
-      <p className="whitespace-pre-line text-sm leading-7 md:w-1/2 md:mr-auto">
+      <p className="whitespace-pre-line text-sm leading-6 md:w-1/2 md:mr-auto">
         {about.englishIntro}
       </p>
       <div className="w-full h-1 bg-slate-300 my-4 md:bg-transparent" />
-      <p className="whitespace-pre-line text-sm leading-7 md:w-1/2 md:ml-auto">
+      <p className="whitespace-pre-line text-sm leading-6 md:w-1/2 md:ml-auto">
         {about.frenchIntro}
       </p>
     </div>
