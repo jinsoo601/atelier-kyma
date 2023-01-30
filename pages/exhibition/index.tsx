@@ -17,7 +17,7 @@ type Props = {
 
 export default function Exhibition({ exhibitions }: Props) {
   return (
-    <div className=" grid grid-cols-1 md:grid-cols-4 gap-6">
+    <div className=" grid grid-cols-2 md:grid-cols-4 gap-8">
       {exhibitions.map(({ name, slug, posterImage }) => (
         <Link
           key={slug.current}
