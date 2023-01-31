@@ -23,7 +23,9 @@ export default function ArtistDetail({ artistDetail }: Props) {
   return (
     <>
       <header className="text-xl font-semibold">{artistDetail.name}</header>
-      <PortableText value={artistDetail.career} components={components} />
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-x-4">
+        <PortableText value={artistDetail.career} components={components} />
+      </div>
     </>
   );
 }
