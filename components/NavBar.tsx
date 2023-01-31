@@ -119,7 +119,7 @@ function MobileNav({
 
 function Logo() {
   return (
-    <Link href="/about">
+    <Link href="/">
       <Image
         src="/logo.png"
         alt="Atelier Kyma Logo"
