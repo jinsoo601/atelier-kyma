@@ -24,28 +24,28 @@ type Props = {
 export default function About({ contact }: Props) {
   return (
     <>
-      <Heading value="CONTACT" />
       <div className="flex gap-4 flex-col md:flex-row">
         <div className="md:w-3/5">
-          <h5 className="text-base font-bold mb-2 border-b-4 border-slate-300 w-2/3 md:w-1/3">
-            이메일 (Email)
-          </h5>
+          <Heading value="CONTACT" />
+          <h6 className="text-xs font-semibold opacity-70 mt-8 mb-2">
+            이메일 (EMAIL)
+          </h6>
           <p>{contact.email}</p>
-          <h5 className="text-base font-bold mt-4 mb-2 border-b-4 border-slate-300 w-2/3 md:w-1/3">
-            전화 (Phone)
-          </h5>
+          <h6 className="text-xs font-semibold opacity-70 mt-4 mb-2">
+            전화 (PHONE)
+          </h6>
           <p>{contact.phoneNumber}</p>
-          <h5 className="text-base font-bold mt-4 mb-2 border-b-4 border-slate-300 w-2/3 md:w-1/3">
-            웹 (Website)
-          </h5>
+          <h6 className="text-xs font-semibold opacity-70 mt-4 mb-2">
+            웹 (WEB)
+          </h6>
           <Link href="/about">{contact.website}</Link>
-          <h5 className="text-base font-bold mt-4 mb-2 border-b-4 border-slate-300 w-2/3 md:w-1/3">
-            주소 (Address)
-          </h5>
+          <h6 className="text-xs font-semibold opacity-70 mt-4 mb-2">
+            주소 (ADDRESS)
+          </h6>
           <p>{contact.address}</p>
-          <h5 className="text-base font-bold mt-4 mb-2 border-b-4 border-slate-300 w-2/3 md:w-1/3">
-            인스타 (Instagram)
-          </h5>
+          <h6 className="text-xs font-semibold opacity-70 mt-4 mb-2">
+            인스타 (INSTAGRAM)
+          </h6>
           <a href="https://www.instagram.com/atelierkyma/">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -60,12 +60,12 @@ export default function About({ contact }: Props) {
             </svg>
             {contact.instagramName}
           </a>
-          <h5 className="text-base font-bold mt-4 mb-2 border-b-4 border-slate-300 w-2/3 md:w-1/3">
-            영업시간 (Hours)
-          </h5>
+          <h6 className="text-xs font-semibold opacity-70 mt-4 mb-2">
+            영업시간 (HOURS)
+          </h6>
           <p className="whitespace-pre-line">{contact.hours}</p>
         </div>
-        <div className="relative w-full aspect-[3/4] md:w-2/5">
+        <div className="relative w-full aspect-[3/4] md:w-2/5 md:h-[500px]">
           <Image
             src={urlFor(contact.image).url()}
             alt="Atelier Kyma image"
