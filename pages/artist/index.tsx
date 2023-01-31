@@ -4,6 +4,7 @@ import type { Image as SanityImage, Slug } from "@sanity/types";
 import { client, urlFor } from "../../lib/sanityClient";
 import Link from "next/link";
 import Image from "next/image";
+import Heading from "@/components/Heading";
 
 type Artist = {
   name: string;
@@ -17,23 +18,26 @@ type Props = {
 
 export default function Artist({ artists }: Props) {
   return (
-    <div className=" grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
-      {artists.map(({ name, slug, profileImage }) => (
-        <Link
-          key={slug.current}
-          href={`/artist/${slug.current}`}
-          className="flex flex-col items-center transition-transform hover:scale-105 duration-500"
-        >
-          <Image
-            src={urlFor(profileImage).width(200).height(250).url()}
-            alt={name}
-            width={200}
-            height={250}
-          />
-          <p className="text-sm font-semibold mt-2">{name}</p>
-        </Link>
-      ))}
-    </div>
+    <>
+      <Heading value="ARTISTS" />
+      <div className=" grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+        {artists.map(({ name, slug, profileImage }) => (
+          <Link
+            key={slug.current}
+            href={`/artist/${slug.current}`}
+            className="flex flex-col items-center transition-transform hover:scale-105 duration-500"
+          >
+            <Image
+              src={urlFor(profileImage).width(200).height(250).url()}
+              alt={name}
+              width={200}
+              height={250}
+            />
+            <p className="text-sm font-semibold mt-2">{name}</p>
+          </Link>
+        ))}
+      </div>
+    </>
   );
 }
 

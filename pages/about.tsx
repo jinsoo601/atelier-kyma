@@ -1,3 +1,4 @@
+import Heading from "@/components/Heading";
 import type { GetStaticProps } from "next/types";
 
 import React from "react";
@@ -16,6 +17,9 @@ type Props = {
 export default function About({ about }: Props) {
   return (
     <div className="">
+      <div className="md:w-1/2 md:ml-auto">
+        <Heading value="ABOUT" />
+      </div>
       <p className="whitespace-pre-line text-sm leading-6 md:w-1/2 md:ml-auto">
         {about.koreanIntro}
       </p>
