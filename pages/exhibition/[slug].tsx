@@ -31,10 +31,12 @@ export default function ExhibitionDetail({ exhibitionDetail }: Props) {
       <p>
         {startDate} ~ {endDate}
       </p>
-      <PortableText
-        value={exhibitionDetail.description}
-        components={components}
-      />
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-x-4">
+        <PortableText
+          value={exhibitionDetail.description}
+          components={components}
+        />
+      </div>
     </>
   );
 }
