@@ -10,7 +10,12 @@ const components: Partial<PortableTextReactComponents> = {
     image: ({ value }: { value: SanityImageSource }) => {
       return (
         <div className={`relative w-full mt-2 aspect-square`}>
-          <Image src={urlFor(value).url()} alt="image" fill />
+          <Image
+            src={urlFor(value).url()}
+            alt="image"
+            fill
+            style={{ objectFit: "contain", objectPosition: "top" }}
+          />
         </div>
       );
     },
