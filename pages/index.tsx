@@ -22,7 +22,7 @@ export default function Index({ currentExhibition }: Props) {
 
 export const getStaticProps: GetStaticProps<Props> = async () => {
 	const today = new Date().toISOString().split('T')[0];
-	const query = `*[_type == "exhibition" && endDate > "${today}"][0]{name, slug, posterImage. startDate, endDate}`;
+	const query = `*[_type == "exhibition" && endDate > "${today}"][0]{name, slug, posterImage, startDate, endDate}`;
 	const currentExhibition: Exhibition | null = await client.fetch(query);
 
 	if (!currentExhibition) {
