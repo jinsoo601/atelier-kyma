@@ -92,6 +92,9 @@ export default function ExhibitionDetail({ exhibitionDetail }: Props) {
 					caption="Pandemic Drawing_P, 2021, Acrylic on paper, 24x30cm"
 				/>
 			</div>
+			<small className="block text-end whitespace-nowrap">
+				Copyright ©️ 2022 jiyukwak, all rights reserved
+			</small>
 		</>
 	);
 }
