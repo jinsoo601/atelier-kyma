@@ -53,7 +53,11 @@ export const getStaticPaths: GetStaticPaths = async () => {
 			},
 		}))
 		.filter(
-			path => !['jiyu-kwak-solo-exhibition-layers'].includes(path.params.slug)
+			path =>
+				![
+					'jiyu-kwak-solo-exhibition-layers',
+					'jeong-hyun-ha-solo-exhibition',
+				].includes(path.params.slug)
 		);
 
 	return {
