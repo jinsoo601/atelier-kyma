@@ -35,7 +35,7 @@ export default function ExhibitionDetail({ exhibitionDetail }: Props) {
           components={components}
         />
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-6 gap-4 my-12">
+      <div>
         <Painting
           src="/jeong-hyun-ha-solo-exhibition/1-1.jpeg"
           caption={`Draw without drawing 93, 2018, oil bar, oil pastel and acrylic color on canvas\n116cm x 74cm`}
@@ -52,8 +52,6 @@ export default function ExhibitionDetail({ exhibitionDetail }: Props) {
           src="/jeong-hyun-ha-solo-exhibition/1-4.jpeg"
           caption={`Draw without drawing 105, 2020, oil bar, oil pastel and acrylic color on canvas\n116.8cm x 91cm`}
         />
-      </div>
-      <div className="grid grid-cols-1 md:grid-cols-6 gap-4 my-12">
         <Painting
           src="/jeong-hyun-ha-solo-exhibition/2-1.jpeg"
           caption={`Draw without drawing 114, 2022, oil bar, oil pastel and acrylic color on canvas\n91cm x 91cm`}
@@ -74,8 +72,6 @@ export default function ExhibitionDetail({ exhibitionDetail }: Props) {
           src="/jeong-hyun-ha-solo-exhibition/2-5.jpeg"
           caption={`Draw without drawing 118, 2022, oil bar, oil pastel and acrylic color on canvas\n91cm x 91cm`}
         />
-      </div>
-      <div className="grid grid-cols-1 md:grid-cols-6 gap-4 my-12">
         <Painting
           src="/jeong-hyun-ha-solo-exhibition/3-1.jpeg"
           caption={`Draw without drawing 124, 2022, oil bar, oil pastel and oil color on canvas\n192cm x 150cm`}
@@ -88,8 +84,6 @@ export default function ExhibitionDetail({ exhibitionDetail }: Props) {
           src="/jeong-hyun-ha-solo-exhibition/3-3.jpeg"
           caption={`Draw without drawing 126, 2022, oil bar, oil pastel and oil color on canvas\n162.2cm x 130.3cm`}
         />
-      </div>
-      <div className="grid grid-cols-1 md:grid-cols-6 gap-4 my-12">
         <Painting
           src="/jeong-hyun-ha-solo-exhibition/4-1.jpeg"
           caption={`Draw without drawing 119, 2022, oil bar, oil pastel and acrylic color on canvas\n88cm x 144cm`}
@@ -115,8 +109,6 @@ export default function ExhibitionDetail({ exhibitionDetail }: Props) {
           caption={`Draw without drawing 123, 2022, oil bar, oil pastel and acrylic color on canvas\n140.5cm x 232.5cm`}
           isLong
         />
-      </div>
-      <div className="grid grid-cols-1 md:grid-cols-6 gap-4 my-12">
         <Painting
           src="/jeong-hyun-ha-solo-exhibition/5-3.jpeg"
           caption={`Draw without drawing 133, 2022, oil bar, oil pastel and oil color on canvas\n31.8cm x 31.8cm`}
@@ -133,8 +125,6 @@ export default function ExhibitionDetail({ exhibitionDetail }: Props) {
           src="/jeong-hyun-ha-solo-exhibition/5-6.jpeg"
           caption={`Draw without drawing 136, 2022, oil bar, oil pastel and oil color on canvas\n31.8cm x 31.8cm`}
         />
-      </div>
-      <div className="grid grid-cols-1 md:grid-cols-6 gap-4 my-12">
         <Painting
           src="/jeong-hyun-ha-solo-exhibition/6-1.jpeg"
           caption={`Treasure hunt 1, 2022,\nmixed media\n25cm x 25cm`}
@@ -155,8 +145,6 @@ export default function ExhibitionDetail({ exhibitionDetail }: Props) {
           src="/jeong-hyun-ha-solo-exhibition/6-5.jpeg"
           caption={`Treasure hunt 9, 2022,\nmixed media\n25cm x 25cm`}
         />
-      </div>
-      <div className="grid grid-cols-1 md:grid-cols-6 gap-4 my-12">
         <Painting
           src="/jeong-hyun-ha-solo-exhibition/7-1.jpeg"
           caption={`Draw without drawing on paper 1, 2014 pencil on paper\n33cm x 24.5cm`}
@@ -192,15 +180,15 @@ export default function ExhibitionDetail({ exhibitionDetail }: Props) {
 function Painting({
   caption,
   src,
-  isLong = false,
+  isLong,
 }: {
   caption: string;
   src: string;
   isLong?: boolean;
 }) {
   return (
-    <div>
-      <div className={`relative aspect-square ${isLong ? "aspect-[3/5]" : ""}`}>
+    <div className="text-center mb-12">
+      <div className={`relative ${isLong ? "h-80 md:h-[36rem]": "h-48 md:h-80"}`}>
         <Image
           src={src}
           alt="jeong-hyun-ha-solo-exhibition-painting"
