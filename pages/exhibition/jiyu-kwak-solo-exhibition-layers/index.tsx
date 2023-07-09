@@ -80,8 +80,7 @@ export default function ExhibitionDetail({ exhibitionDetail }: Props) {
 					caption="Soap Bubble, 2019, Oil on canvas, 30x40cm"
 				/>
 			</div>
-			<div className="grid grid-cols-1 md:grid-cols-4 my-12 md:h-[360px]">
-				<div />
+			<div className="grid grid-cols-1 md:grid-cols-3 my-12 md:h-[360px]">
 				<div />
 				<Painting
 					src="/jiyu/5-1.png"
