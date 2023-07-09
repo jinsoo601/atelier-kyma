@@ -9,12 +9,12 @@ const components: Partial<PortableTextReactComponents> = {
   types: {
     image: ({ value }: { value: SanityImageSource }) => {
       return (
-        <div className={`relative w-full mt-2 aspect-square`}>
+        <div className={`relative col-span-full mt-8 mx-auto w-3/4 h-48 md:h-96`}>
           <Image
             src={urlFor(value).url()}
             alt="image"
             fill
-            style={{ objectFit: "contain", objectPosition: "top" }}
+            className="object-contain object-bottom"
           />
         </div>
       );
@@ -42,7 +42,7 @@ const components: Partial<PortableTextReactComponents> = {
       </h5>
     ),
     h6: ({ children }) => (
-      <h6 className="text-sm text-medium mt-4 mb-2">{children}</h6>
+      <h6 className="text-sm text-medium mt-2 mb-2 col-span-full text-center">{children}</h6>
     ),
     blockquote: ({ children }) => (
       <blockquote className="text-slate-600 italic my-8 text-sm leading-6 col-span-full px-[20%]">
