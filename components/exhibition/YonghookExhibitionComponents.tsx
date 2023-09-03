@@ -3,7 +3,7 @@ import type { PortableTextReactComponents } from '@portabletext/react';
 
 import Image from 'next/image';
 import React from 'react';
-import { urlFor } from '../../../lib/sanityClient';
+import { urlFor } from '../../lib/sanityClient';
 
 const components: Partial<PortableTextReactComponents> = {
 	types: {

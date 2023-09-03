@@ -4,7 +4,7 @@ import type { TypedObject } from '@sanity/types';
 
 import { PortableText } from '@portabletext/react';
 import { client } from '../../../lib/sanityClient';
-import components from './components';
+import components from '../../../components/exhibition/YonghookExhibitionComponents';
 
 type ExhibitionDetail = {
 	name: string;
@@ -35,9 +35,7 @@ export default function ExhibitionDetail({ exhibitionDetail }: Props) {
 	);
 }
 
-export const getStaticProps: GetStaticProps<Props, Params> = async ({
-	params,
-}) => {
+export const getStaticProps: GetStaticProps<Props, Params> = async ({}) => {
 	const query = `*[_type == "exhibition" && slug.current == "yong-hoon-kim-solo-exhibition"][0]{name, startDate, endDate, description}`;
 	const exhibitionDetail: ExhibitionDetail = await client.fetch(query);
 
