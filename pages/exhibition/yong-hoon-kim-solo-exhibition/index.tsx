@@ -24,7 +24,9 @@ type Params = ParsedUrlQuery & {
 export default function ExhibitionDetail({ exhibitionDetail }: Props) {
 	return (
 		<>
-			<header className="text-xl font-semibold">{exhibitionDetail.name.replace('\\n', '\n')}</header>
+			<header className="text-xl font-semibold whitespace-pre-line">
+				{exhibitionDetail.name.replace('\\n', '\n')}
+			</header>
 			<div className="grid grid-cols-1 md:grid-cols-4 gap-x-4">
 				<PortableText
 					value={exhibitionDetail.description}
