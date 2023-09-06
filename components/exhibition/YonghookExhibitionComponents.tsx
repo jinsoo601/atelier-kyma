@@ -16,7 +16,7 @@ const components: Partial<PortableTextReactComponents> = {
 						src={urlFor(value).url()}
 						alt="image"
 						fill
-						className="object-contain object-center"
+						className="object-contain object-top"
 					/>
 				</div>
 			);
@@ -44,7 +44,7 @@ const components: Partial<PortableTextReactComponents> = {
 			</h5>
 		),
 		h6: ({ children }) => (
-			<h6 className="text-sm text-medium mt-2 mb-2 col-span-full text-center">
+			<h6 className="text-lg text-medium mt-12 font-bold col-span-full md:w-1/2 md:mx-auto border-b-2">
 				{children}
 			</h6>
 		),

@@ -33,6 +33,9 @@ export default function ExhibitionDetail({ exhibitionDetail }: Props) {
 					components={components}
 				/>
 			</div>
+			<small className="block text-end whitespace-nowrap mt-12">
+				Copyright ©️ 2023 yonghoon kim, all rights reserved
+			</small>
 		</>
 	);
 }
