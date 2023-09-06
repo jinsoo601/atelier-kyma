@@ -44,7 +44,7 @@ const components: Partial<PortableTextReactComponents> = {
 			</h5>
 		),
 		h6: ({ children }) => (
-			<h6 className="text-lg text-medium mt-12 font-bold col-span-full md:w-1/2 md:mx-auto border-b-2">
+			<h6 className="text-lg text-medium mt-8 pt-4 font-bold col-span-full md:w-1/2 md:mx-auto border-b-2 sticky z-[1] top-[72px] bg-white">
 				{children}
 			</h6>
 		),
