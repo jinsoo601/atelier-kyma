@@ -4,7 +4,6 @@ import { useRouter } from "next/router";
 import React from "react";
 
 import { useState } from "react";
-import Wave from "./Wave";
 
 const selectedStyle =
   "after:block after:absolute after:top-0 after:-left-2 after:h-6 after:w-1/2 after:bg-mustard after:blur after:opacity-70";
@@ -15,7 +14,7 @@ export default function NavBar() {
   const isSelected = (path: string) => router.pathname.startsWith(path);
   return (
     <>
-      <nav className="sticky z-50 h-[72px] top-0 py-2 md:p-2 flex bg-white items-center justify-between mx-4 md:mx-8 border-b-2 border-black/20">
+      <nav className="sticky z-50 top-0 pt-10 pb-2 flex bg-white items-center justify-between mx-4 md:mx-8">
         <Logo />
         <div className="flex items-center">
           <MenuButton isOpen={isOpen} setIsOpen={setIsOpen} />
@@ -54,7 +53,6 @@ export default function NavBar() {
             </Link>
           </div>
         </div>
-        <Wave />
       </nav>
       <MobileNav isOpen={isOpen} setIsOpen={setIsOpen} />
     </>
