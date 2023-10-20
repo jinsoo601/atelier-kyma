@@ -1,7 +1,9 @@
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/navigation';
+import { useEffect } from 'react';
 
 export default function Index() {
 	const router = useRouter();
-	router.push('/exhibition');
-	return null;
+	useEffect(() => {
+		router.push("/exhibition");
+	}, [router]);
 }
