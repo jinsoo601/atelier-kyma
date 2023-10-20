@@ -29,7 +29,7 @@ export default function Exhibition({ exhibitions }: Props) {
 			<div className="mt-24 mb-12">
 				<Heading value="Past Exhibitions" />
 			</div>
-			<div className=" grid grid-cols-2 md:grid-cols-4 gap-4">
+			<div className=" grid grid-cols-2 md:grid-cols-4 gap-8">
 				{pastExhibitions.map(({ name, slug, posterImage }) => (
 					<Link
 						key={slug.current}
@@ -42,7 +42,7 @@ export default function Exhibition({ exhibitions }: Props) {
 							width={400}
 							height={574}
 						/>
-						<p className="font-semibold mt-2">{name}</p>
+						<p className="font-semibold mt-2">{name.replace('\\n', '\n')}</p>
 					</Link>
 				))}
 			</div>
