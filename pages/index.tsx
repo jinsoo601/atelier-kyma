@@ -13,10 +13,13 @@ type Exhibition = {
 };
 
 type Props = {
-	currentExhibition: Exhibition;
+	currentExhibition: Exhibition | null;
 };
 
 export default function Index({ currentExhibition }: Props) {
+	if (!currentExhibition) {
+		return null;
+	}
 	return <NowShowing exhibition={currentExhibition} />;
 }
 
@@ -24,15 +27,6 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
 	const today = new Date().toISOString().split('T')[0];
 	const query = `*[_type == "exhibition" && endDate > "${today}"][0]{name, slug, posterImage, startDate, endDate}`;
 	const currentExhibition: Exhibition | null = await client.fetch(query);
-
-	if (!currentExhibition) {
-		return {
-			redirect: {
-				destination: '/about',
-				permanent: false,
-			},
-		};
-	}
 
 	return {
 		props: {
