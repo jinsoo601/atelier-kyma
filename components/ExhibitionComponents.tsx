@@ -1,4 +1,3 @@
-// import type { SanityImageSource } from "@sanity/image-url/lib/types/types";
 import type { SanityImageSource } from '@sanity/asset-utils/dist/types';
 import type { PortableTextReactComponents } from '@portabletext/react';
 
@@ -12,19 +11,20 @@ const components: Partial<PortableTextReactComponents> = {
 		image: ({ value }: { value: SanityImageSource }) => {
 			const { width, height } = getImageDimensions(value);
 			let aspectStyle = 'aspect-square';
-			let colSpanStyle = 'md:col-span-1';
-			if (width / height >= 1.5) {
+			if (width / height >= 1.2) {
 				aspectStyle = 'aspect-[3/2]';
-				colSpanStyle = 'md:col-span-2';
 			} else if (width / height <= 0.75) {
 				aspectStyle = 'aspect-[2/3]';
 			}
 			return (
-				<div className={`relative w-full ${aspectStyle} mt-2 ${colSpanStyle}`}>
+				<div
+					className={`relative col-span-full mt-6 mx-auto w-full ${aspectStyle} md:w-1/2`}
+				>
 					<Image
 						src={urlFor(value).width(width).height(height).url()}
 						alt="image"
 						fill
+						className="object-contain object-bottom"
 					/>
 				</div>
 			);
@@ -52,15 +52,17 @@ const components: Partial<PortableTextReactComponents> = {
 			</h5>
 		),
 		h6: ({ children }) => (
-			<h6 className="text-sm font-bold mt-4 mb-2 col-span-full">{children}</h6>
+			<h6 className="text-sm text-medium mt-2 mb-2 col-span-full text-center">
+				{children}
+			</h6>
 		),
 		blockquote: ({ children }) => (
-			<blockquote className="text-slate-600 italic border-l-4 border-slate-300 pl-4 my-4 text-sm leading-6 col-span-2 whitespace-nowrap">
+			<blockquote className="text-slate-600 italic my-8 text-sm leading-6 col-span-full px-[20%]">
 				{children}
 			</blockquote>
 		),
 		normal: ({ children }) => (
-			<p className="text-sm leading-7 col-span-full">{children}</p>
+			<p className="my-4 text-sm leading-6 col-span-full">{children}</p>
 		),
 	},
 	list: {
