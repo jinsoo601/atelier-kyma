@@ -26,7 +26,9 @@ export default function ExhibitionDetail({ exhibitionDetail }: Props) {
 	const endDate = exhibitionDetail.endDate.replaceAll('-', '.');
 	return (
 		<>
-			<header className="text-xl font-semibold">{exhibitionDetail.name}</header>
+			<header className="text-xl font-semibold">
+				{exhibitionDetail.name.replace('\\n', '\n')}
+			</header>
 			<h5 className="text-base font-bold mt-4 mb-2">일시</h5>
 			<p>
 				{startDate} ~ {endDate}
