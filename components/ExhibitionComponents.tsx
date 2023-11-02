@@ -31,7 +31,7 @@ const components: Partial<PortableTextReactComponents> = {
 		},
 	},
 	marks: {
-		em: ({ children }) => <em>{children}</em>,
+		em: ({ children }) => <em className="text-end whitespace-nowrap">{children}</em>,
 	},
 	block: {
 		h1: ({ children }) => (
