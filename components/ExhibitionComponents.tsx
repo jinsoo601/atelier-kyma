@@ -4,24 +4,16 @@ import type { PortableTextReactComponents } from '@portabletext/react';
 import Image from 'next/image';
 import React from 'react';
 import { urlFor } from '../lib/sanityClient';
-import { getImageDimensions } from '@sanity/asset-utils';
 
 const components: Partial<PortableTextReactComponents> = {
 	types: {
 		image: ({ value }: { value: SanityImageSource }) => {
-			const { width, height } = getImageDimensions(value);
-			let aspectStyle = 'aspect-square';
-			if (width / height >= 1.2) {
-				aspectStyle = 'aspect-[3/2]';
-			} else if (width / height <= 0.75) {
-				aspectStyle = 'aspect-[2/3]';
-			}
 			return (
 				<div
-					className={`relative col-span-full mt-6 mx-auto w-full ${aspectStyle} md:w-1/2`}
+					className={`relative col-span-full mt-8 mx-auto w-3/4 h-48 md:h-96`}
 				>
 					<Image
-						src={urlFor(value).width(width).height(height).url()}
+						src={urlFor(value).url()}
 						alt="image"
 						fill
 						className="object-contain object-bottom"
@@ -31,7 +23,9 @@ const components: Partial<PortableTextReactComponents> = {
 		},
 	},
 	marks: {
-		em: ({ children }) => <em className="block text-xs text-end whitespace-nowrap">{children}</em>,
+		em: ({ children }) => (
+			<em className="block text-xs text-end whitespace-nowrap">{children}</em>
+		),
 	},
 	block: {
 		h1: ({ children }) => (
