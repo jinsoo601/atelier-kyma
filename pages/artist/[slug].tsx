@@ -31,10 +31,8 @@ export default function ArtistDetail({ artistDetail }: Props) {
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const query = '*[_type == "artist"]{slug {current} }';
-  const artists: Array<{ slug: { current: string } }> = await client.fetch(
-    query
-  );
+  const query = '*[_type == "artist" && defined(slug.current)]{slug {current} }';
+  const artists: Array<{ slug: { current: string } }> = await client.fetch(query);
   const paths = artists.map((artist) => ({
     params: {
       slug: artist.slug.current,
@@ -50,10 +48,12 @@ export const getStaticPaths: GetStaticPaths = async () => {
 export const getStaticProps: GetStaticProps<Props, Params> = async ({
   params,
 }) => {
-  const query = `*[_type == "artist" && slug.current == "${
-    params!.slug
-  }"][0]{name, career}`;
-  const artistDetail: ArtistDetail = await client.fetch(query);
+  const query = '*[_type == "artist" && slug.current == $slug][0]{name, career}';
+  const artistDetail: ArtistDetail | null = await client.fetch(query, {
+    slug: params?.slug,
+  });
+
+  if (!artistDetail) return { notFound: true };
 
   return {
     props: {

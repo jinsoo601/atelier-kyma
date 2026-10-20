@@ -44,7 +44,7 @@ export default function ExhibitionDetail({ exhibitionDetail }: Props) {
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
-	const query = '*[_type == "exhibition"]{slug {current} }';
+	const query = '*[_type == "exhibition" && defined(slug.current)]{slug {current} }';
 	const exhibitions: Array<{ slug: { current: string } }> = await client.fetch(
 		query
 	);
@@ -72,10 +72,12 @@ export const getStaticPaths: GetStaticPaths = async () => {
 export const getStaticProps: GetStaticProps<Props, Params> = async ({
 	params,
 }) => {
-	const query = `*[_type == "exhibition" && slug.current == "${
-		params!.slug
-	}"][0]{name, description, startDate, endDate}`;
-	const exhibitionDetail: ExhibitionDetail = await client.fetch(query);
+	const query = '*[_type == "exhibition" && slug.current == $slug][0]{name, description, startDate, endDate}';
+	const exhibitionDetail: ExhibitionDetail | null = await client.fetch(query, {
+		slug: params?.slug,
+	});
+
+	if (!exhibitionDetail) return { notFound: true };
 
 	return {
 		props: {

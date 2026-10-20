@@ -43,7 +43,7 @@ export default function Artist({ artists }: Props) {
 }
 
 export const getStaticProps: GetStaticProps<Props> = async () => {
-	const query = '*[_type == "artist"]{name, slug, profileImage}';
+	const query = '*[_type == "artist" && defined(slug.current) && defined(profileImage.asset)]{name, slug, profileImage}';
 	const artists: Artist[] = await client.fetch(query);
 
 	return {

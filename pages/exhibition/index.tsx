@@ -51,7 +51,7 @@ export default function Exhibition({ exhibitions }: Props) {
 }
 
 export const getStaticProps: GetStaticProps<Props> = async () => {
-	const query = `*[_type == "exhibition"]{name, slug, endDate, startDate, posterImage} | order(startDate desc)`;
+	const query = `*[_type == "exhibition" && defined(slug.current) && defined(posterImage.asset) && defined(endDate)]{name, slug, endDate, startDate, posterImage} | order(startDate desc)`;
 	const exhibitions: Exhibition[] = await client.fetch(query);
 
 	return {

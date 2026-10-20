@@ -3,7 +3,7 @@ import type { Image as SanityImage, Slug } from '@sanity/types';
 import { urlFor } from '../lib/sanityClient';
 import Link from 'next/link';
 import Image from 'next/image';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import Heading from './Heading';
 
 type Exhibition = {
@@ -21,12 +21,6 @@ export default function NowShowing({
 	exhibition: { name, slug, posterImage, startDate },
 }: Props) {
 	const today = new Date().toISOString().split('T')[0];
-	const [isMobile, setIsMobile] = useState(false);
-	useEffect(() => {
-		if (typeof window !== undefined) {
-			setIsMobile(window.innerWidth < 768);
-		}
-	}, []);
 	const heading = startDate > today ? 'UPCOMING' : 'NOW SHOWING';
 	return (
 		<div className="flex flex-col-reverse md:flex-row md:justify-center">
@@ -47,10 +41,7 @@ export default function NowShowing({
 					src={urlFor(posterImage).url()}
 					alt={name + ' poster'}
 					fill
-					style={{
-						objectFit: isMobile ? 'fill' : 'contain',
-						objectPosition: isMobile ? 'center' : 'right',
-					}}
+					className="object-contain object-center md:object-right"
 				/>
 			</div>
 		</div>

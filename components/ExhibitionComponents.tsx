@@ -1,4 +1,4 @@
-import type { SanityImageSource } from '@sanity/asset-utils/dist/types';
+import type { SanityImageSource } from '@sanity/image-url';
 import type { PortableTextReactComponents } from '@portabletext/react';
 
 import Image from 'next/image';

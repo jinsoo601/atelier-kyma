@@ -1,5 +1,5 @@
 import type { GetStaticProps } from "next/types";
-import type { Image as SanityImage, Slug } from "@sanity/types";
+import type { Image as SanityImage } from "@sanity/types";
 
 import React from "react";
 import { client, urlFor } from "../lib/sanityClient";
