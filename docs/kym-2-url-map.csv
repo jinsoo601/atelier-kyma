@@ -1,0 +1,30 @@
+old_url,proposed_new_url,type,name,live_status,decision
+/,/,page,Home,200,Preserve path; redesign content
+/about,/about,page,About,200,Preserve path; redesign content
+/artist,/artists,page,Artist index,200,Build in App Router alongside legacy route; redirect old URL after destination is live
+/exhibition,/exhibitions,page,Exhibition index,200,Build in App Router alongside legacy route; redirect old URL after destination is live
+/contact,/contact,page,Contact,200,Preserve path; redesign content
+/artist/ahn-seongmin,/artists/ahn-seongmin,artist,안성민/Ahn Seongmin,200,Build in App Router alongside legacy route; redirect old URL after destination is live
+/artist/ehja-kang,/artists/ehja-kang,artist,강애자/Ehja Kang,200,Build in App Router alongside legacy route; redirect old URL after destination is live
+/artist/hong-sungchul,/artists/hong-sungchul,artist,홍성철/Hong Sungchul,200,Build in App Router alongside legacy route; redirect old URL after destination is live
+/artist/in-sook-rhee,/artists/in-sook-rhee,artist,이인숙/In Sook Rhee,200,Build in App Router alongside legacy route; redirect old URL after destination is live
+/artist/jeong-hyun-ha,/artists/jeong-hyun-ha,artist,하정현/Jeong Hyun Ha,200,Build in App Router alongside legacy route; redirect old URL after destination is live
+/artist/jiyu-kwak,/artists/jiyu-kwak,artist,곽지유/Jiyu Kwak,200,Build in App Router alongside legacy route; redirect old URL after destination is live
+/artist/laurent-dorchin,/artists/laurent-dorchin,artist,로렝 도친/Laurent Dorchin,200,Build in App Router alongside legacy route; redirect old URL after destination is live
+/artist/mu-gyu-lee,/artists/mu-gyu-lee,artist,이무규/Mu Gyu Lee,200,Build in App Router alongside legacy route; redirect old URL after destination is live
+/artist/suk-jeen-sung,/artists/suk-jeen-sung,artist,성석진/Suk Jeen Sung,200,Build in App Router alongside legacy route; redirect old URL after destination is live
+/artist/yong-hoon-kim,/artists/yong-hoon-kim,artist,김용훈/Yong Hoon Kim,200,Build in App Router alongside legacy route; redirect old URL after destination is live
+/artist/zinoo-park,/artists/zinoo-park,artist,지누박/Zinoo Park,200,Build in App Router alongside legacy route; redirect old URL after destination is live
+/exhibition/ahn-seongmin-solo-exhibition-n-less-than-itaewon-memoir-greater-than,/exhibitions/ahn-seongmin-solo-exhibition-n-less-than-itaewon-memoir-greater-than,exhibition,안성민 개인전 Ahn Seongmin Solo Exhibition: <Itaewon Memoir>,200,Build in App Router alongside legacy route; redirect old URL after destination is live
+/exhibition/art-race-in-jeju,/exhibitions/art-race-in-jeju,exhibition,아트 레이스 인 제주/Art Race in Jeju,200,Build in App Router alongside legacy route; redirect old URL after destination is live
+/exhibition/hong-sungchul-solo-exhibition-through-the-lines,/exhibitions/hong-sungchul-solo-exhibition-through-the-lines,exhibition,홍성철 개인전 Hong Sungchul Solo Exhibition: <Through the Lines>,200,Build in App Router alongside legacy route; redirect old URL after destination is live
+/exhibition/jeong-hyun-ha-solo-exhibition,/exhibitions/jeong-hyun-ha-solo-exhibition,exhibition,하정현 개인전 Jeong Hyun HA Solo Exhibition: <Glad Landsby; 행복마을>,200,Build in App Router alongside legacy route; redirect old URL after destination is live
+/exhibition/jiyu-kwak-solo-exhibition-layers,/exhibitions/jiyu-kwak-solo-exhibition-layers,exhibition,곽지유 개인전 Jiyu Kwak Solo Exhibition: 겹; Layers,200,Build in App Router alongside legacy route; redirect old URL after destination is live
+/exhibition/kimi-kim-solo-exhibition-less-than-unbound-greater-than,/exhibitions/kimi-kim-solo-exhibition-less-than-unbound-greater-than,exhibition,키미 킴 개인전 Kimi Kim Solo Exhibition <UNBOUND>,200,Build in App Router alongside legacy route; redirect old URL after destination is live
+/exhibition/premier-art-seoul-2022,/exhibitions/premier-art-seoul-2022,exhibition,Premier Art Seoul 2022,200,Build in App Router alongside legacy route; redirect old URL after destination is live
+/exhibition/rhee-in-sook-solo-exhibition-less-than-her-universe-greater-than,/exhibitions/rhee-in-sook-solo-exhibition-less-than-her-universe-greater-than,exhibition,이인숙 개인전 Rhee In Sook Solo Exhibition: <Her Universe>,200,Build in App Router alongside legacy route; redirect old URL after destination is live
+/exhibition/suk-jeen-sung-moon-jar-exhibit,/exhibitions/suk-jeen-sung-moon-jar-exhibit,exhibition,Suk Jeen Sung-성석진 달항아리전,200,Build in App Router alongside legacy route; redirect old URL after destination is live
+/exhibition/the-11th-pink-art-fair-seoul-2022,/exhibitions/the-11th-pink-art-fair-seoul-2022,exhibition,The 11th Pink Art Fair Seoul 2022,200,Build in App Router alongside legacy route; redirect old URL after destination is live
+/exhibition/the-waning-light,/exhibitions/the-waning-light,exhibition,김찬수 사진전: 빛 속으로 (Into the Light),200,Build in App Router alongside legacy route; redirect old URL after destination is live
+/exhibition/yong-hoon-kim-solo-exhibition,/exhibitions/yong-hoon-kim-solo-exhibition,exhibition,김용훈 사진전 Yong Hoon Kim Solo Exhibition: <형과 색 그리고 빛>,200,Build in App Router alongside legacy route; redirect old URL after destination is live
+,/artists/kimi-kim,artist candidate,키미 킴/Kimi Kim,,Owner review: create slug/profile only if this artist should appear
