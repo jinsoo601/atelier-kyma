@@ -1,5 +1,7 @@
 # KYM-10 page design preview
 
+The Next.js implementation is tracked in [KYM-10 implementation state](./kym-10-implementation.md). This HTML file remains the approved visual reference.
+
 Open [the interactive HTML mock](./kym-10-page-preview.html) in a browser. Use the page selector above the gallery header, the site navigation, or the links within a page. Resize the browser to review the phone layout. This file is a design proposal, not a production route; its checkout and inquiry controls do not send anything.
 
 The homepage continues the approved KYM-8 Image-led direction. The mock covers home, the artist list and two artist details, artwork list and detail, all 12 exhibition archive entries and one detailed exhibition example, gallery introduction, and contact/inquiry. The current logo is retained. Both artist details use an on-page grid with six images initially visible (three columns by two rows on desktop; two columns by three rows on phones) and a "더보기" control to reveal the remainder: 12 existing 성석진 images and 8 existing 이인숙 images are all available after expansion. The approved ₩2,000,000 pilot work appears separately in the 성석진 grid and is the only grid item linked to a sale detail; the existing portfolio images do not imply current availability. The artist, artwork, and exhibition images are framed to show complete works without clipping. The About example visibly keeps Korean, English, and French.

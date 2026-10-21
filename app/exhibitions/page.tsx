@@ -1,59 +1,27 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
-
-import { client, urlFor } from "@/lib/sanityClient";
+import GalleryImageFrame from "@/components/gallery/GalleryImage";
+import PageTitle from "@/components/gallery/PageTitle";
+import { exhibitionHref, exhibitions } from "@/content/gallery";
 
 export const metadata: Metadata = { title: "전시 아카이브" };
 
-type Exhibition = {
-  name: string;
-  slug: { current: string };
-  startDate?: string;
-  endDate?: string;
-  posterImage?: { asset?: { _ref: string } };
-};
-
-export default async function ExhibitionsPage() {
-  const exhibitions = await client.fetch<Exhibition[]>(
-    '*[_type == "exhibition" && defined(slug.current)]{name, slug, startDate, endDate, posterImage} | order(startDate desc)',
-  );
-
+export default function ExhibitionsPage() {
+  const featured = exhibitions.find((exhibition) => exhibition.migrated && exhibition.image);
   return (
-    <>
-      <div className="mb-10 border-b border-[#dedbd4] pb-6">
-        <p className="mb-3 text-xs tracking-[0.2em] text-[#77746c]">
-          EXHIBITIONS
-        </p>
-        <h1 className="text-3xl font-medium">전시 아카이브</h1>
+    <main className="shell">
+      <PageTitle eyebrow="EXHIBITIONS" title="전시 아카이브" description="아뜰리에 키마가 소개한 전시를 날짜별로 살펴보세요." />
+      {featured?.image && <Link href={exhibitionHref(featured)} className="exhibition-lead">
+        <GalleryImageFrame image={featured.image} sizes="(max-width: 800px) 100vw, 55vw" />
+        <div><span className="eyebrow">FROM THE ARCHIVE · {featured.startDate.slice(0, 4)}</span><h2>{featured.title}</h2><p>{featured.artistName} 개인전 · {featured.startDate}—{featured.endDate}</p><span className="text-link">전시 보기</span></div>
+      </Link>}
+      <div className="archive-list">
+        <div className="section-heading section-line"><div><span className="eyebrow">ALL EXHIBITIONS</span><h2>지난 전시</h2></div><span className="muted">{exhibitions.length} exhibitions</span></div>
+        {exhibitions.map((exhibition) => <Link className="archive-row" key={exhibition.slug} href={exhibitionHref(exhibition)}>
+          <span className="year">{exhibition.startDate.slice(0, 4)}</span><strong>{exhibition.title}</strong>
+          <span className="date">{exhibition.startDate.slice(5).replace("-", ".")}—{exhibition.endDate.slice(5).replace("-", ".")}</span><span className="arrow" aria-hidden="true">↗</span>
+        </Link>)}
       </div>
-      <div className="grid gap-x-7 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
-        {exhibitions.map((exhibition) => (
-          <Link
-            key={exhibition.slug.current}
-            href={`/exhibitions/${exhibition.slug.current}`}
-            className="group"
-          >
-            <div className="relative aspect-[4/5] bg-[#e9e5dc]">
-              {exhibition.posterImage?.asset && (
-                <Image
-                  src={urlFor(exhibition.posterImage).width(720).url()}
-                  alt={`${exhibition.name} 포스터`}
-                  fill
-                  className="object-contain"
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                />
-              )}
-            </div>
-            <h2 className="mt-4 whitespace-pre-line text-base group-hover:underline">
-              {exhibition.name.replaceAll("\\n", "\n")}
-            </h2>
-            <p className="mt-2 text-sm text-[#77746c]">
-              {exhibition.startDate} – {exhibition.endDate}
-            </p>
-          </Link>
-        ))}
-      </div>
-    </>
+    </main>
   );
 }

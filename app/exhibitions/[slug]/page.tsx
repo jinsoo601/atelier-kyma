@@ -1,56 +1,26 @@
 import type { Metadata } from "next";
-import type { TypedObject } from "@sanity/types";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { PortableText } from "@portabletext/react";
-
-import exhibitionComponents from "@/components/ExhibitionComponents";
-import { client } from "@/lib/sanityClient";
+import { exhibitions } from "@/content/gallery";
 
 type Props = { params: Promise<{ slug: string }> };
-type Exhibition = {
-  name: string;
-  startDate?: string;
-  endDate?: string;
-  description?: TypedObject[];
-};
+const getExhibition = (slug: string) => exhibitions.find((exhibition) => exhibition.slug === slug && exhibition.migrated);
 
-async function getExhibition(slug: string) {
-  return client.fetch<Exhibition | null>(
-    '*[_type == "exhibition" && slug.current == $slug][0]{name, startDate, endDate, description}',
-    { slug },
-  );
-}
-
+export function generateStaticParams() { return exhibitions.filter((exhibition) => exhibition.migrated).map(({ slug }) => ({ slug })); }
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const exhibition = await getExhibition((await params).slug);
-  return { title: exhibition?.name ?? "전시" };
+  return { title: getExhibition((await params).slug)?.title ?? "전시" };
 }
 
 export default async function ExhibitionPage({ params }: Props) {
-  const exhibition = await getExhibition((await params).slug);
+  const exhibition = getExhibition((await params).slug);
   if (!exhibition) notFound();
-
   return (
-    <article>
-      <Link
-        href="/exhibitions"
-        className="text-sm text-[#66645e] hover:underline"
-      >
-        ← 전시 아카이브
-      </Link>
-      <h1 className="mt-8 whitespace-pre-line text-3xl font-medium">
-        {exhibition.name.replaceAll("\\n", "\n")}
-      </h1>
-      <p className="mt-4 border-b border-[#dedbd4] pb-6 text-sm text-[#77746c]">
-        {exhibition.startDate} – {exhibition.endDate}
-      </p>
-      <div className="mt-8 grid gap-x-4 md:grid-cols-4">
-        <PortableText
-          value={exhibition.description ?? []}
-          components={exhibitionComponents}
-        />
-      </div>
-    </article>
+    <main className="shell exhibition-detail">
+      <div className="detail-heading"><Link className="eyebrow" href="/exhibitions">← EXHIBITIONS</Link><h1>{exhibition.title}</h1><p>{exhibition.artistName} 개인전 · {exhibition.startDate}—{exhibition.endDate}</p></div>
+      {exhibition.image && <figure><div className="exhibition-hero-image"><Image src={exhibition.image.src} alt={exhibition.image.alt} fill sizes="100vw" priority /></div><figcaption className="image-caption"><span>{exhibition.image.caption}</span><span>Atelier Kyma, {exhibition.startDate.slice(0, 4)}</span></figcaption></figure>}
+      {exhibition.description && <section className="exhibition-copy section-line"><div><span className="eyebrow">EXHIBITION</span><h2>전시에 관하여</h2></div><p>{exhibition.description}</p></section>}
+      {Boolean(exhibition.images?.length) && <section className="section-line"><div className="section-heading"><div><span className="eyebrow">WORKS ON VIEW</span><h2>전시 이미지</h2></div></div><div className="exhibition-gallery">{exhibition.images?.map((image) => <figure key={image.src}><div className="exhibition-gallery-image"><Image src={image.src} alt={image.alt} fill sizes="(max-width: 600px) 100vw, 48vw" /></div>{image.caption && <figcaption>{image.caption}</figcaption>}</figure>)}</div></section>}
+    </main>
   );
 }

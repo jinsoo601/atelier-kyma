@@ -1,45 +1,48 @@
 import type { Metadata } from "next";
-import type { TypedObject } from "@sanity/types";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { PortableText } from "@portabletext/react";
-
-import artistComponents from "@/components/ArtistComponents";
-import { client } from "@/lib/sanityClient";
+import ArtistWorks from "@/components/gallery/ArtistWorks";
+import GalleryImageFrame from "@/components/gallery/GalleryImage";
+import { artists, exhibitions, exhibitionHref } from "@/content/gallery";
 
 type Props = { params: Promise<{ slug: string }> };
-type Artist = { name: string; career?: TypedObject[] };
+const getArtist = (slug: string) => artists.find((artist) => artist.slug === slug);
 
-const approvedSlugs = new Set(["suk-jeen-sung", "in-sook-rhee"]);
-
-async function getArtist(slug: string) {
-  if (!approvedSlugs.has(slug)) return null;
-  return client.fetch<Artist | null>(
-    '*[_type == "artist" && slug.current == $slug][0]{name, career}',
-    { slug },
-  );
-}
-
+export function generateStaticParams() { return artists.map(({ slug }) => ({ slug })); }
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const artist = await getArtist((await params).slug);
-  return { title: artist?.name ?? "작가" };
+  return { title: getArtist((await params).slug)?.name ?? "작가" };
 }
 
 export default async function ArtistPage({ params }: Props) {
-  const artist = await getArtist((await params).slug);
+  const artist = getArtist((await params).slug);
   if (!artist) notFound();
+  const exhibition = exhibitions.find(({ slug }) => slug === artist.relatedExhibitionSlug);
 
   return (
-    <article>
-      <Link href="/artists" className="text-sm text-[#66645e] hover:underline">
-        ← 작가
-      </Link>
-      <h1 className="mt-8 border-b border-[#dedbd4] pb-6 text-3xl font-medium">
-        {artist.name}
-      </h1>
-      <div className="mt-8 grid gap-x-4 md:grid-cols-4">
-        <PortableText value={artist.career ?? []} components={artistComponents} />
-      </div>
-    </article>
+    <main className="shell">
+      <section className="artist-hero">
+        <div><span className="eyebrow">ARTIST</span><h1>{artist.name}</h1><p className="roman">{artist.romanName}</p><p className="lead">{artist.introduction}</p></div>
+        <figure>
+          <GalleryImageFrame image={artist.hero} sizes="(max-width: 800px) 100vw, 55vw" priority />
+          <figcaption className="image-caption"><span>{artist.hero.caption}</span></figcaption>
+        </figure>
+      </section>
+      <section className="section-line">
+        <div className="section-heading"><div><span className="eyebrow">WORKS</span><h2>작품</h2></div><p className="artist-work-heading-note">{artist.worksLabel}</p></div>
+        <ArtistWorks slug={artist.slug} works={artist.works} />
+      </section>
+      {artist.career.length > 0 && (
+        <section className="section-line career-grid">
+          <div><span className="eyebrow">BIOGRAPHY</span><h2>작가 이력</h2></div>
+          <div>{artist.career.map((group) => <div className="career-group" key={group.heading}><h3>{group.heading}</h3><ul>{group.entries.map((entry) => <li key={entry}>{entry}</li>)}</ul></div>)}</div>
+        </section>
+      )}
+      {exhibition && (
+        <section className="section-line career-grid">
+          <div><span className="eyebrow">RELATED EXHIBITION</span><h2>관련 전시</h2></div>
+          <div><h3>{exhibition.title}</h3><p className="muted">{exhibition.startDate}—{exhibition.endDate} · 아뜰리에 키마</p><Link className="text-link" href={exhibitionHref(exhibition)}>전시 보기</Link></div>
+        </section>
+      )}
+    </main>
   );
 }
