@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { artists, featuredHome } from "@/content/gallery";
+import { artists } from "@/content/gallery";
+import { featuredHome } from "@/content/featured-home";
 
 export const metadata: Metadata = { title: "홈" };
 

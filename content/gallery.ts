@@ -1,5 +1,6 @@
 import artistImageManifest from "@/docs/kym-10-assets/artist-gallery-manifest.json";
 import archive from "@/content/archive.json";
+import { catalogIds, pilotArtwork, pilotProduct, type Availability } from "@/content/catalog";
 
 export type GalleryImage = { src: string; alt: string; caption?: string };
 export type ArtistWork = GalleryImage & { id: string; title: string; artworkSlug?: string; priceLabel?: string };
@@ -8,6 +9,7 @@ export type ArchiveBlock =
   | { type: "text"; style: string; list: boolean; text: string }
   | { type: "image"; src: string; alt: string; caption: string };
 export type Artist = {
+  id: string;
   slug: string;
   name: string;
   romanName: string;
@@ -19,15 +21,20 @@ export type Artist = {
   relatedExhibitionSlug?: string;
 };
 export type Artwork = {
+  id: string;
+  productId: string;
   slug: string;
   title: string;
+  artistId: string;
   artistSlug: string;
   image: GalleryImage;
   priceKrw: number;
-  purchase: { kind: "inquiry" } | { kind: "checkout"; url: string };
+  availability: Availability;
+  purchaseMethod: "inquiry";
   details: { label: string; value: string }[];
 };
 export type Exhibition = {
+  id: string;
   slug: string;
   title: string;
   artistName?: string;
@@ -41,19 +48,23 @@ export type Exhibition = {
 };
 
 const blobBase = "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com";
-const pilotSrc = `${blobBase}/artworks/suk-jeen-sung-cheonghwa-baekgeum-dot-moon-jar/hero.jpeg`;
+const pilotSrc = pilotArtwork.images[0].src;
 const artistImage = (file: string) => `/gallery/artists/${file}`;
 const sungPortfolioImage = (order: number) =>
   `${blobBase}/artists/suk-jeen-sung/portfolio-${String(order).padStart(2, "0")}.jpg`;
 
 export const artworks: Artwork[] = [
   {
-    slug: "suk-jeen-sung-cheonghwa-baekgeum-dot-moon-jar",
-    title: "청화백금닷 달항아리",
+    id: pilotArtwork.id,
+    productId: pilotProduct.id,
+    slug: pilotArtwork.slug,
+    title: pilotArtwork.title,
+    artistId: pilotArtwork.artistId,
     artistSlug: "suk-jeen-sung",
-    image: { src: pilotSrc, alt: "성석진의 청화백금닷 달항아리" },
-    priceKrw: 2_000_000,
-    purchase: { kind: "inquiry" },
+    image: pilotArtwork.images[0],
+    priceKrw: pilotProduct.priceKrw,
+    availability: pilotProduct.availability,
+    purchaseMethod: pilotProduct.purchaseMethod,
     details: [],
   },
 ];
@@ -63,7 +74,7 @@ const existingWorks = (artist: string): ArtistWork[] =>
     .filter((item) => item.artist === artist)
     .sort((a, b) => a.order - b.order)
     .map((item) => ({
-      id: `${artist}-${item.order}`,
+      id: `${artist === "성석진" ? catalogIds.artists.sukJeenSung : catalogIds.artists.inSookRhee}-portfolio-${item.file}`,
       src: artist === "성석진" ? sungPortfolioImage(item.order) : rheePortfolioImages[item.order - 1]?.src ?? artistImage(item.file),
       title: item.caption || `작품 사진 ${String(item.order).padStart(2, "0")}`,
       alt: item.caption ? `${artist}의 ${item.caption}` : `${artist}의 도자 작업 사진 ${item.order}`,
@@ -88,6 +99,7 @@ const careerGroups = (slug: "suk-jeen-sung" | "in-sook-rhee"): CareerGroup[] => 
 
 export const artists: Artist[] = [
   {
+    id: catalogIds.artists.sukJeenSung,
     slug: "suk-jeen-sung",
     name: "성석진",
     romanName: "Suk Jeen Sung",
@@ -95,13 +107,14 @@ export const artists: Artist[] = [
     hero: { src: pilotSrc, alt: "성석진의 달항아리 작품", caption: "성석진 · 청화백금닷 달항아리" },
     worksLabel: "달항아리와 도자 작업",
     works: [
-      { id: "pilot-moon-jar", title: artworks[0].title, ...artworks[0].image, artworkSlug: artworks[0].slug, priceLabel: "₩2,000,000" },
+      { id: pilotArtwork.id, title: artworks[0].title, ...artworks[0].image, artworkSlug: artworks[0].slug, priceLabel: formatKrw(artworks[0].priceKrw) },
       ...existingWorks("성석진"),
     ],
     career: careerGroups("suk-jeen-sung"),
     relatedExhibitionSlug: "suk-jeen-sung-moon-jar-exhibit",
   },
   {
+    id: catalogIds.artists.inSookRhee,
     slug: "in-sook-rhee",
     name: "이인숙",
     romanName: "In Sook Rhee",
@@ -115,18 +128,18 @@ export const artists: Artist[] = [
 ];
 
 const exhibitionSummaries: Exhibition[] = [
-  { slug: "kimi-kim-solo-exhibition-less-than-unbound-greater-than", title: "키미 킴 개인전 〈UNBOUND〉", startDate: "2024-10-08", endDate: "2024-10-31" },
-  { slug: "rhee-in-sook-solo-exhibition-less-than-her-universe-greater-than", title: "이인숙 개인전 〈Her Universe〉", artistName: "이인숙", startDate: "2024-05-03", endDate: "2024-05-30" },
-  { slug: "ahn-seongmin-solo-exhibition-n-less-than-itaewon-memoir-greater-than", title: "안성민 개인전 〈Itaewon Memoir〉", startDate: "2024-01-19", endDate: "2024-02-16" },
-  { slug: "hong-sungchul-solo-exhibition-through-the-lines", title: "홍성철 개인전 〈Through the Lines〉", startDate: "2023-11-04", endDate: "2023-11-30" },
-  { slug: "yong-hoon-kim-solo-exhibition", title: "김용훈 사진전 〈형과 색 그리고 빛〉", startDate: "2023-09-09", endDate: "2023-10-13" },
-  { slug: "jeong-hyun-ha-solo-exhibition", title: "Glad Landsby; 행복마을", artistName: "하정현", startDate: "2023-07-18", endDate: "2023-08-19" },
-  { slug: "jiyu-kwak-solo-exhibition-layers", title: "곽지유 개인전 〈겹; Layers〉", startDate: "2023-06-03", endDate: "2023-07-05" },
-  { slug: "suk-jeen-sung-moon-jar-exhibit", title: "성석진 달항아리전", artistName: "성석진", startDate: "2023-01-16", endDate: "2023-05-25" },
-  { slug: "premier-art-seoul-2022", title: "Premier Art Seoul 2022", startDate: "2022-10-13", endDate: "2022-10-16" },
-  { slug: "the-waning-light", title: "김찬수 사진전 〈빛 속으로〉", startDate: "2022-08-04", endDate: "2022-08-14" },
-  { slug: "art-race-in-jeju", title: "아트 레이스 인 제주", startDate: "2022-07-30", endDate: "2022-09-04" },
-  { slug: "the-11th-pink-art-fair-seoul-2022", title: "The 11th Pink Art Fair Seoul", startDate: "2022-07-07", endDate: "2022-07-10" },
+  { id: "kym-exhibition-0001", slug: "kimi-kim-solo-exhibition-less-than-unbound-greater-than", title: "키미 킴 개인전 〈UNBOUND〉", startDate: "2024-10-08", endDate: "2024-10-31" },
+  { id: "kym-exhibition-0002", slug: "rhee-in-sook-solo-exhibition-less-than-her-universe-greater-than", title: "이인숙 개인전 〈Her Universe〉", artistName: "이인숙", startDate: "2024-05-03", endDate: "2024-05-30" },
+  { id: "kym-exhibition-0003", slug: "ahn-seongmin-solo-exhibition-n-less-than-itaewon-memoir-greater-than", title: "안성민 개인전 〈Itaewon Memoir〉", startDate: "2024-01-19", endDate: "2024-02-16" },
+  { id: "kym-exhibition-0004", slug: "hong-sungchul-solo-exhibition-through-the-lines", title: "홍성철 개인전 〈Through the Lines〉", startDate: "2023-11-04", endDate: "2023-11-30" },
+  { id: "kym-exhibition-0005", slug: "yong-hoon-kim-solo-exhibition", title: "김용훈 사진전 〈형과 색 그리고 빛〉", startDate: "2023-09-09", endDate: "2023-10-13" },
+  { id: "kym-exhibition-0006", slug: "jeong-hyun-ha-solo-exhibition", title: "Glad Landsby; 행복마을", artistName: "하정현", startDate: "2023-07-18", endDate: "2023-08-19" },
+  { id: "kym-exhibition-0007", slug: "jiyu-kwak-solo-exhibition-layers", title: "곽지유 개인전 〈겹; Layers〉", startDate: "2023-06-03", endDate: "2023-07-05" },
+  { id: "kym-exhibition-0008", slug: "suk-jeen-sung-moon-jar-exhibit", title: "성석진 달항아리전", artistName: "성석진", startDate: "2023-01-16", endDate: "2023-05-25" },
+  { id: "kym-exhibition-0009", slug: "premier-art-seoul-2022", title: "Premier Art Seoul 2022", startDate: "2022-10-13", endDate: "2022-10-16" },
+  { id: "kym-exhibition-0010", slug: "the-waning-light", title: "김찬수 사진전 〈빛 속으로〉", startDate: "2022-08-04", endDate: "2022-08-14" },
+  { id: "kym-exhibition-0011", slug: "art-race-in-jeju", title: "아트 레이스 인 제주", startDate: "2022-07-30", endDate: "2022-09-04" },
+  { id: "kym-exhibition-0012", slug: "the-11th-pink-art-fair-seoul-2022", title: "The 11th Pink Art Fair Seoul", startDate: "2022-07-07", endDate: "2022-07-10" },
 ];
 
 export const exhibitions: Exhibition[] = exhibitionSummaries.map((summary) => {
@@ -141,14 +154,6 @@ export const exhibitions: Exhibition[] = exhibitionSummaries.map((summary) => {
   };
 });
 
-export const featuredHome = {
-  image: artworks[0].image,
-  eyebrow: "ATELIER KYMA · SELECTED WORK",
-  title: "작품과 사람 사이, 오래 머무는 시선.",
-  description: "성석진의 달항아리에서 시작해, 아뜰리에 키마가 소개하는 작가와 전시를 만나보세요.",
-  href: `/artworks/${artworks[0].slug}`,
-};
-
 export const contact = {
   email: archive.contact.email,
   phoneDisplay: "+82 2-3785-0118",
@@ -158,6 +163,6 @@ export const contact = {
   hours: ["화–금 11:00–19:00", "토 12:00–18:00", "일–월 휴무"],
 };
 
-export const formatKrw = (value: number) => `₩${value.toLocaleString("ko-KR")}`;
+export function formatKrw(value: number) { return `₩${value.toLocaleString("ko-KR")}`; }
 export const exhibitionHref = (exhibition: Exhibition) =>
   exhibition.migrated ? `/exhibitions/${exhibition.slug}` : `/exhibition/${exhibition.slug}`;
