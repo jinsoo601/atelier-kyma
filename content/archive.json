@@ -1,0 +1,4645 @@
+{
+  "about": {
+    "korean": "키마는 그리스어로 '물결'이라는 뜻입니다. 키마는, 키마만의 독창적인 시각으로 모든 예술 전반에 걸쳐 새로운 물결을 일으키고자 하는 소망을 이루기위해 탄생하였습니다. 평면회화, 다양한 입체작업과 공예, 그리고 디자인 분야 등 모든 예술분야를 아울러 시대적 공감을 파악하고 순수 예술의 대중화를 위해 노력하고자 합니다. \n\n다양한 전시 및 컨설팅 프로젝트를 통해 세계 각지의 역량있는 작가들과의 조우, 동시에 젊고 잠재력있는 작가들을 발굴하는데 주력하고자 합니다.\n\n아뜰리에 키마는 함께하는 작가들의 활동 범위를 넓히기 위해, 국내외 주요 아트페어 참가 및 타 갤러리/작가와의 협업을 추진할 것입니다. 또한 광범위하고 심오한 작품 세계를 대중이 보다 쉽게 접할 수 있도록, 아뜰리에 키마만의 어법으로 풀어가고자 합니다.\n\n갤러리 대표의 프랑스와 미국에서의 25년 경험에서 비롯된, 차별화된 문화적 시선을 아뜰리에 키마의 정체성으로 삼고자 노력하도록 하겠습니다.",
+    "english": "Kyma means 'wave' in Greek. Atelier Kyma was founded with the ambition of making waves across the art world through its distinct perspective and engaging composition. Our goal is to bring the public closer to the works of rising artists across all disciplines - paintings, sculptures, crafting, and design.\n\nBy engaging in various exhibitions and consulting projects, we seek to create connections with established artists across the globe while also shedding light on young and promising talents. Kyma maintains a twofold approach in broadening the scope of the artists that work with us: first, we participate in major art fairs to promote our talents; second, we encourage collaboration with other galleries and creators. \n\nFounder Céline Kim spent her formative years in both France and the United States before returning to South Korea. She brings her unique cultural perspectives from her time abroad to shape the identity of Atelier Kyma.",
+    "french": "Kyma signifie « vague » en grec. L'Atelier Kyma a été fondé avec l'ambition de faire des vagues dans le monde de l'art à travers sa perspective distincte et sa composition engageante.\nNotre objectif est de rapprocher le public des œuvres d'artistes émergents dans toutes les disciplines - peintures, sculptures, artisanat et design.\nEn nous engageant dans diverses expositions et projets de conseil, nous cherchons à créer des liens avec des artistes établis à travers le monde tout en mettant en lumière de jeunes talents prometteurs. Kyma maintient une double approche en élargissant le champ des artistes qui travaillent avec nous: premièrement, nous participons à de grands salons d'art pour promouvoir nos talents; deuxièmement, nous encourageons la collaboration avec d'autres galeries et créateurs.\nLa fondatrice Céline Kim a passé ses années de formation en France et aux États-Unis avant de retourner en Corée du Sud. Elle apporte ses perspectives culturelles uniques de son séjour à l'étranger pour façonner l'identité de l'Atelier Kyma."
+  },
+  "artists": {
+    "suk-jeen-sung": {
+      "name": "성석진/Suk Jeen Sung",
+      "profileImage": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/artists/suk-jeen-sung/profile.jpg",
+      "career": [
+        {
+          "type": "text",
+          "style": "h5",
+          "list": false,
+          "text": "학력"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2003년 일본 동경예술대학 대학원 도예전공 졸업"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "1998년 서울대학교 미술대학 도예과 졸업"
+        },
+        {
+          "type": "text",
+          "style": "h5",
+          "list": false,
+          "text": "개인전"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2022년 성석진 달항아리전 (1707갤러리)"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2022년 성석진 달항아리전-전통과 현대의 조화 (갤러리 가비)"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2021년 성석진 달항아리전 & 제8회 도화원전"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2020년 성석진 달항아리전 & 도화원전"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2020년 성석진 도예전 (Gallery Yui - Tokyo)"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2019년 성석진 달항아리전 (국회의원회관 2층 - 정세균 의원실 후원)"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2019년 달의공간 - 투영되다 (1707갤러리)"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2019년 성석진 달항아리전 & 도화원전 외 다수"
+        },
+        {
+          "type": "text",
+          "style": "h5",
+          "list": false,
+          "text": "작품상설"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "인천국제공항 터미널 1, 2 한국의집 (동관, 서관)"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "국립고궁박물관 뮤지엄샵 뜨락"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "일본 동경예술대학 뮤지엄샵"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "경복궁 버들마루"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "창덕궁 동궐마루"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "KCDF갤러리샵"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "청와대사랑채"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "갤러리무"
+        },
+        {
+          "type": "text",
+          "style": "blockquote",
+          "list": false,
+          "text": "\"무심히 스쳐 지나가던 작업장 앞마당에서 바라본 밤하늘 속에 이렇게나 많은 별들이 있었던가 싶을 정도로 유난히 내 시선을 사로잡은 날이 있었다. 첫 번째로 눈에 들어온 것은 오리온 자리였다. 원래 알고 있는 별자리여서 눈이 간 것이지만, 그 다음엔 나도 모르게 그 주변의 별들을 찾아 보고 있었다. 핸드폰으로 시간과 방위를 넣어서 하나하나 별들의 이름을 찾는 것이 재미있는 작업 후의 일상이 되었다. 이렇게 계속 관찰하고 관심을 갖게 된 여주 작업장의 앞마당에서 바라본 밤하늘의 신비롭고 가슴 뭉클한 장엄한 광경을 내 달항아리에 담아 UNIVERSE로 승화시켜 보려 한다.\"\n\n- 작가노트 중에서"
+        },
+        {
+          "type": "text",
+          "style": "h5",
+          "list": false,
+          "text": "달항아리 시리즈"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/artists/suk-jeen-sung/portfolio-01.jpg",
+          "alt": "지리산 하동백토, 백유",
+          "caption": "지리산 하동백토, 백유"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/artists/suk-jeen-sung/portfolio-02.jpg",
+          "alt": "지리산하동백토 , 백유+재유(2중시유), 수금(3벌소성)",
+          "caption": "지리산하동백토 , 백유+재유(2중시유), 수금(3벌소성)"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/artists/suk-jeen-sung/portfolio-03.jpg",
+          "alt": "지리산하동백토 , 백유+재유(2중시유), 수금(3벌소성)",
+          "caption": "지리산하동백토 , 백유+재유(2중시유), 수금(3벌소성)"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/artists/suk-jeen-sung/portfolio-04.jpg",
+          "alt": "지리산 하동백토, 흑유, 백금 (3벌소성)",
+          "caption": "지리산 하동백토, 흑유, 백금 (3벌소성)"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/artists/suk-jeen-sung/portfolio-05.jpg",
+          "alt": "지리산 하동백토, 흑유 , 수금(3벌소성)",
+          "caption": "지리산 하동백토, 흑유 , 수금(3벌소성)"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/artists/suk-jeen-sung/portfolio-06.jpg",
+          "alt": "지리산 하동백토, 청화 , 백유 , 백금 (3벌소성)",
+          "caption": "지리산 하동백토, 청화 , 백유 , 백금 (3벌소성)"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/artists/suk-jeen-sung/portfolio-07.jpg",
+          "alt": "지리산 하동백토, 백유, 수금",
+          "caption": "지리산 하동백토, 백유, 수금"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/artists/suk-jeen-sung/portfolio-08.jpg",
+          "alt": "Universe, 하동백토, 백유+재유, 수금 3벌 소성",
+          "caption": "Universe, 하동백토, 백유+재유, 수금 3벌 소성"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/artists/suk-jeen-sung/portfolio-09.jpg",
+          "alt": "Universe, 하동백토, 백유 + 재유",
+          "caption": "Universe, 하동백토, 백유 + 재유"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/artists/suk-jeen-sung/portfolio-10.jpg",
+          "alt": "Black Universe, 흑유, 수금 3벌 소성",
+          "caption": "Black Universe, 흑유, 수금 3벌 소성"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/artists/suk-jeen-sung/portfolio-11.jpg",
+          "alt": "White Universe, 백유, 수금 3벌 소성",
+          "caption": "White Universe, 백유, 수금 3벌 소성"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/artists/suk-jeen-sung/portfolio-12.jpg",
+          "alt": "Universe, 하동백토, 백유+재유(2중시유), 수금 3벌소성",
+          "caption": "Universe, 하동백토, 백유+재유(2중시유), 수금 3벌소성"
+        }
+      ]
+    },
+    "in-sook-rhee": {
+      "name": "이인숙/In Sook Rhee",
+      "profileImage": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/artists/in-sook-rhee/profile.jpg",
+      "career": [
+        {
+          "type": "text",
+          "style": "h5",
+          "list": false,
+          "text": "학력"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2015.2 이화여자대학교 조형예술대학 도예과 박사"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "1996.2 이화여자대학교 디자인 대학원 요업디자인 전공"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "1993.2 이화여자대학교 미술대학 도예과"
+        },
+        {
+          "type": "text",
+          "style": "h5",
+          "list": false,
+          "text": "개인전"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2020 urban jungle no.2020 - 초이스아트컴퍼니"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2019 인공림 - 갤러리밈"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2018 One&Only - 갤러리O"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2017 Making it! - 갤러리O"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2015 쓰임– 갤러리O"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2014 The extension of ceramic use –이화아트센터"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2013 Creative balance through ceramics–갤러리3"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2011 The re-creation – 인사아트센터"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2010 urban jungle - 갤러리 em"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2006 picture diary (part 2) –충무아트홀"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2006 picture diary (part 1) – 갤러리 도스"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2005 Illustrating with Vessels - 충무아트홀"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2000 color& Ceramic – 가나아트스페이스"
+        },
+        {
+          "type": "text",
+          "style": "h5",
+          "list": false,
+          "text": "경력"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2012~2014 이화여자대학교 디자인대학원 겸임교수"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2010 이화여대 정문 아트월 연구원"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2008~2014 엔소온 운영"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2007 김옥길 기념강좌 문화가있는 상차림 그릇전 연구원 ( 이화여대 도예연구소)"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2005 e-omm 연구원 – 이화여대 도예연구소"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2002 이화여대도예연구소 아트상품 객원 연구원"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "1996 충남보령시보령댐발굴팀연구원"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "1996 이화여자대학교 도예과 조교"
+        },
+        {
+          "type": "text",
+          "style": "h5",
+          "list": false,
+          "text": "교육 경력"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2018~ 2021 공주대학교조형디자인 학부 세라믹 디자인 전공 강사"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2010 ~2016 이화여자대학교 조형예술대학 도예과 강사"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2010~2014 이화여자대학교 디자인 대학원 도자디자인 전공 강사"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2010 공주대학교조형디자인 학부 세라믹 디자인 전공 강사"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2004~2005 이화여자대학교 조형예술대학 공예학부 강사"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2002~2003 여주대학도예과 강사특강 상명대학교(2017) 국민대학교(2006) 인덕대학(2002), 강남대학교(2001)이화여자대학교(2001)"
+        },
+        {
+          "type": "text",
+          "style": "h5",
+          "list": false,
+          "text": "수상"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2015 세계도자비엔날레 국제공모전 : 입선"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2014 산업미술가협회공모전 :은상 –한전갤러리2009 the intelligent hand -designboom and 'MACEF international home show' design competition.-honorable mention - 밀라노"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2005 세계도자비엔날레 국제공모전 ; 생활도자부분(은상) – 경기도,세계도자엑스포"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2002 현대도예공모전 ; 서울신문사 갤러리"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2000 The 2000 International Orton con box show ; Holt-rusell–켄사스"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "1999 이타미국제공예공모전 (대상) – The Museum of arts crafts, 이타미"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "1997 서울현대도예공모전– 서울신문사갤러리대한민국 공예대전 – 과천국립현대미술관1996 산업미술가협회공모전– 디자인포장센터"
+        },
+        {
+          "type": "text",
+          "style": "blockquote",
+          "list": false,
+          "text": "\"저는 석고캐스팅에 기반을 두고 작업을 해오고 있습니다. 이유를 설명한다면... 일상의 기억을 수집할 수 있기 때문입니다. 기억하고 싶은 사물을 모아 몰드를 뜨고 때로는 감정을 표현한 형태를 만들어 마치 곡간을 채우듯 석고 몰드들을 모아둡니다. 아무런 연결고리 없이 습관처럼 매일 하는 평소의 제 작업입니다. 때문에 수집된 유닛들은 이미 저를 말해준다고 생각합니다. 이렇게 수집된 몰드들은 새로운 프로젝트를 만날 때 그 주제에 맞게 선택해 구성합니다. 제 작업의 결과물은 쓰임이라는 용도에 초점을 맞추고 있습니다. 예술과 공예를 구분짓기 보다는 공예의 특성을 갖은 작품을 하고 싶기때문입니다. 공예의 쓰임은 현대도예 안에서 단순한 사용의 의미를 넘어 수용자와의 관계형성을 위한 소통의 도구적 쓰임이라고 생각합니다. 이는 수용자의주관적 참여, 개입을 유도해 완성되는 결과를 기대하게 합니다. 이것이 현대공예의 쓰임의 가능성을 확장하게 할 수 있다고 생각합니다. 어떠한 주제를 생각할 때 작업이 어떻게 소통되어질지에 대한 용도를 생각합니다. 용도라는 것은 작품에 대한 수용자의 개입을 좀 더 용이하게 하고자하는 의도이며 수단입니다. 쉽게 감상하고 사유하게 할수 있는 용도를 만들어 수용자의 생활 안에 들어가고자 합니다. 이는 수용자의 주관적 참여, 개입을 유도해 완성되는 결과를 기대하게 합니다.\"\n\n- 작가노트 중에서"
+        },
+        {
+          "type": "text",
+          "style": "h5",
+          "list": false,
+          "text": "Urban Jungle Project - Porcelain"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/artists/in-sook-rhee/image-01.jpg",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/artists/in-sook-rhee/image-02.jpg",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/artists/in-sook-rhee/image-03.jpg",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/artists/in-sook-rhee/image-04.jpg",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/artists/in-sook-rhee/image-05.jpg",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/artists/in-sook-rhee/image-06.jpg",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/artists/in-sook-rhee/image-07.jpg",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/artists/in-sook-rhee/image-08.jpg",
+          "alt": "",
+          "caption": ""
+        }
+      ]
+    }
+  },
+  "exhibitions": [
+    {
+      "slug": "kimi-kim-solo-exhibition-less-than-unbound-greater-than",
+      "originalTitle": "키미 킴 개인전 Kimi Kim Solo Exhibition <UNBOUND>",
+      "startDate": "2024-10-08",
+      "endDate": "2024-10-31",
+      "poster": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/kimi-kim-solo-exhibition-less-than-unbound-greater-than/poster.png",
+      "content": [
+        {
+          "type": "text",
+          "style": "h5",
+          "list": false,
+          "text": "학력"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "Feb. 2015 UrbanGlass Class for Imagery"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2007 - BA University of the Arts of London Central Saint Martins, London, UK, Specialization: Ceramics"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2006 London College of Art – Camberwell Foundation"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "1998 - BA Silla University, Busan, Korea"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "1992 - 1994 Industrial Design & Craft, Busan Women's College, Korea"
+        },
+        {
+          "type": "text",
+          "style": "h5",
+          "list": false,
+          "text": "수상"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2019 International Competition KOREA CERAMIC Foundation Gyeonggi International CERAMIC Biennale 2019"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "1994 Special Selection for Woodcraft, Korea Art & Craft Prize, Seoul, Korea"
+        },
+        {
+          "type": "text",
+          "style": "h5",
+          "list": false,
+          "text": "전시"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2023 Waterfall Mansion gallery in New York. US"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2023 Apr.1 - Jun.30 A Blooming Resilience"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2023 LA art show"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2023 Feb.23 - Mar.3 Shatto gallery in La group exhibition"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2022 Miami beach art show"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2022 Gallery Mare Galleries Art Fair Setec in Seoul. South Korea"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2022 Gallery Mare Paradise Hotel in Busan. South Korea \"I choose to be GRATEFUL\""
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2021 Artful living Projet Bergdorf Goodman X Waterfall Mansion Gallery Bergdorf Goodman in NY.US"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2020 Artful Living Campaign Waterfall Mansion & Gallery, NY, US"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2020 (RESTORE) To Beloved ArtistsWaterfall Mansion & Gallery, NY, US"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": false,
+          "text": "Kimi Kim's ceramic works represents the nature of love and care in her personal life and how these relationships and beacons of joy are impossibly fragile, yet indes..."
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/kimi-kim-solo-exhibition-less-than-unbound-greater-than/image-01.jpg",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/kimi-kim-solo-exhibition-less-than-unbound-greater-than/image-02.jpg",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/kimi-kim-solo-exhibition-less-than-unbound-greater-than/image-03.jpg",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/kimi-kim-solo-exhibition-less-than-unbound-greater-than/image-04.jpg",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/kimi-kim-solo-exhibition-less-than-unbound-greater-than/image-05.jpg",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/kimi-kim-solo-exhibition-less-than-unbound-greater-than/image-06.jpg",
+          "alt": "욕망 시리즈 I, CHANEL, Mixed media, clay 2024",
+          "caption": "욕망 시리즈 I, CHANEL, Mixed media, clay 2024"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/kimi-kim-solo-exhibition-less-than-unbound-greater-than/image-07.jpg",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/kimi-kim-solo-exhibition-less-than-unbound-greater-than/image-08.jpg",
+          "alt": "욕망 시리즈 II, LEGO, Mixed media, clay, 2024",
+          "caption": "욕망 시리즈 II, LEGO, Mixed media, clay, 2024"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/kimi-kim-solo-exhibition-less-than-unbound-greater-than/image-09.jpg",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/kimi-kim-solo-exhibition-less-than-unbound-greater-than/image-10.jpg",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/kimi-kim-solo-exhibition-less-than-unbound-greater-than/image-11.jpg",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/kimi-kim-solo-exhibition-less-than-unbound-greater-than/image-12.jpg",
+          "alt": "Copyright ©️ 2023 Kimi-Kim, all rights reserved",
+          "caption": "Copyright ©️ 2023 Kimi-Kim, all rights reserved"
+        }
+      ]
+    },
+    {
+      "slug": "rhee-in-sook-solo-exhibition-less-than-her-universe-greater-than",
+      "originalTitle": "이인숙 개인전 Rhee In Sook Solo Exhibition: <Her Universe>",
+      "startDate": "2024-05-03",
+      "endDate": "2024-05-30",
+      "poster": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/rhee-in-sook-solo-exhibition-less-than-her-universe-greater-than/poster.jpg",
+      "content": [
+        {
+          "type": "text",
+          "style": "h5",
+          "list": false,
+          "text": "학력"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2015.2 이화여자대학교 조형예술대학 도예과 박사"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "1996.2 이화여자대학교 디자인 대학원 요업디자인 전공"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "1993.2 이화여자대학교 미술대학 도예과"
+        },
+        {
+          "type": "text",
+          "style": "h5",
+          "list": false,
+          "text": "개인전"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2020 urban jungle no.2020 - 초이스아트컴퍼니"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2019 인공림 - 갤러리밈"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2018 One&Only - 갤러리O"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2017 Making it! - 갤러리O"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2015 쓰임– 갤러리O"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2014 The extension of ceramic use –이화아트센터"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2013 Creative balance through ceramics–갤러리3"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2011 The re-creation – 인사아트센터"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2010 urban jungle - 갤러리 em"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2006 picture diary (part 2) –충무아트홀"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2006 picture diary (part 1) – 갤러리 도스"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2005 Illustrating with Vessels - 충무아트홀"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2000 color& Ceramic – 가나아트스페이스"
+        },
+        {
+          "type": "text",
+          "style": "h5",
+          "list": false,
+          "text": "경력"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2012~2014 이화여자대학교 디자인대학원 겸임교수"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2010 이화여대 정문 아트월 연구원"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2008~2014 엔소온 운영"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2007 김옥길 기념강좌 문화가있는 상차림 그릇전 연구원 ( 이화여대 도예연구소)"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2005 e-omm 연구원 – 이화여대 도예연구소"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2002 이화여대도예연구소 아트상품 객원 연구원"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "1996 충남보령시보령댐발굴팀연구원"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "1996 이화여자대학교 도예과 조교"
+        },
+        {
+          "type": "text",
+          "style": "h5",
+          "list": false,
+          "text": "교육 경력"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2018~ 2021 공주대학교조형디자인 학부 세라믹 디자인 전공 강사"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2010 ~2016 이화여자대학교 조형예술대학 도예과 강사"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2010~2014 이화여자대학교 디자인 대학원 도자디자인 전공 강사"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2010 공주대학교조형디자인 학부 세라믹 디자인 전공 강사"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2004~2005 이화여자대학교 조형예술대학 공예학부 강사"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2002~2003 여주대학도예과 강사특강 상명대학교(2017) 국민대학교(2006) 인덕대학(2002), 강남대학교(2001)이화여자대학교(2001)"
+        },
+        {
+          "type": "text",
+          "style": "h5",
+          "list": false,
+          "text": "수상"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2015 세계도자비엔날레 국제공모전 : 입선"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2014 산업미술가협회공모전 :은상 –한전갤러리2009 the intelligent hand -designboom and 'MACEF international home show' design competition.-honorable mention - 밀라노"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2005 세계도자비엔날레 국제공모전 ; 생활도자부분(은상) – 경기도,세계도자엑스포"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2002 현대도예공모전 ; 서울신문사 갤러리"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2000 The 2000 International Orton con box show ; Holt-rusell–켄사스"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "1999 이타미국제공예공모전 (대상) – The Museum of arts crafts, 이타미"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "1997 서울현대도예공모전– 서울신문사갤러리대한민국 공예대전 – 과천국립현대미술관1996 산업미술가협회공모전– 디자인포장센터"
+        },
+        {
+          "type": "text",
+          "style": "blockquote",
+          "list": false,
+          "text": "저는 석고캐스팅에 기반을 두고 작업을 해오고 있습니다. 이유를 설명한다면... 일상의 기억을 수집할 수 있기 때문입니다. 기억하고 싶은 사물을 모아 몰드를 뜨고 때로는 감정을 표현한 형태를 만들어 마치 곡간을 채우듯 석고 몰드들을 모아둡니다. 아무런 연결고리 없이 습관처럼 매일 하는 평소의 제 작업입니다. 때문에 수집된 유닛들은 이미 저를 말해준다고 생각합니다. 이러게 수집된 몰드들은 새로운 프로젝트를 만날 때 그 주제에 맞게 선택해 구성합니다.\n\n제 작업의 결과물은 쓰임이라는 용도에 초점을 맞추고 있습니다. 예술과 공예를 구분짓기 보다는 공예의 특성을 갖은 작품을 하고 싶기때문입니다. 공예의 쓰임은 현대도예 안에서 단순한 사용의 의미를 넘어 수용자와의 관계형성을 위한 소통의 도구적 쓰임이라고 생각합니다. 이는 수용자의 주관적 참여, 개입을 유도해 완성되는 결과를 기대하게 합니다. 이것이 현대공예의 쓰임의 가능성을 확장하게 할 수 있다고 생각합니다. 어떠한 주제를 생각할 때 작업이 어떻게 소통되어질지에 대한 용도를 생각합니다. 용도라는 것은 작품에 대한 수용자의 개입을 좀 더 용이하게 하고자하는 의도이며 수단입니다. 쉽게 감상하고 사유하게 할수 있는 용도를 만들어 수용자의 생활 안에 들어가고자 합니다. 이는 수용자의 주관적 참여, 개입을 유도해 완성되는 결과를 기대하게 합니다."
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/rhee-in-sook-solo-exhibition-less-than-her-universe-greater-than/image-01.jpg",
+          "alt": "꿀벌wvp1, ceramic & gold, 2024",
+          "caption": "꿀벌wvp1, ceramic & gold, 2024"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/rhee-in-sook-solo-exhibition-less-than-her-universe-greater-than/image-02.jpg",
+          "alt": "새wvp1, ceramic & gold, 2024",
+          "caption": "새wvp1, ceramic & gold, 2024"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/rhee-in-sook-solo-exhibition-less-than-her-universe-greater-than/image-03.jpg",
+          "alt": "나무은접시화기p1, ceramic & silver, 2024",
+          "caption": "나무은접시화기p1, ceramic & silver, 2024"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/rhee-in-sook-solo-exhibition-less-than-her-universe-greater-than/image-04.jpg",
+          "alt": "fvp1다크브라운, ceramic & painted, 2024",
+          "caption": "fvp1다크브라운, ceramic & painted, 2024"
+        }
+      ]
+    },
+    {
+      "slug": "ahn-seongmin-solo-exhibition-n-less-than-itaewon-memoir-greater-than",
+      "originalTitle": "안성민 개인전 Ahn Seongmin Solo Exhibition:\\n<Itaewon Memoir>",
+      "startDate": "2024-01-19",
+      "endDate": "2024-02-16",
+      "poster": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/ahn-seongmin-solo-exhibition-n-less-than-itaewon-memoir-greater-than/poster.png",
+      "content": [
+        {
+          "type": "text",
+          "style": "h5",
+          "list": false,
+          "text": "학력"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "M.F.A. Multidisciplinary Art, Maryland Institute College of Art, Mount Royal Graduate School"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "M.F.A. Asian Traditional Painting, Seoul National University"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "B.F.A. Asian Traditional Painting, Seoul National University"
+        },
+        {
+          "type": "text",
+          "style": "h5",
+          "list": false,
+          "text": "개인전"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2024 <Itaewon Memoir>, Atelier Kyma, Seoul, Korea"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2023 <Book, Flower and Water>, Kangjin Minhwa Museum, Kangjin, Korea"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2023 <Its Inside Is Bigger Than Its Outside by Seongmin Ahn>, Hudson River Museum, Yonkers, NY"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2023 <Enchanted Reality>, Korea Society, New York, NY"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2022 <Delectable Landscape>, Evercore headquarter presented by CUE Foundation, New York, NY"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2021 <Doongsil Doodoongsil (Float, Float)>, Coyu Cultural Space by Kwangjuyo, Icheon, Korea"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2020 <MINHWA & minhwa: Korean Folk Paintings in Dialogue with the Contemporary>, Asiaweek Exhibition, Korean Cultural Center, New York, NY"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2019 <Unreal Real Unreal>, Gallery Stan, Seoul, Korea"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2016 <“Its inside is bigger than its outside”>, Art Mora, NJ"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2015 <Interrelation>, Art Mora, New York, NY"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2015 <Present Present>, Asian Art Works, Pusan, Korea"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2014 <Lucious Peony>, Wong Cultural Center Gallery, Stonybrook University, Long Island, NY"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2013 <Sweet sometimes>, Hello Museum, Seoul, Korea"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2013 <Portrait of Peony>, Gallery K, Seoul, Korea"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2013 <Reelative Perspectives>, Curated by Hyewon Yi, sponsored by AHL foundation, BBCN bank, New York, NY"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2012 <Neo-Peony>, Gallery Ho, New York, NY"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2012 <Come and Play at my Minhwa Garden>, Yegam Art Space, Flushing, NY"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2011 <Storytelling>, Voelker Orth Museum, Flushing, NY"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2009 <White Square; perspective exercise>, Local Project, Long Island City, NY"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2006 <Particles Are Also Waves>, Delaware Center for the Contemporary Arts, Wilmington, DE"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2005 <Mono.logue>, Queens College Art Center, Flushing, NY"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2004 <New York Report; Seongmin Ahn>, White Wall Gallery, Seoul, Korea"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2004 <Weaving Pain>, Kerrigan Campbell art + project, New York, NY"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2003 <Beyond, Project ’03>, Carriage House, Islip Art Museum, Islip, NY"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2001 <Meditation>, Gomez Gallery, Baltimore, MD"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2001 <Meditation; M.F.A. Thesis Exhibition>, Fox Gallery, Maryland Institute College of Art, Baltimore, MD"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "1998 <Floating>, Gallery Boda, Seoul, Korea"
+        },
+        {
+          "type": "text",
+          "style": "h5",
+          "list": false,
+          "text": "Public Project"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2022 <AGAIN>, window project, John Jay College of Criminal Justice, New York, NY"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2021 <AGAIN>, art on billboard with Save Art Spaces, multiple billboards located in New York metropolitan area"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2021 <AGAIN>, a public installation at Charles Wang Culture Center, Stony Brook University, Long Island, NY"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2021 <AGAIN>, installation at Dongduck Gallery, Seoul, Korea"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2020 <Harmonious Differences>, Public mural, Flushing Queens, NY"
+        },
+        {
+          "type": "text",
+          "style": "h5",
+          "list": false,
+          "text": "단체전"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2023 <Blooming Resilience>, Waterfall Mansion Gallery, New York, NY"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2022 <Renewal of Symbols>, Gladys Marcus Library, Fashion Institute of Technology, New York, NY"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2022 <Praise of Life>, Museum of Modern and Contemporary Art, Seoul"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2022 <Minhwa Story>, Young World, Yeongwol County, Korea"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2022 <Bottari>, Chungmu Art Center, Seoul, Korea"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2022 <Order/Reorder: Experiments with Collections>, Hudson River Museum, Yonkers, NY"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2021 <Chaekgeori, de la beaute des Livres>, Centre Culturel Coreen, Paris, France"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2021 <My Flower is Close and Estrange>, Space C. Coreana Art & Culture Complex, Seoul"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2020 <Women to the Fore>, Hudson River Museum, Yonkers, NY"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2020 <Asia Week New York 2020>, Kang Collection, New York"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2019 <Grateful Fortitute; The Spirit of Korean Women>, Jordan Schnitzer Museum of Art, University of Oregon, Eugene, Oregon"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2019 <New Wave 25>, Insa Art Center, Seoul, Korea"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2019 <Asia Week New York 2019>, Kang Collection, New York, NY"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2019 <Checkgori Today>, Dongduck Gallery, Seoul, Korea"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2019 <Winter Selection>, Susan Eley Fine Art, New York, NY"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2018 <Asia Week New York 2018>, Kang Collection, New York, NY"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2018 <Potatoism:A Global History of Potato Art>, Wang Center, Stonybrook University, Long Island, NY"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2018 <Postmodernism and Aesthetics, Collide and Steer>, Korean Cultural Center, AHL foundation, NY"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2017 <Korean Art: Now and Then>, Kang Contemporary, New York, NY"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2017 <Asia Week New York 2017>, Kang Collection, New York, NY"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2016 <Power and Pleasure of Possessions in Korean Painted Screens>, Wang Center, Stonybrook University, NY"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2016 <Moonbanggu(stationery)>, Hello Museum, Seoul, Korea"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2015 <Art Discovery>, Chumgmoo Art Hall organized by Hello Museum, Seoul, Korea"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2015 <Korea Now>, Susan Eley Fine Art, New York, NY"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2014 <Garden>, National Museum of Modern and Contemporary Art, Seoul, Korea"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2014 <The lineage of Vision: Progress through Persistence>, Gallery Korea, New York, NY"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2014 <Sensory Permeation>, Asian Art Works, Beijing, China"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2014 <Reinterpretation of Flower: Two Person Show>, Samtoe Gallery, Seoul, Korea"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2014 <Affordable Art Fair>, with Art Flow, New York, NY"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2014 <Art Show Busan>, represented by gallery Ho, Busan,"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2014 <Shades of Time>, An Exhibition from the Archive of Korean American Artist, Korean Cultural Service"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2013 <Asia Hotel Art Fair, Seoul>, with EN Art, Conrad Hotel, Seoul, Korea"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2013 <Affordable Art Fair>, with Art Flow, New York, NY"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2013 <Imago Mundi, Venice Bienal Program>, Foundazione Querini Stampalia, Venice, Italy"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2013 <Art Discovery>, Organized by Hello Museum, Shinsegye department store evernthall, Seoul, Korea"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2013 <Community Art Project>, Yegam Art, Flushing, NY"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2013 <Minhwa Story>, Om’s gallery at Bank Asiana, Flushing, NY"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2013 <Dreamer’s Juxtaposition>, Gallery JS Sun at BBCN bank, NY and NJ"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2013 <Take old road new way>, Galley Korea, New York, NY"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2013 <25/75 Silver+diamond Jubilee>, Queens College Art Center, Flushing, NY"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2013 <HyungSekJiGyo (connections between forms and colors)>, Gallery K, Seoul, Korea"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2012 <Mook Chi Pa>, Hello Museum, Seoul, Korea"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2012 <HoHoHo>, Gallery Ho, New York, NY"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2012 <Art Market>, Yegam Art Space, Flushing, NY"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2012 <Operating System>, Curated by Heng-Gil Han, Gallery Ho, New York, NY"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2012 <Sense or Nonsense>, Bennett gallery, Englewood, NJ"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2012 <Hanji Project: Hanji Metamorphses, artistic director Yu-Yeon Kim>, Various location in Chelsea, New York, NY"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2012 <Haiti charity auction by Seoul Auction>, Seoul, Korea"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2012 <Line by Ten Artists>, Riverside Gallery, Hackensack NJ"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2012 <10Women artists>, Gallery Chon, Flushing, NY"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2011 <Reinterpretation: Seongmin Ahn and Minjoo Kim>, Gallery Cha, Seoul, Korea"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2011 <Diary Painting and Reading Painting>, Hello Museum, Seoul, Korea"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2011 <New Reason>, Howard county Education Hall, Baltimore, MD"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2011 <Art Market>, Yegam Art Space, Flushing, NY"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2010 <Employee Show>, Metropolitan Museum of Art, New York, NY"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2010 <MICA in New York>, Spattered Columns, New York, NY"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2009 <Invitation show>, KORUS House, Ambassy of Korea, Washington DC"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2008 <Alumni Show: Seoul National University>, NahRah Gallery, Fort Lee, NJ"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2008 <50 Edition Project>, Local Project, Long Island City, NY"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2006 <In Light>, Gallery Aferro, Newark, NJ"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2005 <Repeating Spaces>, Art Gallery, Montclair State University, Montclair, NJ"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2005 <No End But Addition>, Vox Populi, Philadelphia, PA"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2004 <Re.Occurrence>, Taste of Art, New York, NY"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2004 <Scene/Unscene>, 473 Broadway Gallery, New York, NY"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2004 <ArtLink @ Sotheby’s International Young Art>, (traveling show) Tel Aviv, Amsterdam, Moscow"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2004 <No End, But Addition>, Pierro Gallery, South Orange County, NJ"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2004 <Meditation in New York>, 473 Broadway Gallery, New York, NY"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2004 <Abstraction Identity>, Pelham Art Center, Pelham, NJ"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2004 <Juried show>, Gallery Korea, Korean Cultural Service, Embassy of the Republic of Korea,\nWashington D.C."
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2004 <In the Face of others; NURTUREart at LMCC>, Lower Manhattan Cultural Council, New York, NY"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2003 <Seasonal Litter>, Broadway Gallery Annex, New York, NY"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2003 <No End, But Addition>, Spaces Gallery, Cleveland, Ohio"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2003 <Flicker>, Transplant Gallery, New York, NY"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2003 <Seongmin Ahn and Haejung Oh>, Washington Arts Center, Arlington, VA"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2003 <Space and Surface Painting>, Gallery Korea, New York. NY"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2003 <Shaping Wholeness>, Elmhurst Hospital Center, organized by Asian American Arts Center, Elmhurst, NY"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2003 <Works on Paper>, Annual Juried Show, Perkins Center for the Arts, Moorestown, NJ"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2003 <Nurturing the New>, NURTUREart, New York, NY"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2003 <Curators’ showcase>, in showcase of Margaret Bodell, Viewing Room, New York, NY"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2002 <Contrary Equilibriums: 12th Annual Exhibition>, The Asian American Arts Center, New York, NY"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2002 <eMotion Picture>, United Nations, New York, NY"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2001 <Academy 2001>, Corner Contemporary Gallery, Washington D.C."
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2001 <Masters Juried Show>, Fox Gallery, Maryland Institute, College of Art, Baltimore, MD"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2001 <eMotion Picture>, (traveling show) San Francisco, CA, Washington, D.C., Chicago, IL"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2001 <x<16 x 13>, Fox Hall, Baltimore, MD"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2000 <About Drawing>, The Park School Gallery, Baltimore, MD"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "1997 <Grand Art Show by Joong-Ang Daily News>, Hoam Art Hall, Seoul, Korea"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "1997 <Show of Grand Art Competition by Art World>, Kyung-In Gallery, Seoul, Korea"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "1997 <Exhibition of Grand Art Competition>, Grand Art Hall, Moon-Hwa Broadcast Company, Seoul, Korea"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "1997 <20th Anniversary Show>, Sun-Hwa Art School, Seoul, Korea"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "1997 <M.F.A. Thesis Show>, Museum of Seoul National University, Seoul, Korea"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "1997 <Po-Il Exhibition>, Cultural Center of S.N.U., Seoul, Korea"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "1997 <Exchange Show>, Seoul National University & Tokyo University, Seoul, Korea"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "1995 <New Form and Spirit>, Do-Ol Gallery, Seoul, Korea"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "1995 <Exchange Show>, Seoul University & Tokyo University, Tokyo, Japan"
+        },
+        {
+          "type": "text",
+          "style": "h5",
+          "list": false,
+          "text": "Grants and Awards"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2022 Artist Empowerment Award, $5,000 cash award and a solo show at Evercore, CUE Foundation in partnership with Evercore, New York, NY"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2021 Queens Council on the Arts, $3000 grant for a new project"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2020 Café Royal Foundation, $10,000 grant for community mural project"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2020 Asian American Federation, $11,000 project grant for community mural in Asian American Community"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2014 Pollock-Krasner Grant, $20,000 grant to assist creating artwork, Pollock-Krasner Foundation, New York, NY"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2013 AHL Foundation Competition, First Prize, $3000 cash award and a group show in new york city and active promotion by the foundation, New York, NY"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2003 Pollock-Krasner Grant, $15,000 grant to assist creating artwork, Pollock-Krasner Foundation, New York, NY"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2003 Carriage House Space Award, Islip Art Museum, Islip, NY"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2003 Juror’s Award for Artistic Excellence, Perkins Center for the Art, Moorestown, NJ"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "1997 Selected, Grand Art Competition by Joong-Ang Daily News, Seoul, Korea"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "1997 Specially Selected, Grand Art Competition by Art World, Seoul, Korea"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "1997 Specially Selected, Grand Art Competition by Moon-Hwa Broadcast Company, Seoul, Korea"
+        },
+        {
+          "type": "text",
+          "style": "h5",
+          "list": false,
+          "text": "작품소장"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "Art Bank, Museum of Modern and Contemporary Art, Korea"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "Government Art Bank, Museum of Modern and Contemporary Art, Korea"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "Hello Museum, Seoul, Korea"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "Hudson River Museum, Yonkers, NY, USA"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "Johns Hopkins Hospital, Baltimore, MD, USA"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "Jordan Schnitzel Museum of Art, University of Oregon, Oregon, USA"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "Korean Minhwa Museum, Kangjin, Korea"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "KD Chem, Korea"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "Princeton University Art Museum, New Jersey, USA"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "Space C, Coreana Cosmetics Museum, Seoul, Korea"
+        },
+        {
+          "type": "text",
+          "style": "blockquote",
+          "list": false,
+          "text": "융합과 공존, 다시점, 열린 사고 등에 대해 끊임없이 이야기해온 작가에게 이태원은 또 하나의 작은, 세상의 접점이다. 세계 각지에서 흘러 들어온 사람들과, 그들의 다문화가 융합되어 있다는 점에서 이태원은 작가의 주거지인 뉴욕과 일맥상통한다. 거리에 빼곡히 들어선 상점과 왠지 이국적인 물건들, 바쁘게 걸어가는 젊은이들, 귓가를 스쳐가는 외국어들, 코 끗을 자극하는 향신료들, 모습이 다른 사람들,,,,,\n\n이 전시는 그런 이태원의사람들을 위한 작품들로 이루어 졌다. 보물찾기에 성공한듯, 숨은 그림을 찾은 둣 “발견”되어지고 일상의 한 순간을 즐겁게 하는 작은 공간을 만들고자 하는 마음을 담고 있다.\n\n작가의 반려견인 브루클린 강아지, 바닐라와 체리는 마치 이 전시의 주인공인듯 등장한다. 부귀영화를 상징하는 커다란 모란모자를 쓰고 있기도 하고, 회오리 치는 모란꽃에서 튀어 날아 오르기도 하고, 관객을 바라보며 황금모란똥을 싸기도 한다.\n\n추억의 바나나우유에서 나오는 청룡, 옷리 귀리우유에서 나오는 황룡, 향기로운 마비스 치약에서 불꽃놀이처럼 튀어나오는 모란꽃, 17세기 이탈리안 액자와 족자에서는 구름물이 흘러나오는데, 작품 하나하나 마다 작가가 소곤소곤 작은 스토리를 전해준다.\nMetamorphosis 시리즈 작품들에서는 히틀러, 무솔리니 등 독재자의 총 이미지가 꽃이나 구름, 물 등의 평화로운 자연물로 탈변하는 모습으로 그려졌다. 이 작품은 국가적 차원이건 개인적 차원이건 자신의 우월한 힘을 남용하는 모든 사람들에게, 세계로 열린 이태원의 창구를 통해 작가가 전하는 성찰의 메세지이다. 이번 전시 작품 중 유일하게 한지에 그려진 그림이다.\n\n그 외의 다른 모든 작품들은 나무합판을 모양대로 자른 후 채색화 기법으로 제작하였다.\n\n이번 전시에서는 작가의 실험적인 설치작품을 디자인 상품으로 재해석하여 발표해온 ‘날아오르다’ 부적 스티커, ‘Object d’art’ 전기스위치 벽장식 스티커, 노트삼종세트, fuck 문진 등의 아트 디자인 상품이 함께 소개된다."
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/ahn-seongmin-solo-exhibition-n-less-than-itaewon-memoir-greater-than/image-01.png",
+          "alt": "Metamorphosis_03_small, 장지에 채색, 91.5x61cm, 2023",
+          "caption": "Metamorphosis_03_small, 장지에 채색, 91.5x61cm, 2023"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/ahn-seongmin-solo-exhibition-n-less-than-itaewon-memoir-greater-than/image-02.png",
+          "alt": "Metamorphosis_04_small, 장지에 채색, 91.5x61cm, 2023",
+          "caption": "Metamorphosis_04_small, 장지에 채색, 91.5x61cm, 2023"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/ahn-seongmin-solo-exhibition-n-less-than-itaewon-memoir-greater-than/image-03.png",
+          "alt": "Metamorphosis_04_small, 장지에 채색, 91.5x61cm, 2023",
+          "caption": "Metamorphosis_04_small, 장지에 채색, 91.5x61cm, 2023"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/ahn-seongmin-solo-exhibition-n-less-than-itaewon-memoir-greater-than/image-04.png",
+          "alt": "Banana milk Dragon, 나무판에 채색, 73.5x66cm, 2024",
+          "caption": "Banana milk Dragon, 나무판에 채색, 73.5x66cm, 2024"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/ahn-seongmin-solo-exhibition-n-less-than-itaewon-memoir-greater-than/image-05.png",
+          "alt": "Oatly Dragon, 나무판에 채색, 58.5x68.5cm, 2024",
+          "caption": "Oatly Dragon, 나무판에 채색, 58.5x68.5cm, 2024"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/ahn-seongmin-solo-exhibition-n-less-than-itaewon-memoir-greater-than/image-06.png",
+          "alt": "Malvis, 나무판에 채색, 2024",
+          "caption": "Malvis, 나무판에 채색, 2024"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/ahn-seongmin-solo-exhibition-n-less-than-itaewon-memoir-greater-than/image-07.png",
+          "alt": "Beauty is Within, 나무판에 채색, 68.5x73.5cm, 2024",
+          "caption": "Beauty is Within, 나무판에 채색, 68.5x73.5cm, 2024"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/ahn-seongmin-solo-exhibition-n-less-than-itaewon-memoir-greater-than/image-08.png",
+          "alt": "날아라 바닐라, 나무판에 채색, 68.5x78cm, 2024",
+          "caption": "날아라 바닐라, 나무판에 채색, 68.5x78cm, 2024"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/ahn-seongmin-solo-exhibition-n-less-than-itaewon-memoir-greater-than/image-09.png",
+          "alt": "모란모자_cherry_03, 나무판에 채색, 58.5x68.5cm, 2024",
+          "caption": "모란모자_cherry_03, 나무판에 채색, 58.5x68.5cm, 2024"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/ahn-seongmin-solo-exhibition-n-less-than-itaewon-memoir-greater-than/image-10.png",
+          "alt": "모란모자 vanilla_03_02,나무판에 채색,59.7x58.5cm, 2024",
+          "caption": "모란모자 vanilla_03_02,나무판에 채색,59.7x58.5cm, 2024"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/ahn-seongmin-solo-exhibition-n-less-than-itaewon-memoir-greater-than/image-11.png",
+          "alt": "Cloud scroll_구름물(족자_01), 나무판에 채색, 66x28cm, 2024",
+          "caption": "Cloud scroll_구름물(족자_01), 나무판에 채색, 66x28cm, 2024"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/ahn-seongmin-solo-exhibition-n-less-than-itaewon-memoir-greater-than/image-12.png",
+          "alt": "구름물(이태리 액자_01), 나무판에 채색, 33x25.5cm, 2024",
+          "caption": "구름물(이태리 액자_01), 나무판에 채색, 33x25.5cm, 2024"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/ahn-seongmin-solo-exhibition-n-less-than-itaewon-memoir-greater-than/image-13.png",
+          "alt": "황금모란똥, 나무판에 채색, 43x38cm, 2024",
+          "caption": "황금모란똥, 나무판에 채색, 43x38cm, 2024"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/ahn-seongmin-solo-exhibition-n-less-than-itaewon-memoir-greater-than/image-14.png",
+          "alt": "미니모란_01, 나무판에채색, 16x19cm, 2024",
+          "caption": "미니모란_01, 나무판에채색, 16x19cm, 2024"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/ahn-seongmin-solo-exhibition-n-less-than-itaewon-memoir-greater-than/image-15.png",
+          "alt": "미니모란_02, 나무판에 채색, 18.5x17cm, 2024",
+          "caption": "미니모란_02, 나무판에 채색, 18.5x17cm, 2024"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/ahn-seongmin-solo-exhibition-n-less-than-itaewon-memoir-greater-than/image-16.png",
+          "alt": "바닐라머리_01, 나무판에 채색, 2024",
+          "caption": "바닐라머리_01, 나무판에 채색, 2024"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/ahn-seongmin-solo-exhibition-n-less-than-itaewon-memoir-greater-than/image-17.png",
+          "alt": "바닐라머리_02, 나무판에 채색, 2024",
+          "caption": "바닐라머리_02, 나무판에 채색, 2024"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/ahn-seongmin-solo-exhibition-n-less-than-itaewon-memoir-greater-than/image-18.png",
+          "alt": "체리머리_01, 나무판에 채색, 2024",
+          "caption": "체리머리_01, 나무판에 채색, 2024"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": false,
+          "text": "Copyright ©️ 2023 Ahn Seongmin, all rights reserved"
+        }
+      ]
+    },
+    {
+      "slug": "hong-sungchul-solo-exhibition-through-the-lines",
+      "originalTitle": "홍성철 개인전 Hong Sungchul Solo Exhibition:\\n<Through the Lines>",
+      "startDate": "2023-11-04",
+      "endDate": "2023-11-30",
+      "poster": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/hong-sungchul-solo-exhibition-through-the-lines/poster.png",
+      "content": [
+        {
+          "type": "text",
+          "style": "h5",
+          "list": false,
+          "text": "홍성철 Hong Sungchul (b.1969)"
+        },
+        {
+          "type": "text",
+          "style": "h5",
+          "list": false,
+          "text": "학력"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2001 California Institute of the Arts 대학원 졸업 MFA, Fine Art / Integrated Media"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "1997 홍익대학교 미술대학원 조각과 졸업 MFA"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "1994 홍익대학교 미술대학 조소과 졸업 BFA"
+        },
+        {
+          "type": "text",
+          "style": "h5",
+          "list": false,
+          "text": "개인전"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2018 <Solid but Fluid>, 유아트스페이스, 서울, 대한민국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2017 <Solid but Fluid>, Pontone gallery, 런던, 영국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2012 <Solid but Fluid>, HADA | VYNER STREET, 런던, 영국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2011 <Solid but Fluid>, 갤러리인, 서울, 대한민국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2011 <Les mains déFILent Les yeux FILent>, Galerie Orem, 파리, 프랑스"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2010 <Les mains déFILent Les yeux FILent>, Galerie Orem, 파리, 프랑스"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2010 <Solid but Fluid>, YHD Projects, 서울, 대한민국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2008 <Anxiety and dynamics of incompleteness>, Kring, 서울, 대한민국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2007 <Perceptual Mirror>, 갤러리인, 서울, 대한민국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2007 <Young_eun Artist Relay>, 영은 미술관, 경기도 광주, 대한민국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2002 <RGB show_Green>, 금호미술관, 서울, 대한민국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2001 <String Tongue>, CalArts, 로스앤젤레스, 미국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2000 <White Cube>, CalArts, 로스앤젤레스, 미국"
+        },
+        {
+          "type": "text",
+          "style": "h5",
+          "list": false,
+          "text": "단체전"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2022 <유연한공존ㅡ 홍성철, 강웅기 2인展>, TOBE, 서울, 대한민국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2021 <The Premiere>, A gallery, 서울, 대한민국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2021 <Solitude, Solidarity-김준, 홍성철 2인전>, Waterfall Mansion gallery, 뉴욕, 미국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2021 <SOUTH KOREAN CONTEMPORARY ART>, Pontone gallery, 런던, 영국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2021 <LIGHT HOUSE>, Waterfall Mansion gallery, 뉴욕, 미국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2020 <Slow Art Asia>, Waterfall Mansion gallery, 뉴욕, 미국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2020 <RESTORE>, Waterfall Mansion gallery, 뉴욕, 미국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2019 <Infinitegrace2>, Waterfall Mansion gallery, 뉴욕, 미국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2019 <re: collection 2019, Waterfall Mansion gallery, 뉴욕, 미국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2019 <Beyond The Frame>, Taksu gallery, 싱가포르"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2019 <ordinary Lie>, 서울미술관, 서울, 대한민국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2018 <Infinitegrace2>, Waterfall Mansion gallery, 뉴욕, 미국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2018 <MINIARTEXTIL HUMANS 2018>, Arte&Arte, 코모, 이태리"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2017 <Looking Glass>, the Cornell Art Museum, Delray Beach, 미국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2017 <Art Palm Springs>, Palm Springs Convention Center, 팜스프링, 미국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2017 <확신과 의문>, 021 gallery, 대구, 대한민국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2017 <Journey to DA VINCI>, 함양 아트센터, 함양, 대한민국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2016 <TAKSU in Art Stage Singapore 2016>, 싱가포르"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2016 <RARITY SUMMER CONTEMPORARY>, Rarity gallery, 그리스"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2016 <Flat-Form Subject & Object>, Comix Home Base, 홍콩"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2016 <SALON 2016>, Anthony Brunelli Fine Arts, 빙햄튼, 미국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2015 <The Figure in Art>, Exhibit A, 뉴욕, 미국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2015 <Material Witnesses>, Taksu Galleries, 싱가포르"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2015 <시시각각>, 제주도립 미술관, 제주, 대한민국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2015 <Portrait Gallery>, Kallenbach gallery, 암스텔담, 네델란드"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2015 <Alma Mater>, 가나아트, 서울, 대한민국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2014 <FEEL LIFE SAF 2014>, Waterfall Mansion gallery, 뉴욕, 미국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2014 <Eye Zone>, Saatchi Gallery, 런던, 영국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2014 <Re-presenting Representation VIII>, ARNOT ART MUSEUM, 뉴욕, 미국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2014 <SALON3.2014>, Anthony Brunelli Fine Arts, 빙햄튼, 미국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2013 < 홍성철, 박승모 2인展>, HADA contemporary, 런던, 영국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2013 <Life style 2013>, Waterfall gallery, 뉴욕, 미국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2013 <New waves Korea>, Taksu gallery, 싱가포르"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2012 <Korean eye 2012>, Saatchi Gallery, 런던, 영국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2012 <Out of Frame>, 인터알리아, 서울, 대한민국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2012 <Temporal Being & On Manner of Forming>, Edwin’s Gallery, 자카르타, 인도네시아"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2011 <The Korean Miracle ; A Cultural Evolution>, Asia House, 런던, 영국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2011 <The Senses ; Interactive Perception>, HADA contemporary, 런던, 영국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2011 <Korean Collective den Haag 2011>, Galerie Noordeinde, Den Haag, 네델란드"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2011 <Double Democracy>, 국립아시아문화전당, 광주, 대한민국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2011 <Korean Collective Basel 2011>, hall33, 바젤, 스위스"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2010 <Korea tomorrow>, SETEC, 서울, 대한민국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2010 <Korean Collective London 2010>, Albemarlegallery, 런던, 영국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2010 <홍성도 – 홍성철 2인展>, Erhard Witzel Gallery , Wiesbaden, 독일"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2010 <영은10주년 기념전 Remind 그곳을 기억하다>, 영은 미술관, 광주, 대한민국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2010 <만 레이와 그의 친구들의 사진전>, 서울시립미술관, 서울, 대한민국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2009 <요술, 이미지 The Magic of Photography>, 한미사진미술관, 서울, 대한민국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2009 <포토 코리아 2009 Shooting Image>, KOEX, 서울, 대한민국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2009 <변형된 공간>, Andy’s Gallery, 서울, 대한민국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2008 <과학정신과 한국현대미술전>, KAIST , 대전, 대한민국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2008 <현대사진60년展>, 국립현대미술관, 과천, 대한민국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2008 <반응하는눈_디지탈 스펙트럼>, 서울시립미술관, 서울, 대한민국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2008 <From Korea in Beijing>, Art Seasons Gallery, 베이징, 중국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2007 <Coolbits>, SUNcontemporary, 서울, 대한민국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2007 <Text in Bodyscape>, 서울시립미술관, 서울, 대한민국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2007 <보다 보여지다>, 금호 미술관, 서울, 대한민국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2006 <Soft Landing展7 Artists Meet BMW >, 카이스 갤러리, 서울, 대한민국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2006 <ehs project >, 세종문화회관, 서울, 대한민국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2006 <cube space 개관 1주년 기념전>, 대안공간큐브, 서울, 대한민국"
+        },
+        {
+          "type": "text",
+          "style": "h5",
+          "list": false,
+          "text": "레지던시 프로그램"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "영은미술관 입주작가 프로그램 (6th), 경기도 광주"
+        },
+        {
+          "type": "text",
+          "style": "h5",
+          "list": false,
+          "text": "작품소장"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": false,
+          "text": "국립현대미술관 미술은행, 영은미술관, 금호미술관, 서울시립미술관, 코오롱 그룹, 벽산문화재단, BOGHOSSIAN Fondation (브뤼쉘, 벨기에), 보광그룹, 하나은행, 한국화이자제약, CJ E&MF&FSK Telecom, NIKE Headquters_innovation center (비버튼, 미국)"
+        },
+        {
+          "type": "text",
+          "style": "blockquote",
+          "list": false,
+          "text": "홍성철 작가는 우리의 삶에 내재되어 있는 존재론적 불완전성으로부터 기인하는 ‘불안(anxiety)’에 주목해 왔다. 더욱이 그는 불안을 인간의 실존적 조건으로서 포용할 뿐 아니라 역동적 삶을 추동하는 주요한 원동력으로 파악한다. 작가의 이런 관점들은 전형적인 조각 작업뿐만 아니라 줄, 영상, 퍼포먼스에 이르기까지 여러 매체와 형식을 통해 총체적이면서도, 일관되게 표출되어 왔다.\n최근에는 이미지가 전사된 무수한 줄들을 금속 프레임안에 배열하여 벽면에 설치되는 작업들과, 이미지를 줄대신에 알루미늄 재질의 육각의 작은 유닛들에 전사한 후에 엮어낸 봉들이 중첩되어 형상을 이루며 공중에 매달려있는 공간 설치 작업을 해오고 있다.\n전자의 작업들은 철로 만든 프레임의 위아래에 구멍을 뚫고 그 사이에 가느다란 탄성줄 수백 개를 연결한 후, 신체의 부분들 특히 손을 찍은 사진 이미지를 줄 하나하나에 전사하여 엮은 것이다. 후자의 설치작업은 구현되는 형식은 비슷하지만 프레임없이 유닛들이 세포가 증식하듯 연결되어 스스로 구조를 이루고 건축적으로 결합하여 스스로 독립적인 구조를 이루는 작품이다. 수많은 픽셀들이 모여 전체 이미지를 구성하는 디지털적 이미지의 구현방식과 유사한 원리이다.\n이 두 작업 모두에서 우리 인체부위 중 손이 중요하게 부각된다. 인간의 오감 중 촉각, 즉 손을 사용하는 것은 매우 직접적인 지각방식이지만, 작품에 나타나는 손은 만질 수 없고 눈으로만 보아야 하는 존재로서 소통의 부재를 의미한다. 또한 작품 속 손의 이미지는 멀리서 볼 때는 확연한 실루엣으로 드러나지만 가까이 다가가서 볼수록 여러 겹의 레이어들이 중첩되면서 형체를 분간할 수 없고 설치된 라인들의 떨림으로 인해 묘한 감정의 울림을 전한다. 이는 자아의 분열 및 분열된 자아들 사이에 나타나는 소통의 문제를 의미하기도 한다. 이와 같은 착시 현상은 실체를 분명하게 파악하지 못하게 방해하는 것으로, ‘나’라는 실체의 의미는 그 자체로 닫혀 질 수 없으며 끊임없이 지연되고 연기될 뿐 궁극적인 실체와 의미는 끝내 붙잡을 수 없을 것이다-라는 작가의 실존적 고백을 반영한다."
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/hong-sungchul-solo-exhibition-through-the-lines/image-01.jpg",
+          "alt": "String_Mirror_hands, mixed media, 178x100x20cm, 162x114x17cm, 2022",
+          "caption": "String_Mirror_hands, mixed media, 178x100x20cm, 162x114x17cm, 2022"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/hong-sungchul-solo-exhibition-through-the-lines/image-02.jpg",
+          "alt": "String_hands_0325, mixed media, 200x112x13cm, 2014",
+          "caption": "String_hands_0325, mixed media, 200x112x13cm, 2014"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/hong-sungchul-solo-exhibition-through-the-lines/image-03.jpg",
+          "alt": "String_hands_5376, mixed media, 200x120x14cm, 2016",
+          "caption": "String_hands_5376, mixed media, 200x120x14cm, 2016"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/hong-sungchul-solo-exhibition-through-the-lines/image-04.jpg",
+          "alt": "String_Mirror_2050, mixed media, 82x82x6cm, 2023",
+          "caption": "String_Mirror_2050, mixed media, 82x82x6cm, 2023"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/hong-sungchul-solo-exhibition-through-the-lines/image-05.jpg",
+          "alt": "String_Mirror_1813, mixed media, 82x82x6cm, 2022",
+          "caption": "String_Mirror_1813, mixed media, 82x82x6cm, 2022"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/hong-sungchul-solo-exhibition-through-the-lines/image-06.jpg",
+          "alt": "Folds_4537, mixed media, 50x50cm (6 each), 2023",
+          "caption": "Folds_4537, mixed media, 50x50cm (6 each), 2023"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/hong-sungchul-solo-exhibition-through-the-lines/image-07.jpg",
+          "alt": "String_hands_004, strings on canvas, 91x65cm, Edition (2/3), 2014",
+          "caption": "String_hands_004, strings on canvas, 91x65cm, Edition (2/3), 2014"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/hong-sungchul-solo-exhibition-through-the-lines/image-08.jpg",
+          "alt": "String_hands_005, strings on canvas, 117x80cm, Edition (2/3), 2014",
+          "caption": "String_hands_005, strings on canvas, 117x80cm, Edition (2/3), 2014"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/hong-sungchul-solo-exhibition-through-the-lines/image-09.jpg",
+          "alt": "String_hands_006, strings on canvas, 117x80cm, Edition (2/3), 2014",
+          "caption": "String_hands_006, strings on canvas, 117x80cm, Edition (2/3), 2014"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": false,
+          "text": "Copyright ©️ 2023 Hong Sungchul, all rights reserved"
+        }
+      ]
+    },
+    {
+      "slug": "yong-hoon-kim-solo-exhibition",
+      "originalTitle": "김용훈 사진전 Yong Hoon Kim Solo Exhibition:\\n<형과 색 그리고 빛>",
+      "startDate": "2023-09-09",
+      "endDate": "2023-10-13",
+      "poster": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/yong-hoon-kim-solo-exhibition/poster.png",
+      "content": [
+        {
+          "type": "text",
+          "style": "h5",
+          "list": false,
+          "text": "김용훈 Kim Yonghoon (b.1972)"
+        },
+        {
+          "type": "text",
+          "style": "h5",
+          "list": false,
+          "text": "학력"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "School of Visual Arts Photography BFA, 미국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "홍익대학교 일반대학원 사진과 졸업, 한국"
+        },
+        {
+          "type": "text",
+          "style": "h5",
+          "list": false,
+          "text": "개인전"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2023년 형과 색 그리고 빛 - 아뜰리에 키마"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2023년 빛이 어둠에 비치되 - 스페이스22"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2022년 김용훈전 - Severance Art Space"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2021년 김용훈전 -반얀트리서울&스파;갤러리 플래넷"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2021년 사계 四季- 갤러리 룩스"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2019년 김용훈전 -반얀트리서울&스파;갤러리 플래넷"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2018년 시대정물 두 번째 이야기 - 갤러리 룩스"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2017년 빛을 그리다 - 갤러리 칸"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2015년 오색찬란 - 캐논 갤러리"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2014년 BELT 2014-時代情物 - 갤러리 나우"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2013년 Emotion to Emotion - IT gallery"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2008년 Tribute to Her - 갤러리 온"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2007년 The Portrait of Flower - 가나스페이스"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2006년 A Priori of Entity - 관훈갤러리"
+        },
+        {
+          "type": "text",
+          "style": "h5",
+          "list": false,
+          "text": "단체전"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2022년 Timeless Icon - 디자인하우스 모이소 갤러리"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2022년 11가지 즐거움 - 청화랑"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "K-photo 아트페어"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2022년 프리미어 아트페어 조선 - 아뜰리에 키마"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2022년 더프리뷰성수 - 아트스페이스 언주라운드"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2022년 아트앤 크래프트 Upperhaus - KS Gallery"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2022년 화랑미술제 - 청화랑"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2022년 서울리빙디자인 페어 - KS Gallery"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2021년 KIAF - 아트파크"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2021년 Green Green Grass - 신세계 본관 아트월 갤러리"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2021년 꽃스럽다 - 와이아트 갤러리"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2020년 아트마이닝-in to the forest, 노들섬"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2020년 신세계백화점 아트월 - 신세계 백화점 강남"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2020년 컬렉터 - 프린트베이커리(삼청)"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2019년 Odyssey - Space22"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2018년 mise en scene - 미술가의 정물 - 신세계 갤러리 본점"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2018년 Colorful Days - BNK art 갤러리 부산"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2017년 PPAM- 블루스퀘어 복합문화공간 네모"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2017년 Sharing the Spotlight #2, 황규태, 김용훈 2인전- Art Space J"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2016년 Spring in still life - AK 갤러리"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2016년 낯선 기억, 낯선 시간, 낯선 공간 - 갤러리 나우"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2016년 화색선율-김용훈, 다이아나쉐러 2인전 - 코로그램"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2016년 Selected Edition - 신세계 갤러리 센텀시티"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2016년 KOROGRAM X SP, 코로그램"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2015년 피우다 - 갤러리 나우"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2015년 아트햄튼 아트페어"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2015년 홍콩호텔 아트페어, 홍콩"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2015년 아트에디션 - 예술의 전당 한가람 미술관"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2015년 Modern Memories - 갤러리 나우"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2015년 청담미술제"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2011년 오월애 - 한옥란, 김용훈 2인전 - 아트사간 갤러리"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2008년 상해 동화대학교 교수 교류전"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2008년 화유십일홍 - 4art gallery"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2007년 선택된 우연 - 갤러리 와"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2007년 국제교수 교류전 - 광고회관"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2005년 한일 우정의 해 사진전 나고야 - Fuji gallery"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2003년 한중일 아시아 사진 비엔날레 - 일본문화원"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2003년 한중일 아시아 사진 비엔날레 나고야 - Fuji gallery"
+        },
+        {
+          "type": "text",
+          "style": "h5",
+          "list": false,
+          "text": "작품 소장"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": false,
+          "text": "국립현대미술관 정부미술은행, 서울시립미술관, 홍콩 워프홀딩스 그룹, 이탈리아 대사관저, 대한제당, KD미디어, 서울동부지방검찰청, HP, 멘토그래픽스 멀티플 프로젝트, 푸른 이미지, 제주 드림타워, 조선팰리스 서울 강남, 호텔 오노마 오토그래프 컬렉션 외"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": false,
+          "text": "-"
+        },
+        {
+          "type": "text",
+          "style": "blockquote",
+          "list": false,
+          "text": "이번 전시는 사물에 대한 해석과 그 과정 속 표현되어지는 나만의 감성을 시각화하였다.\n\n사진 속 오브제의 구성은 주변에 흔히 보이는 평범한 사물들로 나의 눈에 문득 각별하게 들어왔을때 마치 영화 속 배우가 된 듯이 어떤 감정을 마음 속으로 자유로이 만들어나간다. 꽃이나 과일 등의 자연의 소재 그리고 화병, 그릇과 같이 인간이 만들어 낸 소재와의 조화로움을 염두에 두면서 작업하는 내내 사물과 사물 그리고 배경 등 모든 사진 속 등장 요소들을 다듬고 어루만지며 충분한 교감의 시간을 갖고 배치하면서 그 형태를 카메라 뷰파인더(Viewfinder) 속에서 고민하고 또 고민한다. 오브제가 가지고 있는 고유의 색채와 나의 배경색과의 조화로움이 마침내 빛을 통하여 감정이 투영된 작업 결과물로 완성 되는 것이 지금까지 오랜 시간 작가의 길을 걷고 있는 나에게 중요한 정물사진작업 표현방식이기에 `형과 색 그리고 빛' 이라는 전시 제목으로 나의 사진 세계를 함축하여 말하고자 한다. 작업의 주요 모티브가 되는 시간의 유한성에 대해 아쉽고 그리운 감정으로 삶을 가치 있게 바라보는 마음과 `형과 색 그리고 빛'이 지닌 사진 속 따뜻한 시각적 서정을 느끼고 또 느껴지길 바란다."
+        },
+        {
+          "type": "text",
+          "style": "h6",
+          "list": false,
+          "text": "사계"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/yong-hoon-kim-solo-exhibition/image-01.jpg",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/yong-hoon-kim-solo-exhibition/image-02.jpg",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/yong-hoon-kim-solo-exhibition/image-03.jpg",
+          "alt": "시간의 온도",
+          "caption": "시간의 온도"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/yong-hoon-kim-solo-exhibition/image-04.jpg",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/yong-hoon-kim-solo-exhibition/image-05.jpg",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/yong-hoon-kim-solo-exhibition/image-06.jpg",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/yong-hoon-kim-solo-exhibition/image-07.jpg",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/yong-hoon-kim-solo-exhibition/image-08.jpg",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/yong-hoon-kim-solo-exhibition/image-09.jpg",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/yong-hoon-kim-solo-exhibition/image-10.jpg",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/yong-hoon-kim-solo-exhibition/image-11.jpg",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/yong-hoon-kim-solo-exhibition/image-12.jpg",
+          "alt": "시대정물",
+          "caption": "시대정물"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/yong-hoon-kim-solo-exhibition/image-13.jpg",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/yong-hoon-kim-solo-exhibition/image-14.jpg",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/yong-hoon-kim-solo-exhibition/image-15.jpg",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/yong-hoon-kim-solo-exhibition/image-16.jpg",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/yong-hoon-kim-solo-exhibition/image-17.jpg",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/yong-hoon-kim-solo-exhibition/image-18.jpg",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/yong-hoon-kim-solo-exhibition/image-19.jpg",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/yong-hoon-kim-solo-exhibition/image-20.jpg",
+          "alt": "오색찬란",
+          "caption": "오색찬란"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/yong-hoon-kim-solo-exhibition/image-21.jpg",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/yong-hoon-kim-solo-exhibition/image-22.jpg",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/yong-hoon-kim-solo-exhibition/image-23.jpg",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/yong-hoon-kim-solo-exhibition/image-24.jpg",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/yong-hoon-kim-solo-exhibition/image-25.jpg",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/yong-hoon-kim-solo-exhibition/image-26.jpg",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/yong-hoon-kim-solo-exhibition/image-27.jpg",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/yong-hoon-kim-solo-exhibition/image-28.jpg",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/yong-hoon-kim-solo-exhibition/image-29.jpg",
+          "alt": "고색창연",
+          "caption": "고색창연"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/yong-hoon-kim-solo-exhibition/image-30.jpg",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/yong-hoon-kim-solo-exhibition/image-31.jpg",
+          "alt": "",
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "slug": "jeong-hyun-ha-solo-exhibition",
+      "originalTitle": "하정현 개인전 Jeong Hyun HA Solo Exhibition:\\n<Glad Landsby; 행복마을>",
+      "startDate": "2023-07-18",
+      "endDate": "2023-08-19",
+      "poster": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/jeong-hyun-ha-solo-exhibition/poster.png",
+      "content": [
+        {
+          "type": "text",
+          "style": "h5",
+          "list": false,
+          "text": "학력"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2013 이화여자대학교 대학원 시각디자인과 디자인학박사 (Ph.D.)"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2005 이화여자대학교 대학원 시각디자인과 미술학석사 (MFA)"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2003 이화여자대학교 조형예술대학 도자예술학과 / 시각정보디자인과 미술학사 (BFA)"
+        },
+        {
+          "type": "text",
+          "style": "h5",
+          "list": false,
+          "text": "개인전"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2022 하정현의 낱개들, 갤러리이든, 서울, 한국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2020 하정현 개인전, 에코락갤러리 X YTN 아트스퀘어, 서울, 한국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2018 하정현 개인전, 인사아트프라자갤러리 공모 당선작가전, 서울, 한국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2017 draw without drawing  하정현 개인전, 파비욘드 갤러리 작가 공모 선정 개인전, 서울, 한국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2014 draw without drawing ; playing, GS 타워 더 스트릿 갤러리 기획 초대전, 서울, 한국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2012 draw without drawing, Gallery DOS, 서울, 한국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2011 draw, ing, show. Gallery gabi, 서울, 한국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2005 하정현 개인전, GANA ART SPACE, 서울 한국"
+        },
+        {
+          "type": "text",
+          "style": "h5",
+          "list": false,
+          "text": "단체전"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2023 연말상설기획전, 써포먼트 갤러리, 서울, 한국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2022 Find your piece 2022, 써포먼트 갤러리, 서울, 한국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2021 아트마이닝 주제 공모전 – 숲으로, 스페이스 445, 서울, 한국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2020 제3회 COSO 신진작가기획전, 갤러리 COSO, 서울, 한국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2018 아트마이닝서울 2018 ‘100 MINING ARTISTS - 주목받는 한국 아티스트 100인展’, DDP, 서울, 한국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2018 에코락 갤러리 기획 제 회1 추상화展 - Feast of Color, 에코락 갤러리, 서울, 한국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2018 The Next Big Movement - 키미아트 15주년 기념전, 키미아트갤러리, 서울, 한국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2018 제9회 서울모던아트쇼 - 메세나 대상전 공모선정 작가전, 예술의전당 한가람미술관, 서울, 한국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2018 동경(憧憬)하는 자들 - 키미포유 작가공모 선정전, 키미아트, 서울, 한국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2018 ON - ‘세상에 온전히 서다‘전, 인사아트프라자갤러리 작가공모당선전, 서울, 한국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2018 ‘소소한 행복‘전, 갤러리써포먼트 기획전, 서울, 한국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2017 제2회 한국미술응원프로젝트, 세종문화회관, 서울, 한국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2017 더 갤러리 쇼, 도산공원, 서울, 한국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2017 서울모던아트쇼, 예술의전당, 서울, 한국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2017 카탈로그레조네 전, 에코락 갤러리, 서울, 한국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2017 갤러리 라이프 신진작가 공모 선정전, 갤러리 라이프, 서울, 한국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2017 위풍닭닭 에코락 갤러리 기획전, 에코락 갤러리, 서울, 한국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2016 The Beginning전, 에코락 갤러리, 서울, 한국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2016 SUN10전, 640 아트타워, 서울, 한국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2016 썸머힐링스토리전, 갤러리써포먼트, 서울, 한국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2015 Art & Life Show, aT 센터, 서울, 한국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2015 제3회 서울미술협회 초대작가전, 한전아트센터 갤러리, 서울, 한국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2014 세라믹 컨버젼스 2014, 예술의전당, 서울, 한국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2014 제10회 서울미협회원전, 서울시립미술관 경희궁 분관, 서울, 한국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2013 제2회 서울미협초대작가전, 한전아트센터, 서울, 한국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2013 한국전력공사 창립 115주년 기념전, 한전아트센터, 서울, 한국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2013 중외 영 아트 어워드 2013전, 홍익아트센터 블루갤러리, 서울, 한국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2013 Combined Bits, l'espace 71 초대전, 서울, 한국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2013 제9회 서울미술협회회원전, 서울시립미술관 경희궁 분관, 서울, 한국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2013 가화만사성展, 이화아트센터, 서울, 한국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2013 제9회 광화문 국제 아트페스티벌 - 현대미술 청년작가시선展, 세종문화회관, 서울, 한국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2013 The District-S, 한전아트센터, 서울, 한국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2013 New Thinking New Art, 리서울 갤러리 기획전, 서울, 한국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2012 A.Project 2012, 서교예술실험센터, 서울, 한국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2012 함께하는 505전, 인사아트센터, 서울, 한국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2012 제8회 광화문국제아트페스티벌 - 현대미술 청년작가시선展, 세종문화회관, 서울, 한국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2012 세라믹 컨버젼스 - 도림전, 한전아트센터, 서울, 한국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2012 도심 속 자연을 담다展, 아이원 갤러리, 서울, 한국"
+        },
+        {
+          "type": "text",
+          "style": "h5",
+          "list": false,
+          "text": "아트페어"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2015 Affordable Art Fair Singapore 2015, F1 PIT 빌딩, 싱가폴"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2014 Affordable Art Fair Singapore 2014, F1 PIT 빌딩, 싱가폴"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2014 Affordable Art Fair HK 2014, HKCEC(홍콩컨벤션센터), 홍콩"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2014 서울 모던 아트 쇼, 예술의전당, 서울, 한국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2013 아트광주 2013, 김대중컨벤션센터, 광주, 한국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2013 AXIS, Revenwoods Event Center, 시카고, 미국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2012 Art Asia, 코엑스, 서울, 한국"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2012 제4회 서울모던아트쇼, aT Center, 서울, 한국"
+        },
+        {
+          "type": "text",
+          "style": "h5",
+          "list": false,
+          "text": "작가선정 및 수상"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2021 국립현대미술관 정부미술은행 2021 공모제 작품 구입 대상 선정"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2021 아트마이닝 주제공모전 작가 선정"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2020 서울시 문화본부 박물관과 추진 ‘신진미술인 지원을 통한 일상전시 사업’ 미술작품 구입 선정"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2020 제3회 갤러리 COSO 신진작가 공모 선정"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2018 제16회 서울미술대상전 장려상 수상"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2018 제8회 서울모던아트쇼 메세나대상전 작가 선정 및 삼천당제약 창작금 지원 작가 선정"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2018 키미포유 키미아트 신진작가 공모 선정"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2018 인사아트프라자갤러리 신진작가 공모 선정"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2017 아트마이닝 신진작가 공모 선정 및 우수상 수상"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2016 파비욘드 갤러리 신진작가 공모 선정"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2016 갤러리 라이프 신진작가 공모 선정"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2016 에코락 갤러리 신진작가 공모 선정"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2015 Art & Life Show, 영 아티스트 선정"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2014 GS타워 더스트릿갤러리 작가공모전 선정"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2014 제6회 서울모던아트쇼 장려상"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2013 중외 영아트 어워드 2013, 특선"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2013 제11회 서울미술대상전, 특선"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2013 제9회 광화문 국제 아트 페스티벌 현대미술 청년작가 시선展 공모 선정"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2013 리서울 갤러리 신진작가 공모 선정"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2012 제8회 광화문 국제 아트 페스티벌 현대미술 청년작가 시선展 공모 선정"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2005 제14회 한국출판미술대전, 동상"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2004 제13회 한국출판미술대전, 동상"
+        },
+        {
+          "type": "text",
+          "style": "h5",
+          "list": false,
+          "text": "작품소장"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "국립현대미술관 정부미술은행, 서울시 문화본부 박물관과, 에코락 갤러리, (주)선진, 640 아트갤러리, 외 개인 콜렉터"
+        },
+        {
+          "type": "text",
+          "style": "h5",
+          "list": false,
+          "text": "기타경력"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2019 기술보증기금, 외부 자문위원 (디자인 자문)"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2016 한성대학교 부설 디자인아트교육원 전임교수"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2007 ~ 2015 이화여자대학교, 한성대학교, 아주대학교, 경기대학교, 국제대학교, 신한대학교 강사 역임"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2006 ~ 2009 한화L&C 마케팅부문 디자인실 디자이너"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2005 (주)푸른이미지 프리랜서 디자이너"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2005 이화여자대학교 디자인특성화사업단 연구원"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": false,
+          "text": "_"
+        },
+        {
+          "type": "text",
+          "style": "blockquote",
+          "list": false,
+          "text": "“삶은 유한하다. 아름다운 일들만 있기에도\n모자란 것이 사람의 일생이다.나는 내 삶의\n모든 순간들이 아름답기를 희망한다.\n나의 인생이 즐겁고, 신나고, 행복한\n순간들로 채워진 아름다운 삶이길 원한다.\n\n나에게 있어 가장 즐겁고, 신나고, 행복한\n순간은 바로 그 어떠한 것에도 얽매이지 않은\n순수한 마음 상태로 놀며\n장난치고 있을 때이다.\n프레임이 없는 캔버스 위에서 손에 잡히는\n여러 재료들을 가지고 자유롭게 그어대고\n즉흥적으로 칠하고 문지르며 놀고 있을 때,\n마음껏 색칠한 커다란 캔버스 천을\n색종이 삼아 스케치 없이 의도하지 않은 채\n가위로 싹둑 싹둑 자르고 오려내는 장난을\n치고 있을 때, 오려낸 조각들을 아무 특별한\n생각없이 모으고 뭉치며 유희하고 있을 때,\n그러한 놀이의 찰나에 빠져들어 있을 때\n나는 진정으로 즐겁고 신나고 행복하다.\n\n그래서 나는 캔버스 위에서 매일같이 놀이한다.\n거기에는, 어제의 놀이 위에\n오늘의 놀이가 이어지고,\n오늘의 놀이 위에 내일의 놀이가 이어진다.\n매일같이 이어지는 나의 놀이는\n신나는 흔적을 무수히 남겨내고\n또한 즐거운 흔적을 수없이 오려낸다.\n끝나지 않고 계속되는 이 놀이는\n오로지 놀이하고 있는 순간들\n그 자체로 남겨지고 존재한다.\n그리고 거기에는 한없이 사랑받던\n내 유년 시절 과거의 순간들이,\n한없는 사랑을 깨달으며 아이와 함께하는\n엄마로서의 내 현재의 순간들이,\n그 밖의 헤아릴 수 없이 많은 삶의 소중한\n순간들이 자연스레 솔직하게 드러난다.”\n\n- 작가 노트중에서"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/jeong-hyun-ha-solo-exhibition/legacy-01.jpeg",
+          "alt": "Draw without drawing 93, 2018, oil bar, oil pastel and acrylic color on canvas",
+          "caption": "Draw without drawing 93, 2018, oil bar, oil pastel and acrylic color on canvas\n116cm x 74cm"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/jeong-hyun-ha-solo-exhibition/legacy-02.jpeg",
+          "alt": "Draw without drawing 96, 2018, oil bar, oil pastel and acrylic color on canvas",
+          "caption": "Draw without drawing 96, 2018, oil bar, oil pastel and acrylic color on canvas\n130cm x 88cm"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/jeong-hyun-ha-solo-exhibition/legacy-03.jpeg",
+          "alt": "Draw without drawing 97, 2018, oil bar, oil pastel and acrylic color on canvas",
+          "caption": "Draw without drawing 97, 2018, oil bar, oil pastel and acrylic color on canvas\n140cm x 80cm"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/jeong-hyun-ha-solo-exhibition/legacy-04.jpeg",
+          "alt": "Draw without drawing 105, 2020, oil bar, oil pastel and acrylic color on canvas",
+          "caption": "Draw without drawing 105, 2020, oil bar, oil pastel and acrylic color on canvas\n116.8cm x 91cm"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/jeong-hyun-ha-solo-exhibition/legacy-05.jpeg",
+          "alt": "Draw without drawing 114, 2022, oil bar, oil pastel and acrylic color on canvas",
+          "caption": "Draw without drawing 114, 2022, oil bar, oil pastel and acrylic color on canvas\n91cm x 91cm"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/jeong-hyun-ha-solo-exhibition/legacy-06.jpeg",
+          "alt": "Draw without drawing 115, 2022, oil bar, oil pastel and acrylic color on canvas",
+          "caption": "Draw without drawing 115, 2022, oil bar, oil pastel and acrylic color on canvas\n91cm x 91cm"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/jeong-hyun-ha-solo-exhibition/legacy-07.jpeg",
+          "alt": "Draw without drawing 116, 2022, oil bar, oil pastel and acrylic color on canvas",
+          "caption": "Draw without drawing 116, 2022, oil bar, oil pastel and acrylic color on canvas\n91cm x 91cm"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/jeong-hyun-ha-solo-exhibition/legacy-08.jpeg",
+          "alt": "Draw without drawing 117, 2022, oil bar, oil pastel and acrylic color on canvas",
+          "caption": "Draw without drawing 117, 2022, oil bar, oil pastel and acrylic color on canvas\n91cm x 91cm"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/jeong-hyun-ha-solo-exhibition/legacy-09.jpeg",
+          "alt": "Draw without drawing 118, 2022, oil bar, oil pastel and acrylic color on canvas",
+          "caption": "Draw without drawing 118, 2022, oil bar, oil pastel and acrylic color on canvas\n91cm x 91cm"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/jeong-hyun-ha-solo-exhibition/legacy-10.jpeg",
+          "alt": "Draw without drawing 124, 2022, oil bar, oil pastel and oil color on canvas",
+          "caption": "Draw without drawing 124, 2022, oil bar, oil pastel and oil color on canvas\n192cm x 150cm"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/jeong-hyun-ha-solo-exhibition/legacy-11.jpeg",
+          "alt": "Draw without drawing 125, 2022, oil bar, oil pastel and oil color on canvas",
+          "caption": "Draw without drawing 125, 2022, oil bar, oil pastel and oil color on canvas\n162.2cm x 130.3cm"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/jeong-hyun-ha-solo-exhibition/legacy-12.jpeg",
+          "alt": "Draw without drawing 126, 2022, oil bar, oil pastel and oil color on canvas",
+          "caption": "Draw without drawing 126, 2022, oil bar, oil pastel and oil color on canvas\n162.2cm x 130.3cm"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/jeong-hyun-ha-solo-exhibition/legacy-13.jpeg",
+          "alt": "Draw without drawing 119, 2022, oil bar, oil pastel and acrylic color on canvas",
+          "caption": "Draw without drawing 119, 2022, oil bar, oil pastel and acrylic color on canvas\n88cm x 144cm"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/jeong-hyun-ha-solo-exhibition/legacy-14.jpeg",
+          "alt": "Draw without drawing 120, 2022, oil bar, oil pastel and acrylic color on canvas",
+          "caption": "Draw without drawing 120, 2022, oil bar, oil pastel and acrylic color on canvas\n88cm x 144cm"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/jeong-hyun-ha-solo-exhibition/legacy-15.jpeg",
+          "alt": "Draw without drawing 121, 2022, oil bar, oil pastel and acrylic color on canvas",
+          "caption": "Draw without drawing 121, 2022, oil bar, oil pastel and acrylic color on canvas\n140.5cm x 237cm"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/jeong-hyun-ha-solo-exhibition/legacy-16.jpeg",
+          "alt": "Draw without drawing 122, 2022, oil bar, oil pastel and acrylic color on canvas",
+          "caption": "Draw without drawing 122, 2022, oil bar, oil pastel and acrylic color on canvas\n140.5cm x 238.5cm"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/jeong-hyun-ha-solo-exhibition/legacy-17.jpeg",
+          "alt": "Draw without drawing 123, 2022, oil bar, oil pastel and acrylic color on canvas",
+          "caption": "Draw without drawing 123, 2022, oil bar, oil pastel and acrylic color on canvas\n140.5cm x 232.5cm"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/jeong-hyun-ha-solo-exhibition/legacy-18.jpeg",
+          "alt": "Draw without drawing 133, 2022, oil bar, oil pastel and oil color on canvas",
+          "caption": "Draw without drawing 133, 2022, oil bar, oil pastel and oil color on canvas\n31.8cm x 31.8cm"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/jeong-hyun-ha-solo-exhibition/legacy-19.jpeg",
+          "alt": "Draw without drawing 134, 2022, oil bar, oil pastel and oil color on canvas",
+          "caption": "Draw without drawing 134, 2022, oil bar, oil pastel and oil color on canvas\n31.8cm x 31.8cm"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/jeong-hyun-ha-solo-exhibition/legacy-20.jpeg",
+          "alt": "Draw without drawing 135, 2022, oil bar, oil pastel and oil color on canvas",
+          "caption": "Draw without drawing 135, 2022, oil bar, oil pastel and oil color on canvas\n31.8cm x 31.8cm"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/jeong-hyun-ha-solo-exhibition/legacy-21.jpeg",
+          "alt": "Draw without drawing 136, 2022, oil bar, oil pastel and oil color on canvas",
+          "caption": "Draw without drawing 136, 2022, oil bar, oil pastel and oil color on canvas\n31.8cm x 31.8cm"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/jeong-hyun-ha-solo-exhibition/legacy-22.jpeg",
+          "alt": "Treasure hunt 1, 2022,",
+          "caption": "Treasure hunt 1, 2022,\nmixed media\n25cm x 25cm"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/jeong-hyun-ha-solo-exhibition/legacy-23.jpeg",
+          "alt": "Treasure hunt 3, 2022,",
+          "caption": "Treasure hunt 3, 2022,\nmixed media\n25cm x 25cm"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/jeong-hyun-ha-solo-exhibition/legacy-24.jpeg",
+          "alt": "Treasure hunt 5, 2022,",
+          "caption": "Treasure hunt 5, 2022,\nmixed media\n25cm x 25cm"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/jeong-hyun-ha-solo-exhibition/legacy-25.jpeg",
+          "alt": "Treasure hunt 7, 2022,",
+          "caption": "Treasure hunt 7, 2022,\nmixed media\n25cm x 25cm"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/jeong-hyun-ha-solo-exhibition/legacy-26.jpeg",
+          "alt": "Treasure hunt 9, 2022,",
+          "caption": "Treasure hunt 9, 2022,\nmixed media\n25cm x 25cm"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/jeong-hyun-ha-solo-exhibition/legacy-27.jpeg",
+          "alt": "Draw without drawing on paper 1, 2014 pencil on paper",
+          "caption": "Draw without drawing on paper 1, 2014 pencil on paper\n33cm x 24.5cm"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/jeong-hyun-ha-solo-exhibition/legacy-28.jpeg",
+          "alt": "Draw without drawing on paper 4, 2014 pencil on paper",
+          "caption": "Draw without drawing on paper 4, 2014 pencil on paper\n33cm x 24.5cm"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/jeong-hyun-ha-solo-exhibition/legacy-29.jpeg",
+          "alt": "Draw without drawing on paper 6, 2014 pencil on paper",
+          "caption": "Draw without drawing on paper 6, 2014 pencil on paper\n33cm x 24.5cm"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/jeong-hyun-ha-solo-exhibition/legacy-30.jpeg",
+          "alt": "Draw without drawing on paper 13, 2018 oil pastel on paper",
+          "caption": "Draw without drawing on paper 13, 2018 oil pastel on paper\n22.5cm x 25cm"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/jeong-hyun-ha-solo-exhibition/legacy-31.jpeg",
+          "alt": "Draw without drawing on paper 18, 2018 pencil and oil pastel on paper",
+          "caption": "Draw without drawing on paper 18, 2018 pencil and oil pastel on paper\n22.5cm x 25cm"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/jeong-hyun-ha-solo-exhibition/legacy-32.jpeg",
+          "alt": "Draw without drawing on paper 18, 2018 oil pastel on paper",
+          "caption": "Draw without drawing on paper 18, 2018 oil pastel on paper\n22.5cm x 25cm"
+        }
+      ]
+    },
+    {
+      "slug": "jiyu-kwak-solo-exhibition-layers",
+      "originalTitle": "곽지유 개인전 Jiyu Kwak Solo Exhibition:\\n겹; Layers",
+      "startDate": "2023-06-03",
+      "endDate": "2023-07-05",
+      "poster": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/jiyu-kwak-solo-exhibition-layers/poster.png",
+      "content": [
+        {
+          "type": "text",
+          "style": "h5",
+          "list": false,
+          "text": "학력"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2014-2020 Diploma in Fine Art, Burg Giebichenstein Kunsthochschule Halle, Germany"
+        },
+        {
+          "type": "text",
+          "style": "h5",
+          "list": false,
+          "text": "주요 개인전"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2022 Something rather than Nothing, Gallery Ricarda Fox, 뮬하임 (독일)"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2020 Drawers Drawers, Gallery Volkspark, 할레 (독일)"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2017 Things that grow, Burg 2 Galerie, 할레 (독일)"
+        },
+        {
+          "type": "text",
+          "style": "h5",
+          "list": false,
+          "text": "주요 단체전"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2022 Random Pages, 갤러리 SP, 서울"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2022 Sweet After Bitter, Project Raum Bubble Bauch, 베를린"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2022 The Preview, 갤러리 SP, 서울"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2021 Kaleidoskopia, Halle 14 UG, 슈피너라이, 라이프치히"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2021 Start 55 Malerei Zeichnung Grafik, Gopea 쿤스트라움, 바트 벤트하임"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2021 Sunrise, F2 Galerie, Halle Saale"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2020 Gopea Forderjahrgang 2019 Group Show, Villa de Bank, 엔스헤데/네덜란드"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2020 SPANNE MK Ausstellung, Altes Xenos, Halle Saale"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2019 Halle 14 Klasse Tilo Baumg'rtel, Spinnerei, 라이프치히"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2018 Junge Malerei, DRK Kliniken Westend, 베를린"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2017 MK am Steintor, Klasse Sofia Schama, Halle Saale"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2017 MKL57 Supermarket Ausstellung, Halle Saale"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2016 Nichts als die Wahrheit, Kunststiftung des Landes Sachsen-Anhalt, 독일"
+        },
+        {
+          "type": "text",
+          "style": "h5",
+          "list": false,
+          "text": "출판 및 프로젝트"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2018 파파파파 파인애플 곽지윤 그림 양혜리 글, 라이프치히 북 메세 출품작, Burg Giebichenstein 출판"
+        },
+        {
+          "type": "text",
+          "style": "h5",
+          "list": false,
+          "text": "레지던시"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2023 \"land Archipelago Guest Artist Residence, 핀란드"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2021.11~2022.1 AADK Spain’s Residency Programme, Centro Negra, 무르시아, 스페인"
+        },
+        {
+          "type": "text",
+          "style": "h5",
+          "list": false,
+          "text": "수상 및 지원"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2019 Gopea F*rderjahrgang 2019, 전시 및 카탈로그 지원, 네덜란드/독일"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "2017~2020 MK 전시 프로젝트, 란데스 작센안할트시 지원 , 독일"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": false,
+          "text": "_"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": false,
+          "text": "곽지유는 판단을 하지 않고 선을 긋고 중복하여 그 위에 그리거나 지움을 반복하며 작가가 지향하는 자유롭게 방황하는 경험을 그리고 있다.\n그는 그림을 그리는 과정이 질서와 구조를 찾으면 찾을수록 공간 사이에 틈이 생기는 끊임없는 양가적인 것의 결투라고 생각한다.\n캔버스 표면에 유기적인 선과 역동적인 색면을 계속 그리고 지우며 선과 표면을 교차시키는 반복되는 과정에서 때때로 다른 레이어에 가려지지\n않고 살아남은 표면의 조각을 통해 작가가 상상하는 취약한 존재의 경계를 표현하고 있다.\n이렇듯 작가의 감정이 고스란히 한 겹, 한 겹 쌓아 올린 선 위에 담겼다.\n때론 행복하고, 때론 불안하고, 때론 희망적이고, 또 때론 절망적이었던 작가 인생의 겹이 쌓여 작품이 되었다."
+        },
+        {
+          "type": "text",
+          "style": "blockquote",
+          "list": false,
+          "text": "“ 작가는 숨김없이 느끼는 바를 작품에 \n표출하고 투영해야 한다고 생각하기 때문에\n내 작품은 반복되는 선 안에서 가장 솔직하게\n나를 표현한다고 생각한다. 내 생각의 연속은\n그 과정에서 나타나는 임의의 모양처럼\n그림에 시각적으로 내재되어 있다.”\n\n- 작가 노트중에서"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/jiyu-kwak-solo-exhibition-layers/legacy-01.jpg",
+          "alt": "Untitled, 2019, Acrylic and charcoal on paper, 80x110cm",
+          "caption": "Untitled, 2019, Acrylic and charcoal on paper, 80x110cm"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/jiyu-kwak-solo-exhibition-layers/legacy-02.jpg",
+          "alt": "Untitled, 2019, Acrylic and charcoal on paper, 80x110cm",
+          "caption": "Untitled, 2019, Acrylic and charcoal on paper, 80x110cm"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/jiyu-kwak-solo-exhibition-layers/legacy-03.jpg",
+          "alt": "Untitled, 2019, Acrylic and charcoal on paper, 80x110cm",
+          "caption": "Untitled, 2019, Acrylic and charcoal on paper, 80x110cm"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/jiyu-kwak-solo-exhibition-layers/legacy-04.jpg",
+          "alt": "Untitled, 2019, Acrylic and charcoal on paper, 80x110cm",
+          "caption": "Untitled, 2019, Acrylic and charcoal on paper, 80x110cm"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/jiyu-kwak-solo-exhibition-layers/legacy-05.jpg",
+          "alt": "Layer 1, 2019, Acrylic on canvas, 80x100cm",
+          "caption": "Layer 1, 2019, Acrylic on canvas, 80x100cm"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/jiyu-kwak-solo-exhibition-layers/legacy-06.jpg",
+          "alt": "Layer 2, 2019, Oil, acrylic and charcoal on canvas, 80x100cm",
+          "caption": "Layer 2, 2019, Oil, acrylic and charcoal on canvas, 80x100cm"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/jiyu-kwak-solo-exhibition-layers/legacy-07.jpg",
+          "alt": "Layer 3, 2019, Acrylic on canvas, 80x100cm",
+          "caption": "Layer 3, 2019, Acrylic on canvas, 80x100cm"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/jiyu-kwak-solo-exhibition-layers/legacy-08.jpg",
+          "alt": "In March_1, 2021, Oil on paper, 42x60cm",
+          "caption": "In March_1, 2021, Oil on paper, 42x60cm"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/jiyu-kwak-solo-exhibition-layers/legacy-09.jpg",
+          "alt": "Soap Bubble, 2019, Oil on canvas, 30x40cm",
+          "caption": "Soap Bubble, 2019, Oil on canvas, 30x40cm"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/jiyu-kwak-solo-exhibition-layers/legacy-10.png",
+          "alt": "Pandemic Drawing_P, 2021, Acrylic on paper, 24x30cm",
+          "caption": "Pandemic Drawing_P, 2021, Acrylic on paper, 24x30cm"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/jiyu-kwak-solo-exhibition-layers/legacy-11.png",
+          "alt": "Pandemic Drawing_P, 2021, Acrylic on paper, 24x30cm",
+          "caption": "Pandemic Drawing_P, 2021, Acrylic on paper, 24x30cm"
+        }
+      ]
+    },
+    {
+      "slug": "suk-jeen-sung-moon-jar-exhibit",
+      "originalTitle": "Suk Jeen Sung-성석진 달항아리전",
+      "startDate": "2023-01-16",
+      "endDate": "2023-05-25",
+      "poster": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/suk-jeen-sung-moon-jar-exhibit/poster.jpg",
+      "content": [
+        {
+          "type": "text",
+          "style": "h5",
+          "list": false,
+          "text": "참여작가"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "성석진 (달항아리/생활도예)"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "이무규 (가구/소품)"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "Olivier Coisne-Jellyfish"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/suk-jeen-sung-moon-jar-exhibit/image-01.jpg",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/suk-jeen-sung-moon-jar-exhibit/image-02.jpg",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/suk-jeen-sung-moon-jar-exhibit/image-03.jpg",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/suk-jeen-sung-moon-jar-exhibit/image-04.jpg",
+          "alt": "",
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "slug": "premier-art-seoul-2022",
+      "originalTitle": "Premier Art Seoul 2022",
+      "startDate": "2022-10-13",
+      "endDate": "2022-10-16",
+      "poster": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/premier-art-seoul-2022/poster.png",
+      "content": [
+        {
+          "type": "text",
+          "style": "h5",
+          "list": false,
+          "text": "장소"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": false,
+          "text": "@ The Westin Josun Seoul"
+        },
+        {
+          "type": "text",
+          "style": "h5",
+          "list": false,
+          "text": "참여작가"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "강애자/Ehja Kang"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "장프랑수아 라리유/Jean-François Larrieu"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "성석진/Suk Jeen Sung"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "곽지유/Jiyu Kwak"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "김용훈/Yong Hoon Kim"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "이인숙/In Sook Rhee"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/premier-art-seoul-2022/image-01.png",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/premier-art-seoul-2022/image-02.png",
+          "alt": "",
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "slug": "the-waning-light",
+      "originalTitle": "김찬수 사진전: 빛 속으로 (Into the Light)",
+      "startDate": "2022-08-04",
+      "endDate": "2022-08-14",
+      "poster": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/the-waning-light/poster.jpg",
+      "content": [
+        {
+          "type": "text",
+          "style": "h5",
+          "list": false,
+          "text": "장소"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": false,
+          "text": "@ 스페이스 루덴스 (에스팩토리 B동, 성수)"
+        },
+        {
+          "type": "text",
+          "style": "h5",
+          "list": false,
+          "text": "참여 작가"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "김찬수 (현 홍익대학교 조형대학 영상애니메이션학부 조교수)"
+        },
+        {
+          "type": "text",
+          "style": "h5",
+          "list": false,
+          "text": "작품 소개"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/the-waning-light/image-01.jpg",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/the-waning-light/image-02.jpg",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/the-waning-light/image-03.jpg",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/the-waning-light/image-04.jpg",
+          "alt": "",
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "slug": "art-race-in-jeju",
+      "originalTitle": "아트 레이스 인 제주/Art Race in Jeju",
+      "startDate": "2022-07-30",
+      "endDate": "2022-09-04",
+      "poster": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/art-race-in-jeju/poster.jpg",
+      "content": [
+        {
+          "type": "text",
+          "style": "h5",
+          "list": false,
+          "text": "장소"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": false,
+          "text": "@제주 탠저린맨션 2층"
+        },
+        {
+          "type": "text",
+          "style": "h5",
+          "list": false,
+          "text": "참여작가"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "지누박/Zinoo Park"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/art-race-in-jeju/image-01.jpg",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/art-race-in-jeju/image-02.jpg",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/art-race-in-jeju/image-03.jpg",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/art-race-in-jeju/image-04.jpg",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/art-race-in-jeju/image-05.jpg",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/art-race-in-jeju/image-06.jpg",
+          "alt": "",
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "slug": "the-11th-pink-art-fair-seoul-2022",
+      "originalTitle": "The 11th Pink Art Fair Seoul 2022",
+      "startDate": "2022-07-07",
+      "endDate": "2022-07-10",
+      "poster": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/the-11th-pink-art-fair-seoul-2022/poster.jpg",
+      "content": [
+        {
+          "type": "text",
+          "style": "h5",
+          "list": false,
+          "text": "장소"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": false,
+          "text": "@ Intercontinental Hotel Seoul Coex"
+        },
+        {
+          "type": "text",
+          "style": "h5",
+          "list": false,
+          "text": "참여 작가"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "로렝 도친/Laurent Dorchin"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "곽지유/Jiyu Kwak"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "김용훈/Yong Hoon Kim"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "지누박/Zinoo Park"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "성석진/Suk Jeen Sung"
+        },
+        {
+          "type": "text",
+          "style": "normal",
+          "list": true,
+          "text": "이인숙/In Sook Rhee"
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/the-11th-pink-art-fair-seoul-2022/image-01.png",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/exhibitions/the-11th-pink-art-fair-seoul-2022/image-02.png",
+          "alt": "",
+          "caption": ""
+        }
+      ]
+    }
+  ],
+  "contact": {
+    "email": "info@atelierkyma.com",
+    "phone": "82.2.3785.0118",
+    "address": "서울시 용산구 녹사평대로 32길 47, 1층(102호) | 1b Noksapyeong-daero 32-gil 47, Yongsan-gu, Seoul, Korea",
+    "instagram": "atelierkyma",
+    "hours": "화 (Tue) - 금 (Fri)        11:00 am - 19:00 pm\n토 (Sat)                       12:00 pm - 18:00 pm\n일 (Sun) - 월 (Mon)     Closed",
+    "image": "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/gallery/contact.jpg"
+  }
+}

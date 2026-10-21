@@ -94,6 +94,7 @@
       .career-group h3 { font-size: 16px; margin-bottom: 13px; }
       .career-group li { margin-bottom: 7px; line-height: 1.55; font-size: 14px; }
       .career-group ul { padding-left: 19px; margin: 0; }
+      .career-note { margin: 0; color: #5f5d58; line-height: 1.85; font-size: 14px; white-space: pre-line; }
       .artwork-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; padding: 36px 0 90px; }
       .artwork-grid .image-frame { aspect-ratio: 4 / 5; }
       .artwork-grid .image-frame img { padding: 5%; }
@@ -139,18 +140,32 @@
       .exhibition-gallery figure { background: var(--photo); }
       .exhibition-gallery img { width: 100%; aspect-ratio: 1.25; object-fit: contain; }
       .exhibition-gallery figcaption { padding: 12px 0; background: var(--paper); color: var(--muted); font-size: 12px; }
+      .exhibition-archive { display: grid; grid-template-columns: 1fr 2fr; gap: 6vw; padding: 42px 0 90px; }
+      .exhibition-archive h2 { margin-top: 12px; font-size: 26px; }
+      .archive-content { min-width: 0; max-width: 880px; }
+      .archive-content h3 { margin: 32px 0 14px; font-size: 19px; }
+      .archive-content p { margin: 9px 0; color: #5f5d58; font-size: 15px; white-space: pre-line; }
+      .archive-content blockquote { margin: 22px 0; padding-left: 20px; border-left: 2px solid var(--line); color: var(--muted); line-height: 1.8; }
+      .archive-content .archive-bullet { position: relative; padding-left: 18px; }
+      .archive-content .archive-bullet::before { content: "•"; position: absolute; left: 1px; }
+      .archive-content-image { margin: 28px 0 44px; }
+      .archive-content-image .exhibition-gallery-image { aspect-ratio: 1.45; background: var(--photo); }
+      .archive-content-image figcaption { padding-top: 10px; color: var(--muted); font-size: 12px; }
       .about-lead { display: grid; grid-template-columns: .8fr 1.2fr; gap: 7vw; padding: 70px 0 80px; }
       .about-lead h1 { margin-top: 16px; }
       .about-lead p { max-width: 620px; padding-top: 25px; font-size: 19px; }
       .language-section { display: grid; grid-template-columns: .45fr 1fr; gap: 7vw; padding: 30px 0 42px; border-top: 1px solid var(--line); }
       .language-section h2 { font-size: 17px; }
       .language-section p { max-width: 720px; color: #5f5d58; font-size: 15px; }
+      .language-copy p { margin-bottom: 18px; white-space: pre-line; }
       .about-visit { padding: 25px 0 90px; }
       .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8vw; padding: 60px 0 90px; }
       .contact-block { padding: 20px 0; border-top: 1px solid var(--line); }
       .contact-block h2 { font-size: 13px; color: var(--muted); margin-bottom: 12px; }
       .contact-block p, .contact-block a { font-size: 20px; line-height: 1.6; }
       .contact-block small { color: var(--muted); font-size: 13px; }
+      .contact-photo { position: relative; width: 100%; aspect-ratio: 4 / 3; margin-top: 28px; background: var(--photo); }
+      .contact-photo img { object-fit: cover; }
       .contact-grid h2.form-title { font-size: 29px; margin-bottom: 14px; }
       .form-intro { color: var(--muted); font-size: 13px; margin-bottom: 25px; }
       .inquiry-form label { display: block; font-size: 13px; margin-top: 20px; margin-bottom: 8px; }
@@ -174,6 +189,7 @@
         .hero-image { min-height: 0; max-height: 650px; aspect-ratio: 1.18; }
         .hero-copy { padding: 38px 6vw 55px; }
         .home-intro, .home-links, .artist-hero, .artwork-detail, .exhibition-lead, .exhibition-copy, .about-lead, .contact-grid { grid-template-columns: 1fr; gap: 30px; }
+        .exhibition-archive { grid-template-columns: 1fr; gap: 26px; }
         .artist-hero .image-frame { order: -1; }
         .artist-hero .lead { margin-top: 25px; }
         .career-grid { grid-template-columns: 1fr; gap: 20px; }

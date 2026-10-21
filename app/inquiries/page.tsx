@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { artworks, contact } from "@/content/gallery";
+import archive from "@/content/archive.json";
 import PageTitle from "@/components/gallery/PageTitle";
 
 export const metadata: Metadata = { title: "문의" };
@@ -19,6 +21,7 @@ export default async function InquiriesPage({ searchParams }: Props) {
           <section className="contact-block"><h2>주소 / ADDRESS</h2><p>{contact.address}</p><small>방문 전 운영시간을 확인해 주세요.</small></section>
           <section className="contact-block"><h2>영업시간 / HOURS</h2><p>{contact.hours.map((line) => <span key={line}>{line}<br /></span>)}</p></section>
           <section className="contact-block"><h2>인스타그램 / INSTAGRAM</h2><a href={`https://www.instagram.com/${contact.instagram}/`} target="_blank" rel="noopener noreferrer">@{contact.instagram} ↗</a></section>
+          <figure className="contact-photo"><Image src={archive.contact.image} alt="아뜰리에 키마 갤러리" fill sizes="(max-width: 800px) 100vw, 40vw" /></figure>
         </div>
         <div>
           <h2 className="form-title">작품 구매 문의</h2>
