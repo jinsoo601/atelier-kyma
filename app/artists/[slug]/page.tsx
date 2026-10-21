@@ -34,7 +34,7 @@ export default async function ArtistPage({ params }: Props) {
       {artist.career.length > 0 && (
         <section className="section-line career-grid">
           <div><span className="eyebrow">BIOGRAPHY</span><h2>작가 이력</h2></div>
-          <div>{artist.career.map((group) => <div className="career-group" key={group.heading}><h3>{group.heading}</h3><ul>{group.entries.map((entry) => <li key={entry}>{entry}</li>)}</ul></div>)}</div>
+          <div>{artist.career.map((group) => <div className="career-group" key={group.heading}><h3>{group.heading}</h3>{group.note ? <blockquote className="career-note">{group.entries.join("\n")}</blockquote> : <ul>{group.entries.map((entry) => <li key={entry}>{entry}</li>)}</ul>}</div>)}</div>
         </section>
       )}
       {exhibition && (
