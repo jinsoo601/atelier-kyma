@@ -1,6 +1,6 @@
 # KYM-12 content migration and editing guide
 
-The new pages use repository content in [`content/archive.json`](../content/archive.json) and [`content/gallery.ts`](../content/gallery.ts). The App Router pages for `/gallery`, `/artists/suk-jeen-sung`, `/artists/in-sook-rhee`, and all 12 `/exhibitions/[slug]` routes do not read Sanity at runtime. The older singular routes remain available during the transition.
+The new pages use repository content in [`content/archive.json`](../content/archive.json), [`content/gallery.ts`](../content/gallery.ts), [`content/catalog.ts`](../content/catalog.ts), and [`content/featured-home.ts`](../content/featured-home.ts). The App Router pages for `/gallery`, `/artists/suk-jeen-sung`, `/artists/in-sook-rhee`, and all 12 `/exhibitions/[slug]` routes do not read Sanity at runtime. The older singular routes remain available during the transition. The stable ID and product editing rules are in [KYM-7's content model](./kym-7-content-model.md).
 
 ## What was moved
 
@@ -13,7 +13,7 @@ The new pages use repository content in [`content/archive.json`](../content/arch
 
 1. Upload images to the **atelier-kyma-images** public Vercel Blob store. Use stable paths under `artists/<slug>/` or `exhibitions/<slug>/`, with random suffix disabled. Retain the original source files separately.
 2. Add the content record to `content/archive.json`. Text blocks use `type: "text"`, a `style` such as `normal` or `h5`, `list` as a boolean, and `text`. Image blocks use `type: "image"`, `src`, `alt`, and `caption`. Keep the blocks in display order.
-3. Add the artist or exhibition summary in `content/gallery.ts`. Artist works are listed there; a price and `artworkSlug` should appear only when the artwork has its own approved sale page. For an exhibition, keep the `slug` equal to the old published slug so old-to-new mapping is obvious.
+3. Add the artist or exhibition summary with a new stable `id` in `content/gallery.ts`. Artist works are listed there; a price and `artworkSlug` should appear only when the artwork has its own approved sale page, with its price derived from its product record in `content/catalog.ts`. For an exhibition, keep the `slug` equal to the old published slug so old-to-new mapping is obvious.
 4. Run `npm run typecheck`, `npm run lint`, and `npm run build`. Review desktop and phone layouts plus image loading before publishing.
 
 The old-to-new route inventory is in [`kym-2-url-map.csv`](kym-2-url-map.csv). Leave old singular routes active until the final switch and redirects are reviewed. The gallery owner confirmed the published hours, and Jin Soo confirmed the street address (서울시 용산구 녹사평대로32길 47, 1층 102호) on 21 October 2026. Sanity client, Studio, and legacy assets can be removed only after the remaining old pages are migrated or retired.

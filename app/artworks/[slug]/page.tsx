@@ -29,9 +29,8 @@ export default async function ArtworkPage({ params }: Props) {
           <h1>{artwork.title}</h1>
           {artist && <Link href={`/artists/${artist.slug}`} className="artist-name">{artist.name} · {artist.romanName} ↗</Link>}
           <p className="price">{formatKrw(artwork.priceKrw)}</p>
-          <p className="availability">재고와 배송 방법은 갤러리 확인 후 안내드립니다.</p>
-          {artwork.purchase.kind === "checkout" && <a className="primary-button" href={artwork.purchase.url}>구매하기</a>}
-          <Link className="secondary-button" href={`/inquiries?artwork=${encodeURIComponent(artwork.slug)}`}>구매 문의</Link>
+          <p className="availability">{artwork.availability === "sold" ? "판매 완료된 작품입니다." : artwork.availability === "reserved" ? "예약 중인 작품입니다." : "재고와 배송 방법은 갤러리 확인 후 안내드립니다."}</p>
+          {artwork.purchaseMethod === "inquiry" && !["reserved", "sold"].includes(artwork.availability) && <Link className="secondary-button" href={`/inquiries?artwork=${encodeURIComponent(artwork.slug)}`}>구매 문의</Link>}
           {artwork.details.length > 0 && <dl className="facts">{artwork.details.map(({ label, value }) => <div key={label}><dt>{label}</dt><dd>{value}</dd></div>)}</dl>}
           <p className="shipping">국내 배송 또는 서울 내 직접 전달을 협의합니다. 배송비와 일정은 구매 확정 전에 안내합니다.</p>
         </div>
