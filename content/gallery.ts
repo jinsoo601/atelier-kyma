@@ -35,8 +35,11 @@ export type Exhibition = {
   migrated?: boolean;
 };
 
-const pilotSrc = "/gallery/pilot/suk-jeen-sung-cheonghwa-baekgeum-dot-moon-jar.jpeg";
+const blobBase = "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com";
+const pilotSrc = `${blobBase}/artworks/suk-jeen-sung-cheonghwa-baekgeum-dot-moon-jar/hero.jpeg`;
 const artistImage = (file: string) => `/gallery/artists/${file}`;
+const sungPortfolioImage = (order: number) =>
+  `${blobBase}/artists/suk-jeen-sung/portfolio-${String(order).padStart(2, "0")}.jpg`;
 
 export const artworks: Artwork[] = [
   {
@@ -56,7 +59,7 @@ const existingWorks = (artist: string): ArtistWork[] =>
     .sort((a, b) => a.order - b.order)
     .map((item) => ({
       id: `${artist}-${item.order}`,
-      src: artistImage(item.file),
+      src: artist === "성석진" ? sungPortfolioImage(item.order) : artistImage(item.file),
       title: item.caption || `작품 사진 ${String(item.order).padStart(2, "0")}`,
       alt: item.caption ? `${artist}의 ${item.caption}` : `${artist}의 도자 작업 사진 ${item.order}`,
     }));
