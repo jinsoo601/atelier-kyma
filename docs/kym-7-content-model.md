@@ -40,6 +40,8 @@ The [official LinkPay API](https://docs.tosspayments.com/reference/linkpay) docu
 
 ## Repeatable editor steps
 
+The reusable [Atelier Kyma content editor skill](../.agents/skills/atelier-kyma-content-editor/SKILL.md) turns these rules into a working checklist for ChatGPT or Codex sessions with access to this repository.
+
 1. Create a new ID in `catalogIds`; choose a human-readable slug separately. Never copy an existing product ID or a Toss `productKey`.
 2. Upload approved photos to Vercel Blob under `artists/{slug}/`, `artworks/{slug}/`, or `exhibitions/{slug}/`. Record source provenance, rights, alt text, and captions. Avoid a visible physical price label that could conflict with a later edit.
 3. Add or edit the artist, artwork, exhibition, and product records as applicable. A portfolio image alone needs no product. A small good needs a product with its own quantity and price but no artwork record unless it merits an editorial artwork page.
