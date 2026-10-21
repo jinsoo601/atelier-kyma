@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>KYM-10 · Atelier Kyma page preview</title>
+    <style>
+      :root { color-scheme: light; --paper: #f8f7f3; --white: #fff; --ink: #22221f; --muted: #777670; --line: #d9d6cf; --accent: #8f604b; --photo: #eeece6; }
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body { margin: 0; background: var(--paper); color: var(--ink); font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", Arial, sans-serif; }
+      button, input, textarea, select { font: inherit; }
+      button, a { -webkit-tap-highlight-color: transparent; }
+      a { color: inherit; text-decoration: none; }
+      a:hover { color: var(--accent); }
+      a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+      img { display: block; max-width: 100%; }
+      [hidden] { display: none !important; }
+      .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+      .preview-bar { min-height: 48px; padding: 10px clamp(20px, 4vw, 68px); background: #252622; color: #f4f1ea; display: flex; align-items: center; justify-content: space-between; gap: 20px; font-size: 12px; letter-spacing: .06em; }
+      .preview-bar strong { font-weight: 600; }
+      .preview-bar span { opacity: .73; }
+      .preview-bar select { min-width: 160px; padding: 7px 28px 7px 10px; border: 1px solid #83847d; background: #252622; color: #fff; border-radius: 0; }
+      .site-header { display: flex; align-items: center; justify-content: space-between; gap: 32px; padding: 24px clamp(20px, 4vw, 68px); border-bottom: 1px solid var(--line); background: var(--paper); }
+      .logo-link { display: block; flex: none; width: clamp(158px, 19vw, 218px); }
+      .logo-link img { width: 100%; height: auto; }
+      .site-nav { display: flex; align-items: center; gap: clamp(19px, 2.2vw, 34px); font-size: 14px; white-space: nowrap; }
+      .site-nav a[aria-current="page"] { color: var(--accent); text-decoration: underline; text-underline-offset: 7px; }
+      .menu-button { display: none; background: transparent; border: 0; padding: 9px 0 9px 16px; color: var(--ink); }
+      .site-content { min-height: 58vh; }
+      .shell { max-width: 1500px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 68px); }
+      .eyebrow { display: block; color: var(--muted); font-size: 11px; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; }
+      h1, h2, h3, p, figure { margin: 0; }
+      h1, h2, h3 { font-weight: 500; letter-spacing: -.045em; word-break: keep-all; }
+      h1 { font-size: clamp(39px, 5.4vw, 76px); line-height: 1.15; }
+      h2 { font-size: clamp(26px, 3vw, 42px); line-height: 1.25; }
+      h3 { font-size: clamp(19px, 2vw, 26px); line-height: 1.35; }
+      p { line-height: 1.8; word-break: keep-all; }
+      .muted { color: var(--muted); }
+      .text-link { display: inline-flex; align-items: center; gap: 14px; width: fit-content; padding: 10px 0 8px; border-bottom: 1px solid var(--ink); font-size: 14px; font-weight: 600; }
+      .text-link::after { content: "↗"; font-size: 17px; line-height: 1; }
+      .text-link:hover { border-color: var(--accent); }
+      .section-line { border-top: 1px solid var(--line); }
+      .page-title { display: flex; align-items: end; justify-content: space-between; gap: 25px; padding: 60px 0 28px; border-bottom: 1px solid var(--line); }
+      .page-title h1 { margin-top: 14px; }
+      .page-title p { max-width: 380px; color: var(--muted); font-size: 14px; }
+      .image-frame { position: relative; background: var(--photo); overflow: hidden; }
+      .image-frame img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; }
+      .image-caption { display: flex; justify-content: space-between; gap: 16px; padding-top: 13px; font-size: 12px; color: var(--muted); }
+      .hero { display: grid; grid-template-columns: 48% 52%; min-height: 570px; }
+      .hero-image { min-height: 570px; background: #ded7ca; }
+      .hero-image img { width: 100%; height: 100%; max-height: 630px; object-fit: contain; }
+      .hero-copy { padding: 62px min(10%, 92px); display: flex; flex-direction: column; justify-content: center; align-items: start; gap: 24px; }
+      .hero-copy p { max-width: 370px; color: #5f5d58; font-size: 15px; }
+      .home-intro { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; padding-top: 64px; padding-bottom: 70px; }
+      .home-intro h2 { margin-top: 16px; }
+      .home-intro p { max-width: 540px; align-self: end; color: #5f5d58; }
+      .home-links { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; padding: 0 0 82px; }
+      .home-links section { padding-top: 25px; border-top: 1px solid var(--line); }
+      .home-links h2 { margin-top: 12px; }
+      .home-links p { margin-top: 20px; max-width: 360px; color: var(--muted); }
+      .name-list { margin-top: 25px; }
+      .name-list a { display: flex; justify-content: space-between; gap: 20px; padding: 13px 0; border-bottom: 1px solid var(--line); font-size: 20px; }
+      .name-list small { font-size: 12px; color: var(--muted); align-self: center; }
+      .home-links .text-link { margin-top: 20px; }
+      .artist-index { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; padding: 36px 0 85px; }
+      .artist-index article:nth-child(2) { margin-top: 85px; }
+      .artist-index .image-frame { aspect-ratio: 4 / 4.5; }
+      .artist-index .image-frame img { padding: 6%; }
+      .artist-index h2 { margin-top: 18px; font-size: 29px; }
+      .artist-index p { margin-top: 4px; color: var(--muted); font-size: 13px; }
+      .image-placeholder { background: #e7e4dc; width: 100%; height: 100%; display: flex; align-items: end; padding: 30px; color: #65615a; }
+      .image-placeholder span { font-size: 12px; letter-spacing: .07em; }
+      .artist-hero { display: grid; grid-template-columns: minmax(300px, .85fr) minmax(0, 1.15fr); gap: 7vw; padding-top: 62px; padding-bottom: 85px; }
+      .artist-hero h1 { margin: 16px 0 8px; }
+      .artist-hero .roman { color: var(--muted); font-size: 23px; }
+      .artist-hero .lead { margin-top: 45px; max-width: 410px; font-size: 17px; }
+      .artist-hero .note { margin-top: 26px; max-width: 410px; color: var(--muted); font-size: 13px; }
+      .artist-hero .image-frame { aspect-ratio: 5 / 4; }
+      .artist-hero .image-frame img { padding: 4%; }
+      .section-heading { display: flex; justify-content: space-between; align-items: end; gap: 20px; padding: 25px 0 30px; }
+      .section-heading h2 { margin-top: 10px; }
+      .selected-work { display: grid; grid-template-columns: 48% 1fr; gap: 6vw; padding-bottom: 82px; align-items: center; }
+      .selected-work .image-frame { aspect-ratio: 1 / .83; }
+      .selected-work .image-frame img { padding: 5%; }
+      .selected-work h3 { margin: 14px 0; }
+      .selected-work p { color: var(--muted); font-size: 14px; }
+      .selected-work .text-link { margin-top: 22px; }
+      .career-grid { display: grid; grid-template-columns: 1fr 2fr; gap: 6vw; padding: 30px 0 80px; }
+      .career-grid h2 { font-size: 26px; }
+      .career-group { padding-bottom: 24px; margin-bottom: 24px; border-bottom: 1px solid var(--line); }
+      .career-group h3 { font-size: 16px; margin-bottom: 13px; }
+      .career-group li { margin-bottom: 7px; line-height: 1.55; font-size: 14px; }
+      .career-group ul { padding-left: 19px; margin: 0; }
+      .artwork-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; padding: 36px 0 90px; }
+      .artwork-grid .image-frame { aspect-ratio: 4 / 5; }
+      .artwork-grid .image-frame img { padding: 5%; }
+      .artwork-grid h2 { font-size: 21px; margin: 17px 0 5px; }
+      .artwork-grid p { color: var(--muted); font-size: 13px; }
+      .artwork-grid .price { margin-top: 10px; color: var(--ink); font-size: 16px; }
+      .artwork-detail { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(300px, .75fr); gap: 6vw; padding-top: 58px; padding-bottom: 86px; }
+      .artwork-detail .image-frame { min-height: 630px; }
+      .artwork-detail .image-frame img { padding: 3%; max-height: 740px; }
+      .artwork-detail h1 { font-size: clamp(32px, 3.3vw, 52px); margin: 25px 0 10px; }
+      .artwork-detail .artist-name { color: var(--muted); font-size: 16px; }
+      .artwork-detail .price { font-size: 30px; margin-top: 42px; }
+      .availability { font-size: 13px; color: var(--muted); margin-top: 4px; }
+      .primary-button { display: block; width: 100%; margin-top: 28px; padding: 17px 18px; background: var(--ink); color: var(--white); border: 1px solid var(--ink); text-align: center; font-size: 14px; font-weight: 600; }
+      .primary-button:hover { background: var(--accent); border-color: var(--accent); color: #fff; }
+      .secondary-button { display: block; width: 100%; margin-top: 10px; padding: 16px 18px; border: 1px solid var(--ink); background: transparent; text-align: center; font-size: 14px; font-weight: 600; }
+      .secondary-button:hover { border-color: var(--accent); color: var(--accent); }
+      .artwork-detail .small-note { margin-top: 12px; color: var(--muted); font-size: 12px; }
+      .facts { margin-top: 45px; border-top: 1px solid var(--line); }
+      .facts div { display: grid; grid-template-columns: 90px 1fr; gap: 15px; padding: 14px 0; border-bottom: 1px solid var(--line); font-size: 13px; }
+      .facts dt { color: var(--muted); }
+      .facts dd { margin: 0; }
+      .artwork-detail .shipping { margin-top: 23px; color: var(--muted); font-size: 13px; }
+      .exhibition-lead { display: grid; grid-template-columns: 53% 1fr; gap: 5vw; padding: 38px 0 62px; align-items: center; }
+      .exhibition-lead .image-frame { aspect-ratio: 1.35; }
+      .exhibition-lead .image-frame img { padding: 5%; }
+      .exhibition-lead h2 { margin: 16px 0; }
+      .exhibition-lead p { color: var(--muted); font-size: 14px; }
+      .exhibition-lead .text-link { margin-top: 20px; }
+      .archive-row { display: grid; grid-template-columns: 115px 1fr 160px 22px; gap: 20px; padding: 22px 0; border-top: 1px solid var(--line); align-items: baseline; }
+      .archive-row:last-child { border-bottom: 1px solid var(--line); }
+      .archive-row .year, .archive-row .date { color: var(--muted); font-size: 13px; }
+      .archive-row strong { font-weight: 500; font-size: 17px; }
+      .archive-list { padding-bottom: 95px; }
+      .exhibition-detail .detail-heading { padding: 65px 0 34px; }
+      .exhibition-detail .detail-heading h1 { max-width: 950px; margin: 18px 0 22px; }
+      .exhibition-detail .detail-heading p { color: var(--muted); }
+      .exhibition-detail .hero-art { width: 100%; max-height: 650px; background: var(--photo); object-fit: contain; }
+      .exhibition-detail .image-caption { padding-bottom: 60px; }
+      .exhibition-copy { display: grid; grid-template-columns: 1fr 1.5fr; gap: 5vw; padding-top: 30px; padding-bottom: 65px; }
+      .exhibition-copy p { max-width: 650px; color: #5f5d58; }
+      .exhibition-gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; padding: 32px 0 95px; }
+      .exhibition-gallery figure { background: var(--photo); }
+      .exhibition-gallery img { width: 100%; aspect-ratio: 1.25; object-fit: contain; }
+      .exhibition-gallery figcaption { padding: 12px 0; background: var(--paper); color: var(--muted); font-size: 12px; }
+      .about-lead { display: grid; grid-template-columns: .8fr 1.2fr; gap: 7vw; padding: 70px 0 80px; }
+      .about-lead h1 { margin-top: 16px; }
+      .about-lead p { max-width: 620px; padding-top: 25px; font-size: 19px; }
+      .language-section { display: grid; grid-template-columns: .45fr 1fr; gap: 7vw; padding: 30px 0 42px; border-top: 1px solid var(--line); }
+      .language-section h2 { font-size: 17px; }
+      .language-section p { max-width: 720px; color: #5f5d58; font-size: 15px; }
+      .about-visit { padding: 25px 0 90px; }
+      .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8vw; padding: 60px 0 90px; }
+      .contact-block { padding: 20px 0; border-top: 1px solid var(--line); }
+      .contact-block h2 { font-size: 13px; color: var(--muted); margin-bottom: 12px; }
+      .contact-block p, .contact-block a { font-size: 20px; line-height: 1.6; }
+      .contact-block small { color: var(--muted); font-size: 13px; }
+      .contact-grid h2.form-title { font-size: 29px; margin-bottom: 14px; }
+      .form-intro { color: var(--muted); font-size: 13px; margin-bottom: 25px; }
+      .inquiry-form label { display: block; font-size: 13px; margin-top: 20px; margin-bottom: 8px; }
+      .inquiry-form input, .inquiry-form textarea, .inquiry-form select { display: block; width: 100%; padding: 13px 11px; border: 1px solid #bcb8af; background: transparent; border-radius: 0; color: var(--ink); font-size: 15px; }
+      .inquiry-form textarea { min-height: 130px; resize: vertical; }
+      .inquiry-form .checkbox-label { display: flex; gap: 11px; align-items: start; line-height: 1.5; }
+      .inquiry-form .checkbox-label input { width: 18px; height: 18px; flex: none; margin: 1px 0 0; }
+      .inquiry-form .primary-button { cursor: pointer; }
+      .site-footer { border-top: 1px solid var(--line); padding: 28px clamp(20px, 4vw, 68px) 34px; display: grid; grid-template-columns: 1fr 1fr; gap: 25px; color: var(--muted); font-size: 12px; line-height: 1.65; }
+      .site-footer .footer-links { display: flex; gap: 16px; justify-content: end; flex-wrap: wrap; }
+      .preview-toast { position: fixed; left: 50%; bottom: 22px; transform: translateX(-50%); max-width: calc(100vw - 40px); padding: 12px 18px; background: var(--ink); color: white; font-size: 13px; z-index: 10; box-shadow: 0 5px 18px #0003; }
+      @media (max-width: 860px) {
+        .site-header { flex-wrap: wrap; padding-top: 14px; padding-bottom: 14px; }
+        .menu-button { display: block; margin-left: auto; }
+        .site-nav { display: none; width: 100%; padding-top: 15px; border-top: 1px solid var(--line); flex-direction: column; align-items: stretch; gap: 0; }
+        .site-nav.is-open { display: flex; }
+        .site-nav a { padding: 13px 0; border-bottom: 1px solid var(--line); }
+        .hero { grid-template-columns: 1fr; }
+        .hero-image { min-height: 0; max-height: 650px; aspect-ratio: 1.18; }
+        .hero-copy { padding: 38px 6vw 55px; }
+        .home-intro, .home-links, .artist-hero, .selected-work, .artwork-detail, .exhibition-lead, .exhibition-copy, .about-lead, .contact-grid { grid-template-columns: 1fr; gap: 30px; }
+        .artist-hero .image-frame { order: -1; }
+        .artist-hero .lead { margin-top: 25px; }
+        .career-grid { grid-template-columns: 1fr; gap: 20px; }
+        .artwork-detail .image-frame { min-height: 0; aspect-ratio: 1; }
+        .artwork-grid { grid-template-columns: repeat(2, 1fr); }
+        .about-lead { padding-bottom: 50px; }
+      }
+      @media (max-width: 600px) {
+        .preview-bar { align-items: start; flex-direction: column; gap: 7px; }
+        .preview-bar select { width: 100%; }
+        .logo-link { width: 164px; }
+        .page-title { display: block; padding-top: 38px; }
+        .page-title p { margin-top: 17px; }
+        .hero-image { aspect-ratio: 1.08; }
+        .home-intro { padding-top: 45px; padding-bottom: 45px; }
+        .home-links { padding-bottom: 55px; }
+        .artist-index, .artwork-grid, .exhibition-gallery { grid-template-columns: 1fr; }
+        .artist-index article:nth-child(2) { margin-top: 0; }
+        .artist-hero { padding-top: 28px; padding-bottom: 58px; }
+        .artist-hero .roman { font-size: 18px; }
+        .selected-work { padding-bottom: 55px; }
+        .artwork-detail { padding-top: 28px; padding-bottom: 60px; }
+        .artwork-detail .image-frame { aspect-ratio: .9; }
+        .exhibition-lead { padding-bottom: 50px; }
+        .archive-row { grid-template-columns: 1fr 22px; gap: 5px 12px; padding: 17px 0; }
+        .archive-row .year { grid-column: 1; }
+        .archive-row strong { grid-column: 1; }
+        .archive-row .date { grid-column: 1; }
+        .archive-row .arrow { grid-column: 2; grid-row: 2; }
+        .exhibition-detail .detail-heading { padding-top: 40px; }
+        .exhibition-detail .image-caption { padding-bottom: 42px; }
+        .language-section { grid-template-columns: 1fr; gap: 12px; }
+        .contact-grid { padding-top: 32px; }
+        .site-footer { grid-template-columns: 1fr; }
+        .site-footer .footer-links { justify-content: start; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="preview-bar">
+      <div><strong>KYM-10 · 디자인 제안</strong> <span>실제 사이트가 아닌 탐색 가능한 시안입니다.</span></div>
+      <label><span class="sr-only">미리 볼 페이지</span><select id="page-picker" aria-label="미리 볼 페이지">
+        <option value="home">홈</option><option value="artists">작가 목록</option><option value="artist">성석진 상세</option><option value="artist-rhee">이인숙 상세</option><option value="artworks">작품 목록</option><option value="artwork">작품 상세</option><option value="exhibitions">전시 아카이브</option><option value="exhibition">전시 상세</option><option value="about">갤러리</option><option value="contact">문의</option>
+      </select></label>
+    </div>
+    <header class="site-header">
+      <a class="logo-link" href="#home" aria-label="Atelier Kyma 홈"><img src="../public/logo.png" alt="Atelier Kyma" /></a>
+      <button id="menu-button" class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">메뉴 <span aria-hidden="true">☰</span></button>
+      <nav id="site-nav" class="site-nav" aria-label="주요 메뉴"><a href="#artists">작가</a><a href="#artworks">작품</a><a href="#exhibitions">전시</a><a href="#about">갤러리</a><a href="#contact">문의</a></nav>
+    </header>
+    <div id="preview-status" class="sr-only" aria-live="polite"></div>
+    <div class="site-content">
+      <main class="page" data-page="home">
+        <div class="hero">
+          <div class="hero-image"><img src="../assets/pilot/suk-jeen-sung-cheonghwa-baekgeum-dot-moon-jar.jpeg" alt="청화백금닷 달항아리" /></div>
+          <div class="hero-copy"><span class="eyebrow">ATELIER KYMA · SELECTED WORK</span><h1>작품과 사람 사이,<br />오래 머무는 시선.</h1><p>성석진의 달항아리에서 시작해, 아뜰리에 키마가 소개하는 작가와 전시를 만나보세요.</p><a class="text-link" href="#artwork">작품 보기</a></div>
+        </div>
+        <div class="shell"><section class="home-intro section-line"><div><span class="eyebrow">ABOUT THE GALLERY</span><h2>새로운 물결을 만드는 공간</h2></div><p>키마는 그리스어로 ‘물결’을 뜻합니다. 회화와 공예, 디자인을 가로지르며 작가의 세계를 가까이에서 소개합니다.</p></section>
+          <div class="home-links"><section><span class="eyebrow">ARTISTS</span><h2>작가</h2><div class="name-list"><a href="#artist"><span>성석진</span><small>Suk Jeen Sung</small></a><a href="#artist-rhee"><span>이인숙</span><small>In Sook Rhee</small></a></div><a class="text-link" href="#artists">전체 작가 보기</a></section><section><span class="eyebrow">EXHIBITIONS</span><h2>전시 아카이브</h2><p>지난 전시의 이미지와 이야기를 날짜별로 살펴보세요.</p><a class="text-link" href="#exhibitions">전시 보기</a></section></div>
+        </div>
+      </main>
+
+      <main class="page shell" data-page="artists" hidden>
+        <div class="page-title"><div><span class="eyebrow">ARTISTS</span><h1>작가</h1></div><p>아뜰리에 키마와 함께하는 작가들을 소개합니다. 새로운 작가가 더해져도 같은 구성으로 확장됩니다.</p></div>
+        <div class="artist-index"><article><a href="#artist"><div class="image-frame"><img src="../assets/pilot/suk-jeen-sung-cheonghwa-baekgeum-dot-moon-jar.jpeg" alt="성석진의 청화백금닷 달항아리" /></div><h2>성석진 ↗</h2><p>Suk Jeen Sung</p></a></article><article><a href="#artist-rhee"><div class="image-frame"><img src="kym-10-assets/in-sook-rhee-preview.jpeg" alt="이인숙의 도자 작업 사진" /></div><h2>이인숙 ↗</h2><p>In Sook Rhee</p></a></article></div>
+      </main>
+
+      <main class="page shell" data-page="artist" hidden>
+        <section class="artist-hero"><div><span class="eyebrow">ARTIST</span><h1>성석진</h1><p class="roman">Suk Jeen Sung</p><p class="lead">달항아리 작업과 아뜰리에 키마에서 소개한 작품을 한곳에서 만나보세요.</p><p class="note">작가 소개 문장은 기존 작가 자료를 검토한 뒤 최종 문구로 교체합니다.</p><a class="text-link" href="#exhibition" style="margin-top:25px">관련 전시 보기</a></div><figure><div class="image-frame"><img src="../assets/pilot/suk-jeen-sung-cheonghwa-baekgeum-dot-moon-jar.jpeg" alt="성석진의 달항아리 작품" /></div><figcaption class="image-caption"><span>성석진 · 청화백금닷 달항아리</span><span>대표 이미지</span></figcaption></figure></section>
+        <section class="section-line"><div class="section-heading"><div><span class="eyebrow">SELECTED WORK</span><h2>작품</h2></div><a class="text-link" href="#artworks">전체 작품</a></div><div class="selected-work"><div class="image-frame"><img src="../assets/pilot/suk-jeen-sung-cheonghwa-baekgeum-dot-moon-jar.jpeg" alt="청화백금닷 달항아리 전체 모습" /></div><div><span class="eyebrow">CERAMICS</span><h3>청화백금닷 달항아리</h3><p>한 점의 작품을 자세히 살펴보고 구매 또는 문의할 수 있습니다.</p><a class="text-link" href="#artwork">작품 상세 보기</a></div></div></section>
+        <section class="section-line career-grid"><div><span class="eyebrow">BIOGRAPHY</span><h2 style="margin-top:10px">작가 이력</h2></div><div><div class="career-group"><h3>학력</h3><ul><li>2003 · 일본 동경예술대학 대학원 도예전공 졸업</li><li>1998 · 서울대학교 미술대학 도예과 졸업</li></ul></div><div class="career-group"><h3>주요 개인전</h3><ul><li>2022 · 성석진 달항아리전, 1707갤러리</li><li>2022 · 성석진 달항아리전—전통과 현대의 조화, 갤러리 가비</li></ul></div><a class="text-link" href="#exhibition">아뜰리에 키마 전시 보기</a></div></section>
+      </main>
+
+      <main class="page shell" data-page="artist-rhee" hidden>
+        <section class="artist-hero"><div><span class="eyebrow">ARTIST</span><h1>이인숙</h1><p class="roman">In Sook Rhee</p><p class="lead">이인숙의 도자 작업과 아뜰리에 키마의 전시 기록을 소개합니다.</p><p class="note">이 페이지는 같은 작가 템플릿의 두 번째 예시입니다. 본문과 이력은 기존 자료를 검토해 채웁니다.</p><a class="text-link" href="#exhibitions" style="margin-top:25px">전시 아카이브 보기</a></div><figure><div class="image-frame"><img src="kym-10-assets/in-sook-rhee-preview.jpeg" alt="이인숙의 도자 작업 사진" /></div><figcaption class="image-caption"><span>이인숙 · 대표 작업 이미지</span><span>기존 갤러리 자료</span></figcaption></figure></section>
+        <section class="section-line career-grid"><div><span class="eyebrow">BIOGRAPHY</span><h2 style="margin-top:10px">작가 이력</h2></div><div><div class="career-group"><h3>소개와 주요 활동</h3><p class="muted" style="font-size:14px">기존 작가 페이지의 학력, 개인전, 작업 노트를 이 읽기 영역에 옮깁니다. 항목 수가 늘어도 이 레이아웃을 유지합니다.</p></div><div class="career-group"><h3>아뜰리에 키마 전시</h3><p>2024 · 이인숙 개인전 〈Her Universe〉</p></div><a class="text-link" href="#exhibitions">전체 전시 보기</a></div></section>
+      </main>
+
+      <main class="page shell" data-page="artworks" hidden>
+        <div class="page-title"><div><span class="eyebrow">ARTWORKS</span><h1>작품</h1></div><p>판매 또는 구매 문의가 가능한 작품입니다. 각 작품의 가격과 구매 방법을 상세 페이지에서 확인하세요.</p></div>
+        <div class="artwork-grid"><article><a href="#artwork"><div class="image-frame"><img src="../assets/pilot/suk-jeen-sung-cheonghwa-baekgeum-dot-moon-jar.jpeg" alt="청화백금닷 달항아리" /></div><h2>청화백금닷 달항아리 ↗</h2><p>성석진 · 도자</p><p class="price">₩2,000,000</p></a></article></div>
+      </main>
+
+      <main class="page shell" data-page="artwork" hidden>
+        <div class="artwork-detail"><figure><div class="image-frame"><img src="../assets/pilot/suk-jeen-sung-cheonghwa-baekgeum-dot-moon-jar.jpeg" alt="성석진의 청화백금닷 달항아리 정면 전체 사진" /></div><figcaption class="image-caption"><span>작품 전체 모습</span><span>추가 각도는 추후 제공</span></figcaption></figure><div><a class="eyebrow" href="#artworks">← ARTWORKS</a><h1>청화백금닷<br />달항아리</h1><a href="#artist" class="artist-name">성석진 · Suk Jeen Sung ↗</a><p class="price">₩2,000,000</p><p class="availability">단일 작품 · 실제 재고는 갤러리 확인 후 확정</p><button class="primary-button" type="button" data-demo="checkout">구매하기</button><a class="secondary-button" href="#contact">구매 문의</a><p class="small-note">이 시안의 버튼은 결제되지 않습니다. 실제 구매 연결은 결제·재고 검증 후 진행합니다.</p><dl class="facts"><div><dt>제작연도</dt><dd>갤러리 확인 후 입력</dd></div><div><dt>재료</dt><dd>갤러리 확인 후 입력</dd></div><div><dt>크기</dt><dd>갤러리 확인 후 입력</dd></div><div><dt>상태</dt><dd>갤러리 확인 후 입력</dd></div></dl><p class="shipping">국내 배송 또는 서울 내 직접 전달을 협의합니다. 배송비와 일정은 결제 전 명확히 안내합니다.</p><a class="text-link" href="#contact" style="margin-top:12px">배송·반품 문의</a></div></div>
+      </main>
+
+      <main class="page shell" data-page="exhibitions" hidden>
+        <div class="page-title"><div><span class="eyebrow">EXHIBITIONS</span><h1>전시 아카이브</h1></div><p>아뜰리에 키마가 소개한 전시를 날짜별로 살펴보세요.</p></div>
+        <a href="#exhibition" class="exhibition-lead"><div class="image-frame"><img src="../public/jeong-hyun-ha-solo-exhibition/1-1.jpeg" alt="하정현 개인전 출품작 이미지" /></div><div><span class="eyebrow">FROM THE ARCHIVE · 2023</span><h2>Glad Landsby;<br />행복마을</h2><p>하정현 개인전 · 2023.07.18—08.19</p><span class="text-link">전시 보기</span></div></a>
+        <div class="archive-list"><div class="section-heading section-line"><div><span class="eyebrow">ALL EXHIBITIONS</span><h2>지난 전시</h2></div><span class="muted">12 exhibitions</span></div>
+          <div class="archive-row"><span class="year">2024</span><strong>키미 킴 개인전 〈UNBOUND〉</strong><span class="date">10.08—10.31</span></div>
+          <div class="archive-row"><span class="year">2024</span><strong>이인숙 개인전 〈Her Universe〉</strong><span class="date">05.03—05.30</span></div>
+          <div class="archive-row"><span class="year">2024</span><strong>안성민 개인전 〈Itaewon Memoir〉</strong><span class="date">01.19—02.16</span></div>
+          <div class="archive-row"><span class="year">2023</span><strong>홍성철 개인전 〈Through the Lines〉</strong><span class="date">11.04—11.30</span></div>
+          <div class="archive-row"><span class="year">2023</span><strong>김용훈 사진전 〈형과 색 그리고 빛〉</strong><span class="date">09.09—10.13</span></div>
+          <a class="archive-row" href="#exhibition"><span class="year">2023</span><strong>하정현 개인전 〈Glad Landsby; 행복마을〉</strong><span class="date">07.18—08.19</span><span class="arrow">↗</span></a>
+          <div class="archive-row"><span class="year">2023</span><strong>곽지유 개인전 〈겹; Layers〉</strong><span class="date">06.03—07.05</span></div>
+          <div class="archive-row"><span class="year">2023</span><strong>성석진 달항아리전</strong><span class="date">01.16—05.25</span></div>
+          <div class="archive-row"><span class="year">2022</span><strong>Premier Art Seoul 2022</strong><span class="date">10.13—10.16</span></div>
+          <div class="archive-row"><span class="year">2022</span><strong>김찬수 사진전 〈빛 속으로〉</strong><span class="date">08.04—08.14</span></div>
+          <div class="archive-row"><span class="year">2022</span><strong>아트 레이스 인 제주</strong><span class="date">07.30—09.04</span></div>
+          <div class="archive-row"><span class="year">2022</span><strong>The 11th Pink Art Fair Seoul</strong><span class="date">07.07—07.10</span></div>
+        </div>
+      </main>
+
+      <main class="page shell exhibition-detail" data-page="exhibition" hidden>
+        <div class="detail-heading"><a class="eyebrow" href="#exhibitions">← EXHIBITIONS</a><h1>Glad Landsby;<br />행복마을</h1><p>하정현 개인전 · 2023.07.18—08.19</p></div>
+        <figure><img class="hero-art" src="../public/jeong-hyun-ha-solo-exhibition/1-1.jpeg" alt="하정현 개인전 출품작" /><figcaption class="image-caption"><span>Glad Landsby; 행복마을</span><span>Atelier Kyma, 2023</span></figcaption></figure>
+        <section class="exhibition-copy section-line"><div><span class="eyebrow">EXHIBITION</span><h2 style="margin-top:12px">전시에 관하여</h2></div><p>전시를 소개하는 글을 이미지와 분리된 읽기 편한 폭으로 배치합니다. 기존 전시 기록의 본문과 작품별 설명은 내용 이관 때 그대로 검토해 옮깁니다.</p></section>
+        <section class="section-line"><div class="section-heading"><div><span class="eyebrow">WORKS ON VIEW</span><h2>전시 이미지</h2></div></div><div class="exhibition-gallery"><figure><img src="../public/jeong-hyun-ha-solo-exhibition/2-1.jpeg" alt="하정현 개인전 출품작 이미지 2" /><figcaption>전시 이미지 · 작품 정보 확인 후 캡션 추가</figcaption></figure><figure><img src="../public/jeong-hyun-ha-solo-exhibition/3-1.jpeg" alt="하정현 개인전 출품작 이미지 3" /><figcaption>전시 이미지 · 작품 정보 확인 후 캡션 추가</figcaption></figure></div></section>
+      </main>
+
+      <main class="page shell" data-page="about" hidden>
+        <section class="about-lead"><div><span class="eyebrow">ABOUT ATELIER KYMA</span><h1>갤러리</h1></div><p>작품과 작가, 그리고 그 작품을 만나는 사람들 사이에서 새로운 물결을 만들어 갑니다.</p></section>
+        <section class="language-section"><h2>한국어 <span class="muted">/ Korean</span></h2><p lang="ko">키마는 그리스어로 ‘물결’이라는 뜻입니다. 평면회화, 다양한 입체작업과 공예, 그리고 디자인 분야를 아우르며 예술을 더 가까이 소개하고자 합니다. 기존 소개 전문은 이 영역에 이어집니다.</p></section>
+        <section class="language-section"><h2>English</h2><p lang="en">Kyma means “wave” in Greek. Atelier Kyma brings the public closer to artists working across painting, sculpture, craft, and design. The existing English introduction continues here.</p></section>
+        <section class="language-section"><h2>Français</h2><p lang="fr">Kyma signifie « vague » en grec. L’Atelier Kyma rapproche le public des œuvres d’artistes de différentes disciplines. La présentation française existante se poursuit ici.</p></section>
+        <div class="about-visit"><a class="text-link" href="#contact">방문 정보 보기</a></div>
+      </main>
+
+      <main class="page shell" data-page="contact" hidden>
+        <div class="page-title"><div><span class="eyebrow">CONTACT & VISIT</span><h1>문의</h1></div><p>작품, 구매, 전시 또는 방문에 관해 연락해 주세요.</p></div>
+        <div class="contact-grid"><div><section class="contact-block"><h2>이메일 / EMAIL</h2><a href="mailto:info@atelierkyma.com">info@atelierkyma.com ↗</a></section><section class="contact-block"><h2>전화 / PHONE</h2><a href="tel:+82237850118">02-3785-0118 ↗</a></section><section class="contact-block"><h2>주소 / ADDRESS</h2><p>서울시 용산구 녹사평대로32길 47<br />1층 102호</p><small>방문 전 운영시간을 확인해 주세요.</small></section><section class="contact-block"><h2>영업시간 / HOURS</h2><p>화–금 11:00–19:00<br />토 12:00–18:00<br />일–월 휴무</p></section><section class="contact-block"><h2>인스타그램 / INSTAGRAM</h2><a href="https://www.instagram.com/atelierkyma/" target="_blank" rel="noopener noreferrer">@atelierkyma ↗</a></section></div><div><h2 class="form-title">작품 구매 문의</h2><p class="form-intro">문의만으로 작품이 예약되지는 않습니다. 갤러리가 재고와 배송 방법을 확인해 답변드립니다.</p><form id="inquiry-form" class="inquiry-form"><label for="inquiry-name">성함</label><input id="inquiry-name" name="name" autocomplete="name" required /><label for="inquiry-email">이메일</label><input id="inquiry-email" type="email" name="email" autocomplete="email" required /><label for="inquiry-artwork">문의 작품</label><select id="inquiry-artwork" name="artwork"><option>청화백금닷 달항아리 · 성석진</option><option>기타 문의</option></select><label for="inquiry-message">문의 내용</label><textarea id="inquiry-message" name="message" required></textarea><label class="checkbox-label"><input type="checkbox" required /><span>답변을 위한 개인정보 수집 및 이용에 동의합니다. (최종 고지문 검토 필요)</span></label><button type="submit" class="primary-button">문의 보내기</button><p class="small-note muted" style="margin-top:10px;font-size:12px">시안에서는 전송되지 않습니다.</p></form></div></div>
+      </main>
+    </div>
+    <footer class="site-footer"><div><strong>Atelier Kyma</strong><br />서울시 용산구 녹사평대로32길 47, 1층 102호<br />info@atelierkyma.com · +82 2-3785-0118</div><div class="footer-links"><a href="#artists">작가</a><a href="#artworks">작품</a><a href="#exhibitions">전시</a><a href="#about">갤러리</a><a href="#contact">문의</a></div></footer>
+    <div id="preview-toast" class="preview-toast" role="status" hidden></div>
+    <script>
+      const pages = [...document.querySelectorAll('[data-page]')];
+      const pagePicker = document.getElementById('page-picker');
+      const siteNav = document.getElementById('site-nav');
+      const menuButton = document.getElementById('menu-button');
+      const status = document.getElementById('preview-status');
+      const toast = document.getElementById('preview-toast');
+      let toastTimer;
+      function showPage() {
+        const requested = location.hash.slice(1);
+        const page = pages.some((item) => item.dataset.page === requested) ? requested : 'home';
+        pages.forEach((item) => { item.hidden = item.dataset.page !== page; });
+        pagePicker.value = page;
+        const navPage = ({ artist: 'artists', 'artist-rhee': 'artists', artwork: 'artworks', exhibition: 'exhibitions' })[page] || page;
+        siteNav.querySelectorAll('a').forEach((link) => {
+          if (link.hash === '#' + navPage) link.setAttribute('aria-current', 'page');
+          else link.removeAttribute('aria-current');
+        });
+        siteNav.classList.remove('is-open');
+        menuButton.setAttribute('aria-expanded', 'false');
+        status.textContent = pagePicker.options[pagePicker.selectedIndex].text + ' 페이지 미리보기';
+        window.scrollTo(0, 0);
+      }
+      pagePicker.addEventListener('change', () => { location.hash = pagePicker.value; });
+      menuButton.addEventListener('click', () => {
+        const open = siteNav.classList.toggle('is-open');
+        menuButton.setAttribute('aria-expanded', String(open));
+      });
+      document.querySelector('[data-demo="checkout"]').addEventListener('click', () => {
+        toast.textContent = '디자인 시안입니다. 실제 결제는 연결되어 있지 않습니다.';
+        toast.hidden = false;
+        clearTimeout(toastTimer);
+        toastTimer = setTimeout(() => { toast.hidden = true; }, 3500);
+      });
+      document.getElementById('inquiry-form').addEventListener('submit', (event) => {
+        event.preventDefault();
+        toast.textContent = '디자인 시안입니다. 문의는 전송되지 않았습니다.';
+        toast.hidden = false;
+        clearTimeout(toastTimer);
+        toastTimer = setTimeout(() => { toast.hidden = true; }, 3500);
+      });
+      window.addEventListener('hashchange', showPage);
+      showPage();
+    </script>
+  </body>
+</html>
