@@ -58,7 +58,7 @@
       .name-list small { font-size: 12px; color: var(--muted); align-self: center; }
       .home-links .text-link { margin-top: 20px; }
       .artist-index { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; padding: 36px 0 85px; }
-      .artist-index article:nth-child(2) { margin-top: 85px; }
+      .artist-index article:nth-child(even) { margin-top: 85px; }
       .artist-index .image-frame { aspect-ratio: 4 / 4.5; }
       .artist-index .image-frame img { padding: 6%; }
       .artist-index h2 { margin-top: 18px; font-size: 29px; }
@@ -215,7 +215,7 @@
         .home-intro { padding-top: 45px; padding-bottom: 45px; }
         .home-links { padding-bottom: 55px; }
         .artist-index, .artwork-grid, .exhibition-gallery { grid-template-columns: 1fr; }
-        .artist-index article:nth-child(2) { margin-top: 0; }
+        .artist-index article:nth-child(even) { margin-top: 0; }
         .artist-hero { padding-top: 28px; padding-bottom: 58px; }
         .artist-hero .roman { font-size: 18px; }
         .section-heading:has(+ .artist-work-grid) { align-items: start; flex-direction: column; gap: 8px; }
