@@ -1,8 +1,15 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import archive from "@/content/archive.json";
+import { pageMetadata } from "@/lib/siteMetadata";
 
-export const metadata: Metadata = { title: "갤러리" };
+export const metadata: Metadata = pageMetadata({
+  title: "갤러리",
+  description: "아뜰리에 키마의 이야기와 공간을 한국어, 영어, 프랑스어로 소개합니다. 서울 용산구 녹사평대로32길에 위치한 갤러리입니다.",
+  path: "/gallery",
+  image: archive.contact.image,
+  imageAlt: "아뜰리에 키마 갤러리 공간",
+});
 
 const paragraphs = (copy: string) => copy.split(/\n\s*\n/).map((paragraph) => paragraph.trim()).filter(Boolean);
 

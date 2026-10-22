@@ -4,6 +4,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { exhibitions } from "@/content/gallery";
 import type { ArchiveBlock } from "@/content/gallery";
+import { featuredHome } from "@/content/featured-home";
+import { pageMetadata } from "@/lib/siteMetadata";
 
 type Props = { params: Promise<{ slug: string }> };
 const getExhibition = (slug: string) => exhibitions.find((exhibition) => exhibition.slug === slug && exhibition.migrated);
@@ -32,7 +34,16 @@ function ArchiveContent({ blocks, title }: { blocks: ArchiveBlock[]; title: stri
 
 export function generateStaticParams() { return exhibitions.filter((exhibition) => exhibition.migrated).map(({ slug }) => ({ slug })); }
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  return { title: getExhibition((await params).slug)?.title ?? "전시" };
+  const exhibition = getExhibition((await params).slug);
+  if (!exhibition) notFound();
+  const image = exhibition.image ?? featuredHome.image;
+  return pageMetadata({
+    title: exhibition.title,
+    description: `${exhibition.title} · ${exhibition.startDate}부터 ${exhibition.endDate}까지. 아뜰리에 키마의 전시 기록과 작품 이미지를 살펴보세요.`,
+    path: `/exhibitions/${exhibition.slug}`,
+    image: image.src,
+    imageAlt: image.alt,
+  });
 }
 
 export default async function ExhibitionPage({ params }: Props) {

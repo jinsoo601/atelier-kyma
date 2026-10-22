@@ -4,13 +4,22 @@ import { notFound } from "next/navigation";
 import ArtistWorks from "@/components/gallery/ArtistWorks";
 import GalleryImageFrame from "@/components/gallery/GalleryImage";
 import { artists, exhibitions, exhibitionHref } from "@/content/gallery";
+import { pageMetadata } from "@/lib/siteMetadata";
 
 type Props = { params: Promise<{ slug: string }> };
 const getArtist = (slug: string) => artists.find((artist) => artist.slug === slug);
 
 export function generateStaticParams() { return artists.map(({ slug }) => ({ slug })); }
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  return { title: getArtist((await params).slug)?.name ?? "작가" };
+  const artist = getArtist((await params).slug);
+  if (!artist) notFound();
+  return pageMetadata({
+    title: `${artist.name} · ${artist.romanName}`,
+    description: `${artist.name} 작가의 작품과 이력, 아뜰리에 키마에서 소개한 전시를 만나보세요.`,
+    path: `/artists/${artist.slug}`,
+    image: artist.hero.src,
+    imageAlt: artist.hero.alt,
+  });
 }
 
 export default async function ArtistPage({ params }: Props) {

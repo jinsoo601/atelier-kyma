@@ -3,8 +3,15 @@ import Image from "next/image";
 import { artworks, contact } from "@/content/gallery";
 import archive from "@/content/archive.json";
 import PageTitle from "@/components/gallery/PageTitle";
+import { pageMetadata } from "@/lib/siteMetadata";
 
-export const metadata: Metadata = { title: "문의" };
+export const metadata: Metadata = pageMetadata({
+  title: "문의 · 방문",
+  description: "아뜰리에 키마의 작품 구매 문의, 주소, 연락처와 운영시간을 확인하세요.",
+  path: "/inquiries",
+  image: archive.contact.image,
+  imageAlt: "아뜰리에 키마 갤러리 공간",
+});
 
 type Props = { searchParams: Promise<{ artwork?: string }> };
 

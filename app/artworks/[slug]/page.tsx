@@ -3,13 +3,23 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import GalleryImageFrame from "@/components/gallery/GalleryImage";
 import { artists, artworks, formatKrw } from "@/content/gallery";
+import { pageMetadata } from "@/lib/siteMetadata";
 
 type Props = { params: Promise<{ slug: string }> };
 const getArtwork = (slug: string) => artworks.find((artwork) => artwork.slug === slug);
 
 export function generateStaticParams() { return artworks.map(({ slug }) => ({ slug })); }
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  return { title: getArtwork((await params).slug)?.title ?? "작품" };
+  const artwork = getArtwork((await params).slug);
+  if (!artwork) notFound();
+  const artist = artists.find(({ slug }) => slug === artwork.artistSlug);
+  return pageMetadata({
+    title: artwork.title,
+    description: `${artist?.name ?? "아뜰리에 키마"}의 ${artwork.title}. 작품 이미지, 제작 정보와 구매 문의 방법을 확인하세요.`,
+    path: `/artworks/${artwork.slug}`,
+    image: artwork.image.src,
+    imageAlt: artwork.image.alt,
+  });
 }
 
 export default async function ArtworkPage({ params }: Props) {

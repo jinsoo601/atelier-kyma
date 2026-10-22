@@ -3,8 +3,17 @@ import Link from "next/link";
 import GalleryImageFrame from "@/components/gallery/GalleryImage";
 import PageTitle from "@/components/gallery/PageTitle";
 import { exhibitionHref, exhibitions } from "@/content/gallery";
+import { featuredHome } from "@/content/featured-home";
+import { pageMetadata } from "@/lib/siteMetadata";
 
-export const metadata: Metadata = { title: "전시 아카이브" };
+const exhibitionImage = exhibitions.find((exhibition) => exhibition.image)?.image ?? featuredHome.image;
+export const metadata: Metadata = pageMetadata({
+  title: "전시 아카이브",
+  description: "아뜰리에 키마의 지난 전시를 날짜별로 살펴보세요. 전시 소개와 작품 이미지가 보관되어 있습니다.",
+  path: "/exhibitions",
+  image: exhibitionImage.src,
+  imageAlt: exhibitionImage.alt,
+});
 
 export default function ExhibitionsPage() {
   const featured = exhibitions.find((exhibition) => exhibition.migrated && exhibition.image);

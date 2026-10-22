@@ -3,8 +3,16 @@ import Link from "next/link";
 import GalleryImageFrame from "@/components/gallery/GalleryImage";
 import PageTitle from "@/components/gallery/PageTitle";
 import { artists, artworks, formatKrw } from "@/content/gallery";
+import { featuredHome } from "@/content/featured-home";
+import { pageMetadata } from "@/lib/siteMetadata";
 
-export const metadata: Metadata = { title: "작품" };
+export const metadata: Metadata = pageMetadata({
+  title: "작품",
+  description: "아뜰리에 키마의 작품을 살펴보고 가격, 제작 정보, 구매 문의 방법을 확인하세요.",
+  path: "/artworks",
+  image: artworks[0]?.image.src ?? featuredHome.image.src,
+  imageAlt: artworks[0]?.image.alt ?? featuredHome.image.alt,
+});
 
 const categoryLabel = {
   ceramics: "도자",
