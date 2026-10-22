@@ -17,7 +17,7 @@ An ID is assigned once and never derived from the title, artist name, image file
 ## Record fields
 
 - **Artist:** `id`, `slug`, Korean and romanized names, introduction, hero image, ordered portfolio images, complete career blocks, optional related exhibition. Add future artist IDs in `catalogIds` and keep biography/career information separate from sale claims.
-- **Artwork:** `id`, `slug`, `artistId`, title, category, ordered images with `src` and Korean `alt` (optional caption), year, materials, dimensions, and condition. Use `null` for a fact not yet verified; do not invent a year or dimensions. Image URLs are stable Vercel Blob paths and source files/rights remain separately traceable.
+- **Artwork:** `id`, `slug`, `artistId`, title, category, ordered images with `src` and Korean `alt` (optional caption), year, materials, and dimensions. Use `null` for a fact not yet verified; do not invent a year or dimensions. The gallery inspects works before listing; there is no public condition field. Image URLs are stable Vercel Blob paths and source files/rights remain separately traceable.
 - **Exhibition:** `id`, `slug`, title, dates, poster, ordered content blocks and image captions. A past exhibition remains an archive item; IDs survive title corrections.
 - **Product:** `id`, `kind` (`unique-artwork` or `small-good`), link to `artworkId` for an artwork or a standalone name/images for a small good, `availability`, and a separate `purchaseMethod`. For inquiry, also store one KRW asking price, quantity, and separate price/stock confirmation flags. For approved checkout, store the Toss `productKey` **instead of** a second editable price or quantity. Each small-good variant can initially be a separate product record; a cart and variant UI are later work.
 
@@ -49,4 +49,4 @@ The reusable [Atelier Kyma content editor skill](../.agents/skills/atelier-kyma-
 5. For the home hero, edit the single record in `content/featured-home.ts`; check its image, copy, link, rights, and any visible physical price card together.
 6. Review the change with Jin Soo or the gallery owner, run typecheck/lint/build, and verify the page on desktop and phone before publishing. A ChatGPT session can prepare the Git change; no editor dashboard is required for launch.
 
-Open pilot facts for the owner: creation year, materials, dimensions, condition, photo rights/clean image, actual physical stock, sale permission, and whether Korean delivery is included in the asking price. These belong to KYM-13 and KYM-16 before live checkout.
+Open pilot facts for the owner: creation year, materials, dimensions, photo rights/clean image, actual physical stock, sale permission, and whether Korean delivery is included in the asking price. These belong to KYM-13 and KYM-16 before live checkout.

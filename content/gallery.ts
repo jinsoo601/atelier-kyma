@@ -68,7 +68,6 @@ function artworkDetails(record: ArtworkRecord): Artwork["details"] {
     { label: "제작 연도", value: record.year === null ? null : String(record.year) },
     { label: "재료", value: record.materials },
     { label: "크기", value: record.dimensions },
-    { label: "상태", value: record.condition },
   ].filter((detail): detail is Artwork["details"][number] => detail.value !== null);
 }
 

@@ -9,7 +9,7 @@ Use this with the `atelier-kyma` repository. Work from the current code, not an 
 
 ## Gather the content
 
-For an artist, obtain the Korean and romanized names, introduction, complete career text, image order/captions, and any related exhibition. For an artwork or small good, obtain title, artist, approved photos, price in KRW, physical quantity, and the owner's decision about availability and sale method. Record year, materials, dimensions, condition, delivery terms, photo rights, and sale permission only when confirmed; use `null` or an explicit unconfirmed state otherwise. For an exhibition, obtain the original published slug if one exists, title, dates, poster, and ordered text/image blocks. Do not invent missing facts or copy buyer/order details into Git.
+For an artist, obtain the Korean and romanized names, introduction, complete career text, image order/captions, and any related exhibition. For an artwork or small good, obtain title, artist, approved photos, price in KRW, physical quantity, and the owner's decision about availability and sale method. Record year, materials, dimensions, delivery terms, photo rights, and sale permission only when confirmed; use `null` or an explicit unconfirmed state otherwise. The gallery inspects works before listing and does not publish a condition field. For an exhibition, obtain the original published slug if one exists, title, dates, poster, and ordered text/image blocks. Do not invent missing facts or copy buyer/order details into Git.
 
 If required files or decisions are missing, prepare the content and implementation that can be done safely, then ask the gallery owner or Jin Soo for the specific outstanding items. A draft inquiry page can remain `unconfirmed`; that state does not authorize checkout.
 
