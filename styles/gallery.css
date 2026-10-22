@@ -102,8 +102,11 @@
       .artwork-grid p { color: var(--muted); font-size: 13px; }
       .artwork-grid .price { margin-top: 10px; color: var(--ink); font-size: 16px; }
       .artwork-detail { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(300px, .75fr); gap: 6vw; padding-top: 58px; padding-bottom: 86px; }
-      .artwork-detail .image-frame { min-height: 630px; }
-      .artwork-detail .image-frame img { padding: 3%; max-height: 740px; }
+      .artwork-detail .artwork-media > figure .image-frame { min-height: 630px; }
+      .artwork-detail .artwork-media > figure .image-frame img { padding: 3%; max-height: 740px; }
+      .artwork-secondary-images { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; margin-top: 24px; }
+      .artwork-secondary-images .image-frame { aspect-ratio: 1; }
+      .artwork-secondary-images .image-frame img { padding: 4%; }
       .artwork-detail h1 { font-size: clamp(32px, 3.3vw, 52px); margin: 25px 0 10px; }
       .artwork-detail .artist-name { color: var(--muted); font-size: 16px; }
       .artwork-detail .price { font-size: 30px; margin-top: 42px; }
@@ -197,7 +200,7 @@
         .artist-hero .lead { margin-top: 25px; }
         .career-grid { grid-template-columns: 1fr; gap: 20px; }
         .artist-work-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-        .artwork-detail .image-frame { min-height: 0; aspect-ratio: 1; }
+        .artwork-detail .artwork-media > figure .image-frame { min-height: 0; aspect-ratio: 1; }
         .artwork-grid { grid-template-columns: repeat(2, 1fr); }
         .about-lead { padding-bottom: 50px; }
       }
@@ -221,7 +224,7 @@
         .artist-work-card .work-status { font-size: 11px; }
         .artist-work-actions { padding: 30px 0 55px; }
         .artwork-detail { padding-top: 28px; padding-bottom: 60px; }
-        .artwork-detail .image-frame { aspect-ratio: .9; }
+        .artwork-detail .artwork-media > figure .image-frame { aspect-ratio: .9; }
         .exhibition-lead { padding-bottom: 50px; }
         .archive-row { grid-template-columns: 1fr 22px; gap: 5px 12px; padding: 17px 0; }
         .archive-row .year { grid-column: 1; }

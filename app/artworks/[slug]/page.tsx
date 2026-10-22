@@ -20,10 +20,18 @@ export default async function ArtworkPage({ params }: Props) {
   return (
     <main className="shell">
       <div className="artwork-detail">
-        <figure>
-          <GalleryImageFrame image={artwork.image} sizes="(max-width: 800px) 100vw, 60vw" priority />
-          <figcaption className="image-caption"><span>작품 전체 모습</span></figcaption>
-        </figure>
+        <div className="artwork-media">
+          <figure>
+            <GalleryImageFrame image={artwork.image} sizes="(max-width: 800px) 100vw, 60vw" priority />
+            <figcaption className="image-caption"><span>{artwork.image.caption ?? "작품 전체 모습"}</span></figcaption>
+          </figure>
+          {artwork.images.length > 1 && <div className="artwork-secondary-images">
+            {artwork.images.slice(1).map((image) => <figure key={image.src}>
+              <GalleryImageFrame image={image} sizes="(max-width: 800px) 50vw, 28vw" />
+              {image.caption && <figcaption className="image-caption"><span>{image.caption}</span></figcaption>}
+            </figure>)}
+          </div>}
+        </div>
         <div>
           <Link className="eyebrow" href="/artworks">← ARTWORKS</Link>
           <h1>{artwork.title}</h1>

@@ -88,3 +88,9 @@ export const pilotProduct: InquiryProductRecord = {
   priceConfirmed: false,
   stockConfirmed: false,
 };
+
+/** Add future editorial artwork records here, in the order they should appear on /artworks. */
+export const artworkCatalog: ArtworkRecord[] = [pilotArtwork];
+
+/** A portfolio photograph needs no product. Small goods may have a product without an artwork page. */
+export const productCatalog: ProductRecord[] = [pilotProduct];

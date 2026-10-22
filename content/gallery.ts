@@ -1,6 +1,6 @@
 import artistImageManifest from "@/docs/kym-10-assets/artist-gallery-manifest.json";
 import archive from "@/content/archive.json";
-import { catalogIds, pilotArtwork, pilotProduct, type Availability } from "@/content/catalog";
+import { artworkCatalog, catalogIds, pilotArtwork, productCatalog, type Availability, type ArtworkRecord } from "@/content/catalog";
 
 export type GalleryImage = { src: string; alt: string; caption?: string };
 export type ArtistWork = GalleryImage & { id: string; title: string; artworkSlug?: string; priceLabel?: string };
@@ -28,6 +28,8 @@ export type Artwork = {
   artistId: string;
   artistSlug: string;
   image: GalleryImage;
+  images: GalleryImage[];
+  category: ArtworkRecord["category"];
   priceKrw: number;
   availability: Availability;
   purchaseMethod: "inquiry";
@@ -53,21 +55,55 @@ const artistImage = (file: string) => `/gallery/artists/${file}`;
 const sungPortfolioImage = (order: number) =>
   `${blobBase}/artists/suk-jeen-sung/portfolio-${String(order).padStart(2, "0")}.jpg`;
 
-export const artworks: Artwork[] = [
-  {
-    id: pilotArtwork.id,
-    productId: pilotProduct.id,
-    slug: pilotArtwork.slug,
-    title: pilotArtwork.title,
-    artistId: pilotArtwork.artistId,
-    artistSlug: "suk-jeen-sung",
-    image: pilotArtwork.images[0],
-    priceKrw: pilotProduct.priceKrw,
-    availability: pilotProduct.availability,
-    purchaseMethod: pilotProduct.purchaseMethod,
-    details: [],
-  },
-];
+const artistSlugById: Record<string, string> = {
+  [catalogIds.artists.sukJeenSung]: "suk-jeen-sung",
+  [catalogIds.artists.inSookRhee]: "in-sook-rhee",
+};
+
+function artworkDetails(record: ArtworkRecord): Artwork["details"] {
+  return [
+    { label: "제작 연도", value: record.year === null ? null : String(record.year) },
+    { label: "재료", value: record.materials },
+    { label: "크기", value: record.dimensions },
+    { label: "상태", value: record.condition },
+  ].filter((detail): detail is Artwork["details"][number] => detail.value !== null);
+}
+
+export const artworks: Artwork[] = artworkCatalog.map((record) => {
+  const matchingProducts = productCatalog.filter((item) => item.kind === "unique-artwork" && item.artworkId === record.id);
+  const product = matchingProducts[0];
+  const artistSlug = artistSlugById[record.artistId];
+  if (matchingProducts.length !== 1 || !artistSlug) {
+    throw new Error(`Artwork ${record.id} needs exactly one product and a registered artist.`);
+  }
+  if (product.purchaseMethod !== "inquiry") {
+    throw new Error(`Artwork ${record.id} checkout rendering requires KYM-15.`);
+  }
+  return {
+    id: record.id,
+    productId: product.id,
+    slug: record.slug,
+    title: record.title,
+    artistId: record.artistId,
+    artistSlug,
+    image: record.images[0],
+    images: record.images,
+    category: record.category,
+    priceKrw: product.priceKrw,
+    availability: product.availability,
+    purchaseMethod: product.purchaseMethod,
+    details: artworkDetails(record),
+  };
+});
+
+const catalogWorksForArtist = (artistId: string): ArtistWork[] =>
+  artworks.filter((artwork) => artwork.artistId === artistId).map((artwork) => ({
+    id: artwork.id,
+    title: artwork.title,
+    ...artwork.image,
+    artworkSlug: artwork.slug,
+    priceLabel: formatKrw(artwork.priceKrw),
+  }));
 
 const existingWorks = (artist: string): ArtistWork[] =>
   artistImageManifest
@@ -107,7 +143,7 @@ export const artists: Artist[] = [
     hero: { src: pilotSrc, alt: "성석진의 달항아리 작품", caption: "성석진 · 청화백금닷 달항아리" },
     worksLabel: "달항아리와 도자 작업",
     works: [
-      { id: pilotArtwork.id, title: artworks[0].title, ...artworks[0].image, artworkSlug: artworks[0].slug, priceLabel: formatKrw(artworks[0].priceKrw) },
+      ...catalogWorksForArtist(catalogIds.artists.sukJeenSung),
       ...existingWorks("성석진"),
     ],
     career: careerGroups("suk-jeen-sung"),
@@ -121,7 +157,7 @@ export const artists: Artist[] = [
     introduction: "이인숙의 도자 작업과 아뜰리에 키마의 전시 기록을 소개합니다.",
     hero: { src: archive.artists["in-sook-rhee"].profileImage, alt: "이인숙의 도자 작업", caption: "이인숙 · 대표 작업 이미지" },
     worksLabel: "Urban Jungle Project — Porcelain",
-    works: existingWorks("이인숙"),
+    works: [...catalogWorksForArtist(catalogIds.artists.inSookRhee), ...existingWorks("이인숙")],
     career: careerGroups("in-sook-rhee"),
     relatedExhibitionSlug: "rhee-in-sook-solo-exhibition-less-than-her-universe-greater-than",
   },
