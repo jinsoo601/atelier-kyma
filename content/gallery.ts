@@ -118,7 +118,7 @@ const existingWorks = (artist: string): ArtistWork[] =>
 
 const rheePortfolioImages = archive.artists["in-sook-rhee"].career.filter((block) => block.type === "image");
 
-const careerGroups = (slug: "suk-jeen-sung" | "in-sook-rhee"): CareerGroup[] => {
+const careerGroups = (slug: keyof typeof archive.artists): CareerGroup[] => {
   const groups: CareerGroup[] = [];
   for (const block of archive.artists[slug].career as ArchiveBlock[]) {
     if (block.type !== "text") continue;
