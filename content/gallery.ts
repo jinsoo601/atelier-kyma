@@ -127,7 +127,11 @@ const existingWorks = (artist: string): ArtistWork[] =>
       id: `${artist === "성석진" ? catalogIds.artists.sukJeenSung : catalogIds.artists.inSookRhee}-portfolio-${item.file}`,
       src: artist === "성석진" ? sungPortfolioImage(item.order) : rheePortfolioImages[item.order - 1]?.src ?? artistImage(item.file),
       title: item.caption || `작품 사진 ${String(item.order).padStart(2, "0")}`,
-      alt: item.caption ? `${artist}의 ${item.caption}` : `${artist}의 도자 작업 사진 ${item.order}`,
+      alt: item.caption
+        ? `${artist}의 ${item.caption}`
+        : artist === "이인숙"
+          ? rheePortfolioImages[item.order - 1]?.alt || `${artist}의 도자 작업 ${item.order}`
+          : `${artist}의 도자 작업 ${item.order}`,
     }));
 
 const rheePortfolioImages = archive.artists["in-sook-rhee"].career.filter((block) => block.type === "image");
@@ -189,7 +193,9 @@ const migratedArtists: Artist[] = migratedArtistProfiles.map((profile) => {
       id: `${profile.id}-portfolio-${String(index + 1).padStart(2, "0")}`,
       title: block.caption || `작품 사진 ${String(index + 1).padStart(2, "0")}`,
       src: block.src,
-      alt: block.alt,
+      alt: block.alt && !/작품 사진 \d+$/.test(block.alt)
+        ? block.alt
+        : `${profile.name}의 ${profile.worksLabel} 이미지 ${index + 1}`,
       caption: block.caption || undefined,
     })),
     career: careerGroups(profile.slug),
@@ -203,7 +209,7 @@ export const artists: Artist[] = [
     name: "성석진",
     romanName: "Suk Jeen Sung",
     introduction: "달항아리 작업과 아뜰리에 키마에서 소개한 작품을 한곳에서 만나보세요.",
-    hero: { src: pilotSrc, alt: "성석진의 달항아리 작품", caption: "성석진 · 청화백금닷 달항아리" },
+    hero: { src: pilotSrc, alt: pilotArtwork.images[0].alt, caption: "성석진 · 청화백금닷 달항아리" },
     worksLabel: "달항아리와 도자 작업",
     works: [
       ...catalogWorksForArtist(catalogIds.artists.sukJeenSung),
@@ -218,7 +224,7 @@ export const artists: Artist[] = [
     name: "이인숙",
     romanName: "In Sook Rhee",
     introduction: "이인숙의 도자 작업과 아뜰리에 키마의 전시 기록을 소개합니다.",
-    hero: { src: archive.artists["in-sook-rhee"].profileImage, alt: "이인숙의 도자 작업", caption: "이인숙 · 대표 작업 이미지" },
+    hero: { src: archive.artists["in-sook-rhee"].profileImage, alt: "이인숙의 초록색 도자 주전자와 금빛 점 장식 치타, 잎 모양 받침 위 찻잔", caption: "이인숙 · 대표 작업 이미지" },
     worksLabel: "Urban Jungle Project — Porcelain",
     works: [...catalogWorksForArtist(catalogIds.artists.inSookRhee), ...existingWorks("이인숙")],
     career: careerGroups("in-sook-rhee"),

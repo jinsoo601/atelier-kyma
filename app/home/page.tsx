@@ -3,8 +3,15 @@ import Image from "next/image";
 import Link from "next/link";
 import { artists } from "@/content/gallery";
 import { featuredHome } from "@/content/featured-home";
+import { pageMetadata } from "@/lib/siteMetadata";
 
-export const metadata: Metadata = { title: "홈" };
+export const metadata: Metadata = pageMetadata({
+  title: "홈",
+  description: "아뜰리에 키마가 소개하는 작가와 작품, 전시를 만나보세요. 서울 용산구의 갤러리 Atelier Kyma.",
+  path: "/home",
+  image: featuredHome.image.src,
+  imageAlt: featuredHome.image.alt,
+});
 
 export default function HomePage() {
   return (

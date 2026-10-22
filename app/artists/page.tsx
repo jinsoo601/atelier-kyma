@@ -3,8 +3,15 @@ import Link from "next/link";
 import { artists } from "@/content/gallery";
 import GalleryImageFrame from "@/components/gallery/GalleryImage";
 import PageTitle from "@/components/gallery/PageTitle";
+import { pageMetadata } from "@/lib/siteMetadata";
 
-export const metadata: Metadata = { title: "작가" };
+export const metadata: Metadata = pageMetadata({
+  title: "작가",
+  description: "아뜰리에 키마가 소개하는 작가들의 작품과 이력, 관련 전시를 살펴보세요.",
+  path: "/artists",
+  image: artists[0].hero.src,
+  imageAlt: artists[0].hero.alt,
+});
 
 export default function ArtistsPage() {
   return (
