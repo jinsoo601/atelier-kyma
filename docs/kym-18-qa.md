@@ -26,4 +26,4 @@ For interactive checks on the development server, use `http://localhost:3000`. T
 
 - KYM-15 must finish the on-site inquiry form before submission, error, privacy-consent, and spam handling can be tested. The current form controls are intentionally disabled, with email and phone available.
 - KYM-5 and KYM-17 cover live checkout, payment outcomes, and stock behavior after Toss provides a usable test path.
-- Check real-device loading and a production-domain performance trace after the new site is launched. Local build and image-loading checks do not establish a real-user speed score.
+- Check real-device loading and a production-domain performance trace after the new site is launched. Local build and image-loading checks do not establish a real-user speed score. A mobile PageSpeed Insights request against the Vercel preview returned HTTP 429, so no Lighthouse score was recorded.
