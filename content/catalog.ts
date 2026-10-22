@@ -25,7 +25,6 @@ export type ArtworkRecord = {
   year: number | null;
   materials: string | null;
   dimensions: string | null;
-  condition: string | null;
 };
 
 type ProductBase = {
@@ -42,6 +41,9 @@ export type InquiryProductRecord = ProductBase & ProductSubject & {
   purchaseMethod: "inquiry";
   priceKrw: number;
   quantity: number;
+  domesticShippingFeeKrw: number | null;
+  woodenBoxPackagingFeeKrw: number | null;
+  woodenBoxPackagingOptional: boolean;
   priceConfirmed: boolean;
   stockConfirmed: boolean;
   tossProductKey?: never;
@@ -60,7 +62,7 @@ export type CheckoutProductRecord = ProductBase & ProductSubject & {
 export type ProductRecord = InquiryProductRecord | CheckoutProductRecord;
 
 const pilotImage: CatalogImage = {
-  src: "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/artworks/suk-jeen-sung-cheonghwa-baekgeum-dot-moon-jar/hero.jpeg",
+  src: "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/artworks/suk-jeen-sung-cheonghwa-baekgeum-dot-moon-jar/suk-jeen-sung-cheonghwa-baekgeum-dot-moon-jar-clean.jpeg",
   alt: "성석진의 청화백금닷 달항아리",
 };
 
@@ -71,20 +73,28 @@ export const pilotArtwork: ArtworkRecord = {
   title: "청화백금닷 달항아리",
   category: "ceramics",
   images: [pilotImage],
-  year: null,
-  materials: null,
-  dimensions: null,
-  condition: null,
+  year: 2025,
+  materials: "하동백토, 청화유, 플래티넘",
+  dimensions: "20.5 × 20.5 × H21.3 cm",
 };
 
 export const pilotProduct: InquiryProductRecord = {
   id: catalogIds.products.moonJar,
   artworkId: pilotArtwork.id,
   kind: "unique-artwork",
-  availability: "unconfirmed",
+  availability: "available",
   purchaseMethod: "inquiry",
   priceKrw: 2_000_000,
   quantity: 1,
-  priceConfirmed: false,
-  stockConfirmed: false,
+  domesticShippingFeeKrw: 10_000,
+  woodenBoxPackagingFeeKrw: 15_000,
+  woodenBoxPackagingOptional: true,
+  priceConfirmed: true,
+  stockConfirmed: true,
 };
+
+/** Add future editorial artwork records here, in the order they should appear on /artworks. */
+export const artworkCatalog: ArtworkRecord[] = [pilotArtwork];
+
+/** A portfolio photograph needs no product. Small goods may have a product without an artwork page. */
+export const productCatalog: ProductRecord[] = [pilotProduct];

@@ -6,6 +6,13 @@ import { artists, artworks, formatKrw } from "@/content/gallery";
 
 export const metadata: Metadata = { title: "작품" };
 
+const categoryLabel = {
+  ceramics: "도자",
+  painting: "회화",
+  photography: "사진",
+  other: "기타",
+} as const;
+
 export default function ArtworksPage() {
   return (
     <main className="shell">
@@ -15,7 +22,7 @@ export default function ArtworksPage() {
           const artist = artists.find(({ slug }) => slug === artwork.artistSlug);
           return <article key={artwork.slug}><Link href={`/artworks/${artwork.slug}`}>
             <GalleryImageFrame image={artwork.image} sizes="(max-width: 600px) 100vw, 32vw" />
-            <h2>{artwork.title} ↗</h2><p>{artist?.name} · 도자</p><p className="price">{formatKrw(artwork.priceKrw)}</p>
+            <h2>{artwork.title} ↗</h2><p>{artist?.name} · {categoryLabel[artwork.category]}</p><p className="price">{formatKrw(artwork.priceKrw)}</p>
           </Link></article>;
         })}
       </div>
