@@ -31,6 +31,8 @@ export type Artwork = {
   images: GalleryImage[];
   category: ArtworkRecord["category"];
   priceKrw: number;
+  domesticShippingFeeKrw: number | null;
+  woodenBoxPackagingFeeKrw: number | null;
   availability: Availability;
   purchaseMethod: "inquiry";
   details: { label: string; value: string }[];
@@ -90,6 +92,8 @@ export const artworks: Artwork[] = artworkCatalog.map((record) => {
     images: record.images,
     category: record.category,
     priceKrw: product.priceKrw,
+    domesticShippingFeeKrw: product.domesticShippingFeeKrw,
+    woodenBoxPackagingFeeKrw: product.woodenBoxPackagingFeeKrw,
     availability: product.availability,
     purchaseMethod: product.purchaseMethod,
     details: artworkDetails(record),

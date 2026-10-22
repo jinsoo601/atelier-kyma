@@ -1,12 +1,13 @@
 # KYM-13 — One artwork catalog pattern
 
-The first saleable catalog example is 성석진's **청화백금닷 달항아리**. The artist's complete published career is preserved in `content/archive.json` and shown on `/artists/suk-jeen-sung`. The artwork is `kym-artwork-0001`; its inquiry product is `kym-product-0001`. The public asking price is read from that one product record in `content/catalog.ts`: **₩2,000,000**. Quantity **1** is the working assumption. Checkout is not active.
+The first saleable catalog example is 성석진's **청화백금닷 달항아리** (2025, 하동백토·청화유·플래티넘). The artist's complete published career is preserved in `content/archive.json` and shown on `/artists/suk-jeen-sung`. The artwork is `kym-artwork-0001`; its inquiry product is `kym-product-0001`. The public asking price is read from that one product record in `content/catalog.ts`: **₩2,000,000**. The owner confirmed one piece in stock and on sale. Domestic delivery **₩10,000** and wooden box packaging **₩15,000** are separate from the artwork price. Checkout is not active.
 
 ## Edit an existing work
 
-- Change inquiry price, quantity, or availability in its product record in `content/catalog.ts`. The artwork page, index, and artist card derive the same price. Check any physical price card visible in photos before changing a price.
+- Change inquiry price, quantity, availability, domestic delivery fee, or packaging fee in its product record in `content/catalog.ts`. The artwork page, index, and artist card derive the same price. Match the terms in Toss before activating its payment link.
 - Change title, ordered images, year, materials, dimensions, or condition in its artwork record. Unknown facts stay `null`; the page omits them. Keep the stable ID even if the title or price changes. A slug change needs a redirect.
-- Keep the work at `unconfirmed` while the gallery owner checks physical stock and sale permission. A buyer's inquiry does not reserve it. If it sells in person, the owner must stop any live Toss link before the site is updated to `sold`.
+- Keep new works at `unconfirmed` while the gallery owner checks physical stock and sale permission. This pilot is `available` because the owner confirmed both; a buyer's inquiry still does not reserve it. If it sells in person, the owner must stop any live Toss link before the site is updated to `sold`.
+- The original pilot photo had a physical price tag below the vessel. `assets/pilot/suk-jeen-sung-cheonghwa-baekgeum-dot-moon-jar-clean.jpeg` is a crop of that original at 1630×1790, preserving the actual vessel. The website serves an identical copy from `public/gallery/artworks/suk-jeen-sung-cheonghwa-baekgeum-dot-moon-jar/hero-clean.jpeg`. The 3260×3580 `-clean-2x.jpeg` file is interpolated for optional upload; it does not contain newly recovered detail. Do not use AI-generated variants that change the vessel's glaze or surface as sale photos.
 
 ## Add another artist and artwork
 
@@ -20,4 +21,4 @@ For a small good such as a cup, add a unique `kind: "small-good"` product record
 
 ## Owner and payment handoff
 
-The pilot still needs owner confirmation of production year, materials, dimensions, condition, actual physical stock, sale permission, photo rights, a clean image or approved crop without the visible price card, and whether domestic delivery is included in ₩2,000,000. Until those are confirmed, the site remains inquiry-only. A matching Toss LinkPay product/key can be recorded only after it exists and the merchant approval and stock behavior are checked in KYM-4/5. KYM-15 implements live checkout. Do not place a second checkout price or checkout URL in the repository.
+The pilot still needs its exact dimensions (50 cm is tentative), condition, and confirmation of how the box fee is applied when arranging delivery. The clean crop should be reviewed against the real work. The gallery owner confirmed year, materials, price, one-piece stock, sale permission, and separate delivery and packaging charges. The user will register the cleaned photo with Toss LinkPay and supply the resulting link. Merchant approval and stock behavior are checked in KYM-4/5; KYM-15 implements live checkout. Do not place a second checkout price or checkout URL in the repository.

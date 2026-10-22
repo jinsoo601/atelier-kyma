@@ -42,6 +42,8 @@ export type InquiryProductRecord = ProductBase & ProductSubject & {
   purchaseMethod: "inquiry";
   priceKrw: number;
   quantity: number;
+  domesticShippingFeeKrw: number | null;
+  woodenBoxPackagingFeeKrw: number | null;
   priceConfirmed: boolean;
   stockConfirmed: boolean;
   tossProductKey?: never;
@@ -60,7 +62,7 @@ export type CheckoutProductRecord = ProductBase & ProductSubject & {
 export type ProductRecord = InquiryProductRecord | CheckoutProductRecord;
 
 const pilotImage: CatalogImage = {
-  src: "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/artworks/suk-jeen-sung-cheonghwa-baekgeum-dot-moon-jar/hero.jpeg",
+  src: "/gallery/artworks/suk-jeen-sung-cheonghwa-baekgeum-dot-moon-jar/hero-clean.jpeg",
   alt: "성석진의 청화백금닷 달항아리",
 };
 
@@ -71,8 +73,8 @@ export const pilotArtwork: ArtworkRecord = {
   title: "청화백금닷 달항아리",
   category: "ceramics",
   images: [pilotImage],
-  year: null,
-  materials: null,
+  year: 2025,
+  materials: "하동백토, 청화유, 플래티넘",
   dimensions: null,
   condition: null,
 };
@@ -81,12 +83,14 @@ export const pilotProduct: InquiryProductRecord = {
   id: catalogIds.products.moonJar,
   artworkId: pilotArtwork.id,
   kind: "unique-artwork",
-  availability: "unconfirmed",
+  availability: "available",
   purchaseMethod: "inquiry",
   priceKrw: 2_000_000,
   quantity: 1,
-  priceConfirmed: false,
-  stockConfirmed: false,
+  domesticShippingFeeKrw: 10_000,
+  woodenBoxPackagingFeeKrw: 15_000,
+  priceConfirmed: true,
+  stockConfirmed: true,
 };
 
 /** Add future editorial artwork records here, in the order they should appear on /artworks. */
