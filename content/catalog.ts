@@ -44,6 +44,7 @@ export type InquiryProductRecord = ProductBase & ProductSubject & {
   quantity: number;
   domesticShippingFeeKrw: number | null;
   woodenBoxPackagingFeeKrw: number | null;
+  woodenBoxPackagingOptional: boolean;
   priceConfirmed: boolean;
   stockConfirmed: boolean;
   tossProductKey?: never;
@@ -89,6 +90,7 @@ export const pilotProduct: InquiryProductRecord = {
   quantity: 1,
   domesticShippingFeeKrw: 10_000,
   woodenBoxPackagingFeeKrw: 15_000,
+  woodenBoxPackagingOptional: true,
   priceConfirmed: true,
   stockConfirmed: true,
 };

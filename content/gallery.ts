@@ -33,6 +33,7 @@ export type Artwork = {
   priceKrw: number;
   domesticShippingFeeKrw: number | null;
   woodenBoxPackagingFeeKrw: number | null;
+  woodenBoxPackagingOptional: boolean;
   availability: Availability;
   purchaseMethod: "inquiry";
   details: { label: string; value: string }[];
@@ -94,6 +95,7 @@ export const artworks: Artwork[] = artworkCatalog.map((record) => {
     priceKrw: product.priceKrw,
     domesticShippingFeeKrw: product.domesticShippingFeeKrw,
     woodenBoxPackagingFeeKrw: product.woodenBoxPackagingFeeKrw,
+    woodenBoxPackagingOptional: product.woodenBoxPackagingOptional,
     availability: product.availability,
     purchaseMethod: product.purchaseMethod,
     details: artworkDetails(record),

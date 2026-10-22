@@ -41,7 +41,7 @@ export default async function ArtworkPage({ params }: Props) {
           {artwork.purchaseMethod === "inquiry" && !["reserved", "sold"].includes(artwork.availability) && <Link className="secondary-button" href={`/inquiries?artwork=${encodeURIComponent(artwork.slug)}`}>구매 문의</Link>}
           {artwork.details.length > 0 && <dl className="facts">{artwork.details.map(({ label, value }) => <div key={label}><dt>{label}</dt><dd>{value}</dd></div>)}</dl>}
           <p className="shipping">{artwork.domesticShippingFeeKrw !== null && artwork.woodenBoxPackagingFeeKrw !== null
-            ? `국내 배송비(${formatKrw(artwork.domesticShippingFeeKrw)})와 오동나무 상자 포장비(${formatKrw(artwork.woodenBoxPackagingFeeKrw)})는 작품 가격과 별도입니다. 서울 내 직접 전달은 별도 협의합니다.`
+            ? `국내 배송비는 ${formatKrw(artwork.domesticShippingFeeKrw)}이며 작품 가격과 별도입니다. ${artwork.woodenBoxPackagingOptional ? `오동나무 상자 포장을 선택하면 추가 비용은 ${formatKrw(artwork.woodenBoxPackagingFeeKrw)}입니다.` : `오동나무 상자 포장비는 ${formatKrw(artwork.woodenBoxPackagingFeeKrw)}이며 작품 가격과 별도입니다.`} 서울 내 직접 전달은 별도 협의합니다.`
             : "국내 배송 또는 서울 내 직접 전달을 협의합니다. 배송비와 일정은 구매 확정 전에 안내합니다."}</p>
         </div>
       </div>
