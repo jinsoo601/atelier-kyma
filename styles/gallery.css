@@ -79,7 +79,7 @@
       .artist-work-card { min-width: 0; }
       .artist-work-card .image-frame { aspect-ratio: 1; }
       .artist-work-card .image-frame img { padding: 6%; }
-      .artist-work-card figcaption { padding-top: 14px; color: #595751; font-size: 13px; line-height: 1.55; word-break: keep-all; }
+      .artist-work-card figcaption { padding-top: 14px; color: #595751; font-size: 13px; line-height: 1.55; word-break: keep-all; white-space: pre-line; }
       .artist-work-card .work-status { display: block; margin-top: 7px; color: var(--accent); font-size: 12px; font-weight: 600; }
       .artist-work-card a:hover .image-frame { background: #e7e3da; }
       .artist-work-card a:hover figcaption { color: var(--accent); }
@@ -95,6 +95,7 @@
       .career-group li { margin-bottom: 7px; line-height: 1.55; font-size: 14px; }
       .career-group ul { padding-left: 19px; margin: 0; }
       .career-note { margin: 0; color: #5f5d58; line-height: 1.85; font-size: 14px; white-space: pre-line; }
+      .career-prose p { margin: 0 0 14px; color: #5f5d58; line-height: 1.85; font-size: 14px; white-space: pre-line; }
       .artwork-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; padding: 36px 0 90px; }
       .artwork-grid .image-frame { aspect-ratio: 4 / 5; }
       .artwork-grid .image-frame img { padding: 5%; }
