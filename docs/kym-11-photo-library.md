@@ -6,7 +6,7 @@ The sample photo library for 성석진 is in the public Vercel Blob store `ateli
 
 | Order | Caption | Web copy | Available source | Web SHA-256 | Published image |
 | --- | --- | --- | --- | --- | --- |
-| Pilot | 청화백금닷 달항아리 | 1630×2082 | 1630×2082 | `548837bc07c4f4f8877f5298a05350d37b35755666c9d97bc739562b308cfdf4` | [Blob](https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/artworks/suk-jeen-sung-cheonghwa-baekgeum-dot-moon-jar/hero.jpeg) |
+| Pilot, clean crop | 청화백금닷 달항아리 | 1630×1790 | 1630×2082 original | `8f17192a241b6f43aee7bfb08a3f230bb5688782515155e89366da8d6325ebad` | [Blob](https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/artworks/suk-jeen-sung-cheonghwa-baekgeum-dot-moon-jar/suk-jeen-sung-cheonghwa-baekgeum-dot-moon-jar-clean.jpeg) |
 | 01 | 지리산 하동백토, 백유 | 1000×1064 | 2000×2127 | `3699e300bcbc0b34b79b6e82ec440c3a7c2930a8806b4a279a12ed53c771295c` | [Blob](https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/artists/suk-jeen-sung/portfolio-01.jpg) |
 | 02 | 지리산하동백토 , 백유+재유(2중시유), 수금(3벌소성) | 1000×752 | 500×376 | `5348db1bcff600e65ff7dee17172b69792399f2b4d155f376841382ac286fca2` | [Blob](https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/artists/suk-jeen-sung/portfolio-02.jpg) |
 | 03 | 지리산하동백토 , 백유+재유(2중시유), 수금(3벌소성) | 1000×698 | 500×349 | `91e8d608aaa4067c19caa2af5cdc3fd8635f9f36d0f022d5205e611ffe22a2a6` | [Blob](https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/artists/suk-jeen-sung/portfolio-03.jpg) |
@@ -26,7 +26,7 @@ The pilot work is the ₩2,000,000, one-of-one artwork record in [`content/galle
 
 The 12 source files are backed up in [`assets/masters/suk-jeen-sung/`](../assets/masters/suk-jeen-sung/), outside `public/`. The pilot source is also in [`assets/pilot/`](../assets/pilot/) and its backup is `assets/masters/suk-jeen-sung/cheonghwa-baekgeum-dot-moon-jar-source.jpeg`. `portfolio-01` and `portfolio-12` have higher-resolution legacy sources (2000×2127 and 2591×2707). The other ten legacy Sanity sources are only about 500 pixels wide; their 1000-pixel web copies do not add detail. Obtain gallery-owned originals for those ten if higher-quality images become available. Do not describe these 500-pixel files as high-resolution masters.
 
-The published files were downloaded from Blob on 21 October 2026 and checked byte-for-byte against the web copies above (pilot against `assets/pilot/`).
+The initial files were downloaded from Blob on 21 October 2026 and checked byte-for-byte against the web copies. The clean pilot crop was uploaded on 22 October 2026; Vercel's ETag matched the local file's MD5, and its SHA-256 is recorded above. The earlier [`hero.jpeg`](https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/artworks/suk-jeen-sung-cheonghwa-baekgeum-dot-moon-jar/hero.jpeg) remains in Blob as the price-tagged original but is not used by the new site.
 
 ## Repeat for a new artwork or artist
 

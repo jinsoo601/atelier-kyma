@@ -62,7 +62,7 @@ export type CheckoutProductRecord = ProductBase & ProductSubject & {
 export type ProductRecord = InquiryProductRecord | CheckoutProductRecord;
 
 const pilotImage: CatalogImage = {
-  src: "/gallery/artworks/suk-jeen-sung-cheonghwa-baekgeum-dot-moon-jar/hero-clean.jpeg",
+  src: "https://rw1qqgsmaxclw3vy.public.blob.vercel-storage.com/artworks/suk-jeen-sung-cheonghwa-baekgeum-dot-moon-jar/suk-jeen-sung-cheonghwa-baekgeum-dot-moon-jar-clean.jpeg",
   alt: "성석진의 청화백금닷 달항아리",
 };
 
