@@ -3,6 +3,15 @@ export const catalogIds = {
   artists: {
     sukJeenSung: "kym-artist-0001",
     inSookRhee: "kym-artist-0002",
+    ahnSeongmin: "kym-artist-0003",
+    ehjaKang: "kym-artist-0004",
+    hongSungchul: "kym-artist-0005",
+    jeongHyunHa: "kym-artist-0006",
+    jiyuKwak: "kym-artist-0007",
+    laurentDorchin: "kym-artist-0008",
+    muGyuLee: "kym-artist-0009",
+    yongHoonKim: "kym-artist-0010",
+    zinooPark: "kym-artist-0011",
   },
   artworks: {
     moonJar: "kym-artwork-0001",

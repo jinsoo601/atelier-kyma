@@ -27,14 +27,14 @@ export default async function ArtistPage({ params }: Props) {
           <figcaption className="image-caption"><span>{artist.hero.caption}</span></figcaption>
         </figure>
       </section>
-      <section className="section-line">
+      <section className="section-line artist-works-section">
         <div className="section-heading"><div><span className="eyebrow">WORKS</span><h2>작품</h2></div><p className="artist-work-heading-note">{artist.worksLabel}</p></div>
         <ArtistWorks slug={artist.slug} works={artist.works} />
       </section>
       {artist.career.length > 0 && (
         <section className="section-line career-grid">
           <div><span className="eyebrow">BIOGRAPHY</span><h2>작가 이력</h2></div>
-          <div>{artist.career.map((group) => <div className="career-group" key={group.heading}><h3>{group.heading}</h3>{group.note ? <blockquote className="career-note">{group.entries.join("\n")}</blockquote> : <ul>{group.entries.map((entry) => <li key={entry}>{entry}</li>)}</ul>}</div>)}</div>
+          <div>{artist.career.map((group, index) => <div className="career-group" key={`${group.heading}-${index}`}>{group.heading && <h3>{group.heading}</h3>}{group.note ? <blockquote className="career-note">{group.entries.join("\n")}</blockquote> : group.prose ? <div className="career-prose">{group.entries.map((entry, entryIndex) => <p key={entryIndex}>{entry}</p>)}</div> : <ul>{group.entries.map((entry, entryIndex) => <li key={entryIndex}>{entry}</li>)}</ul>}</div>)}</div>
         </section>
       )}
       {exhibition && (

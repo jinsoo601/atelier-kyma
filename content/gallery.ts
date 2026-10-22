@@ -4,7 +4,7 @@ import { artworkCatalog, catalogIds, pilotArtwork, productCatalog, type Availabi
 
 export type GalleryImage = { src: string; alt: string; caption?: string };
 export type ArtistWork = GalleryImage & { id: string; title: string; artworkSlug?: string; priceLabel?: string };
-export type CareerGroup = { heading: string; entries: string[]; note?: boolean };
+export type CareerGroup = { heading: string; entries: string[]; note?: boolean; prose?: boolean };
 export type ArchiveBlock =
   | { type: "text"; style: string; list: boolean; text: string }
   | { type: "image"; src: string; alt: string; caption: string };
@@ -61,6 +61,15 @@ const sungPortfolioImage = (order: number) =>
 const artistSlugById: Record<string, string> = {
   [catalogIds.artists.sukJeenSung]: "suk-jeen-sung",
   [catalogIds.artists.inSookRhee]: "in-sook-rhee",
+  [catalogIds.artists.ahnSeongmin]: "ahn-seongmin",
+  [catalogIds.artists.ehjaKang]: "ehja-kang",
+  [catalogIds.artists.hongSungchul]: "hong-sungchul",
+  [catalogIds.artists.jeongHyunHa]: "jeong-hyun-ha",
+  [catalogIds.artists.jiyuKwak]: "jiyu-kwak",
+  [catalogIds.artists.laurentDorchin]: "laurent-dorchin",
+  [catalogIds.artists.muGyuLee]: "mu-gyu-lee",
+  [catalogIds.artists.yongHoonKim]: "yong-hoon-kim",
+  [catalogIds.artists.zinooPark]: "zinoo-park",
 };
 
 function artworkDetails(record: ArtworkRecord): Artwork["details"] {
@@ -127,16 +136,65 @@ const careerGroups = (slug: keyof typeof archive.artists): CareerGroup[] => {
   const groups: CareerGroup[] = [];
   for (const block of archive.artists[slug].career as ArchiveBlock[]) {
     if (block.type !== "text") continue;
+    const cleanedText = block.text.replace(/\u200d/g, "").trim();
+    if (!cleanedText || cleanedText === "_") continue;
     if (block.style.startsWith("h")) {
-      groups.push({ heading: block.text, entries: [] });
+      groups.push({ heading: cleanedText, entries: [] });
     } else if (block.style === "blockquote") {
-      groups.push({ heading: "작가 노트", entries: [block.text], note: true });
-    } else if (groups.length) {
-      groups[groups.length - 1].entries.push(block.text);
+      groups.push({ heading: "작가 노트", entries: [cleanedText], note: true });
+    } else {
+      const prose = !block.list;
+      if (!groups.length) groups.push({ heading: "작가 소개", entries: [], prose });
+      const current = groups[groups.length - 1];
+      if (current.entries.length && (Boolean(current.prose) !== prose || current.note)) {
+        groups.push({ heading: "", entries: [], prose });
+      } else if (!current.entries.length) {
+        current.prose = prose;
+      }
+      groups[groups.length - 1].entries.push(cleanedText);
     }
   }
   return groups.filter((group) => group.entries.length);
 };
+
+const migratedArtistProfiles: {
+  id: string;
+  slug: keyof typeof archive.artists;
+  name: string;
+  romanName: string;
+  introduction: string;
+  worksLabel: string;
+  relatedExhibitionSlug?: string;
+}[] = [
+  { id: catalogIds.artists.ahnSeongmin, slug: "ahn-seongmin", name: "안성민", romanName: "Ahn Seongmin", introduction: "안성민 작가의 작품과 활동 기록을 소개합니다.", worksLabel: "회화 작업", relatedExhibitionSlug: "ahn-seongmin-solo-exhibition-n-less-than-itaewon-memoir-greater-than" },
+  { id: catalogIds.artists.ehjaKang, slug: "ehja-kang", name: "강애자", romanName: "Ehja Kang", introduction: "강애자 작가의 작품과 활동 기록을 소개합니다.", worksLabel: "작품 아카이브" },
+  { id: catalogIds.artists.hongSungchul, slug: "hong-sungchul", name: "홍성철", romanName: "Hong Sungchul", introduction: "홍성철 작가의 작품과 활동 기록을 소개합니다.", worksLabel: "작품 아카이브", relatedExhibitionSlug: "hong-sungchul-solo-exhibition-through-the-lines" },
+  { id: catalogIds.artists.jeongHyunHa, slug: "jeong-hyun-ha", name: "하정현", romanName: "Jeong Hyun Ha", introduction: "하정현 작가의 작품과 활동 기록을 소개합니다.", worksLabel: "작품 아카이브", relatedExhibitionSlug: "jeong-hyun-ha-solo-exhibition" },
+  { id: catalogIds.artists.jiyuKwak, slug: "jiyu-kwak", name: "곽지유", romanName: "Jiyu Kwak", introduction: "곽지유 작가의 작품과 활동 기록을 소개합니다.", worksLabel: "작품 아카이브", relatedExhibitionSlug: "jiyu-kwak-solo-exhibition-layers" },
+  { id: catalogIds.artists.laurentDorchin, slug: "laurent-dorchin", name: "로렝 도친", romanName: "Laurent Dorchin", introduction: "로렝 도친 작가의 작품과 소개를 만나보세요.", worksLabel: "회화 작업" },
+  { id: catalogIds.artists.muGyuLee, slug: "mu-gyu-lee", name: "이무규", romanName: "Mu Gyu Lee", introduction: "이무규 작가의 가구와 활동 기록을 소개합니다.", worksLabel: "가구 작업" },
+  { id: catalogIds.artists.yongHoonKim, slug: "yong-hoon-kim", name: "김용훈", romanName: "Yong Hoon Kim", introduction: "김용훈 작가의 사진과 활동 기록을 소개합니다.", worksLabel: "사진 작업", relatedExhibitionSlug: "yong-hoon-kim-solo-exhibition" },
+  { id: catalogIds.artists.zinooPark, slug: "zinoo-park", name: "지누박", romanName: "Zinoo Park", introduction: "지누박 작가의 작품과 활동 기록을 소개합니다.", worksLabel: "작품 아카이브" },
+];
+
+const migratedArtists: Artist[] = migratedArtistProfiles.map((profile) => {
+  const original = archive.artists[profile.slug];
+  const imageBlocks = (original.career as ArchiveBlock[]).filter(
+    (block): block is Extract<ArchiveBlock, { type: "image" }> => block.type === "image",
+  );
+  return {
+    ...profile,
+    hero: { src: original.profileImage, alt: `${profile.name} 작가의 대표 이미지`, caption: profile.name },
+    works: imageBlocks.map((block, index) => ({
+      id: `${profile.id}-portfolio-${String(index + 1).padStart(2, "0")}`,
+      title: block.caption || `작품 사진 ${String(index + 1).padStart(2, "0")}`,
+      src: block.src,
+      alt: block.alt,
+      caption: block.caption || undefined,
+    })),
+    career: careerGroups(profile.slug),
+  };
+});
 
 export const artists: Artist[] = [
   {
@@ -166,6 +224,7 @@ export const artists: Artist[] = [
     career: careerGroups("in-sook-rhee"),
     relatedExhibitionSlug: "rhee-in-sook-solo-exhibition-less-than-her-universe-greater-than",
   },
+  ...migratedArtists,
 ];
 
 const exhibitionSummaries: Exhibition[] = [
