@@ -77,7 +77,7 @@ export const pilotArtwork: ArtworkRecord = {
   year: 2025,
   materials: "하동백토, 청화유, 플래티넘",
   dimensions: "20.5 × 20.5 × H21.3 cm",
-  condition: null,
+  condition: "완벽한 상태, 파손 없음",
 };
 
 export const pilotProduct: InquiryProductRecord = {
