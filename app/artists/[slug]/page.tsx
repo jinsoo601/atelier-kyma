@@ -27,7 +27,7 @@ export default async function ArtistPage({ params }: Props) {
           <figcaption className="image-caption"><span>{artist.hero.caption}</span></figcaption>
         </figure>
       </section>
-      <section className="section-line">
+      <section className="section-line artist-works-section">
         <div className="section-heading"><div><span className="eyebrow">WORKS</span><h2>작품</h2></div><p className="artist-work-heading-note">{artist.worksLabel}</p></div>
         <ArtistWorks slug={artist.slug} works={artist.works} />
       </section>

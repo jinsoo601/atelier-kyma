@@ -76,6 +76,7 @@
       .section-heading { display: flex; justify-content: space-between; align-items: end; gap: 20px; padding: 25px 0 30px; }
       .section-heading h2 { margin-top: 10px; }
       .artist-work-heading-note { color: var(--muted); font-size: 13px; }
+      .artist-works-section { padding-bottom: 82px; }
       .artist-work-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 44px 22px; padding-top: 4px; }
       .artist-work-card { min-width: 0; }
       .artist-work-card .image-frame { aspect-ratio: 1; }
@@ -84,7 +85,7 @@
       .artist-work-card .work-status { display: block; margin-top: 7px; color: var(--accent); font-size: 12px; font-weight: 600; }
       .artist-work-card a:hover .image-frame { background: #e7e3da; }
       .artist-work-card a:hover figcaption { color: var(--accent); }
-      .artist-work-actions { display: flex; justify-content: center; padding: 36px 0 82px; }
+      .artist-work-actions { display: flex; justify-content: center; padding-top: 36px; }
       .artist-work-toggle { display: inline-flex; align-items: center; gap: 14px; border: 0; border-bottom: 1px solid var(--ink); padding: 8px 2px; background: transparent; color: var(--ink); font-size: 14px; font-weight: 600; cursor: pointer; }
       .artist-work-toggle::after { content: "↓"; font-size: 17px; font-weight: 400; }
       .artist-work-toggle[aria-expanded="true"]::after { content: "↑"; }
@@ -224,7 +225,8 @@
         .artist-work-card .image-frame img { padding: 4%; }
         .artist-work-card figcaption { font-size: 12px; overflow-wrap: anywhere; }
         .artist-work-card .work-status { font-size: 11px; }
-        .artist-work-actions { padding: 30px 0 55px; }
+        .artist-works-section { padding-bottom: 55px; }
+        .artist-work-actions { padding-top: 30px; }
         .artwork-detail { padding-top: 28px; padding-bottom: 60px; }
         .artwork-detail .artwork-media > figure .image-frame { aspect-ratio: .9; }
         .exhibition-lead { padding-bottom: 50px; }
