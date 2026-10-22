@@ -1,6 +1,6 @@
 # KYM-13 — One artwork catalog pattern
 
-The first saleable catalog example is 성석진's **청화백금닷 달항아리** (2025, 하동백토·청화유·플래티넘). The artist's complete published career is preserved in `content/archive.json` and shown on `/artists/suk-jeen-sung`. The artwork is `kym-artwork-0001`; its inquiry product is `kym-product-0001`. The public asking price is read from that one product record in `content/catalog.ts`: **₩2,000,000**. The owner confirmed one piece in stock and on sale. Domestic delivery **₩10,000** and wooden box packaging **₩15,000** are separate from the artwork price. Checkout is not active.
+The first saleable catalog example is 성석진's **청화백금닷 달항아리** (2025, 하동백토·청화유·플래티넘, 20.5 × 20.5 × H21.3 cm). The artist's complete published career is preserved in `content/archive.json` and shown on `/artists/suk-jeen-sung`. The artwork is `kym-artwork-0001`; its inquiry product is `kym-product-0001`. The public asking price is read from that one product record in `content/catalog.ts`: **₩2,000,000**. The owner confirmed one piece in stock and on sale. Domestic delivery **₩10,000** and wooden box packaging **₩15,000** are separate from the artwork price. Checkout is not active.
 
 ## Edit an existing work
 
@@ -21,4 +21,4 @@ For a small good such as a cup, add a unique `kind: "small-good"` product record
 
 ## Owner and payment handoff
 
-The pilot still needs its exact dimensions (50 cm is tentative), condition, and confirmation of how the box fee is applied when arranging delivery. The clean crop should be reviewed against the real work. The gallery owner confirmed year, materials, price, one-piece stock, sale permission, and separate delivery and packaging charges. The user will register the cleaned photo with Toss LinkPay and supply the resulting link. Merchant approval and stock behavior are checked in KYM-4/5; KYM-15 implements live checkout. Do not place a second checkout price or checkout URL in the repository.
+The pilot still needs its condition and confirmation of how the box fee is applied when arranging delivery. The clean crop should be reviewed against the real work. The gallery owner confirmed year, materials, dimensions, price, one-piece stock, sale permission, and separate delivery and packaging charges. The user will register the cleaned photo with Toss LinkPay and supply the resulting link. Merchant approval and stock behavior are checked in KYM-4/5; KYM-15 implements live checkout. Do not place a second checkout price or checkout URL in the repository.

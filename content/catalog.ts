@@ -75,7 +75,7 @@ export const pilotArtwork: ArtworkRecord = {
   images: [pilotImage],
   year: 2025,
   materials: "하동백토, 청화유, 플래티넘",
-  dimensions: null,
+  dimensions: "20.5 × 20.5 × H21.3 cm",
   condition: null,
 };
 
