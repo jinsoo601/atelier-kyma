@@ -16,8 +16,9 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="ko">
       <body>
+        <a className="skip-link" href="#main-content">본문으로 건너뛰기</a>
         <SiteHeader />
-        <div className="site-content">{children}</div>
+        <div id="main-content" className="site-content" tabIndex={-1}>{children}</div>
         <footer className="site-footer">
           <strong>Atelier Kyma</strong>
           <address className="footer-details">
